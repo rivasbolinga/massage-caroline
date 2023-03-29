@@ -5,7 +5,7 @@ import NavigationMobile from './components/features/navigation/NavigationMobile'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
-import Syphilology from './components/Syphilology'
+import Sophrology from './components/Sophrology'
 import Bookings from './components/Bookings'
 import GiftCard from './components/GiftCard'
 import {
@@ -34,17 +34,11 @@ function App() {
           <Route path='/bookings' element={<Bookings />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/gift-card' element={<GiftCard />} />
-          <Route path='/syphilology' element={<Syphilology />} />
+          <Route path='/sophrology' element={<Sophrology />} />
           <Route path='/massages' element={<Massages />} />
           <Route path='*' element={<Default404 />} />
         </Routes>
       </BrowserRouter>
-      {/* <Home />
-      <About />
-      <Bookings />
-      <Contact />
-      <GiftCard />
-      <Syphilology /> */}
     </>
   );
 }

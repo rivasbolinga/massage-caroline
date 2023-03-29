@@ -19,26 +19,27 @@ const Navigation = () => {
         <Link to="/">PlaceHolder</Link>
       </div>
       <ul className="menu">
-        <li className="nav-item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleMouseLeave}>
+        <li className="nav-item">
           <Link to="/">Home</Link>
-          {isDropdownOpen && (
-            <div className="dropdown" onMouseLeave={handleMouseLeave}>
-              <Link to="/about">About Us</Link>
-              <Link to="/contact">Contact Us</Link>
-            </div>
-          )}
         </li>
         <li className="nav-item">
           <Link to="/bookings">Bookings</Link>
         </li>
-        <li className="nav-item">
-          <Link to="/massages">Massages</Link>
+        <li className="nav-item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleMouseLeave}>
+          Services
+          {isDropdownOpen && (
+            <div className="dropdown" onMouseLeave={handleMouseLeave}>
+              <Link to="/massages">Massages</Link>
+              <Link to="/gift-card">Gift card</Link>
+              <Link to="/sophrology">Sophrology</Link>
+            </div>
+          )}
         </li>
         <li className="nav-item">
-          <Link to="/syphilology">Syphilology</Link>
+          <Link to="/about">About us</Link>
         </li>
         <li className="nav-item">
-          <Link to="/gift-card">Gift card</Link>
+          <Link to="/contact">Contact us</Link>
         </li>
       </ul>
     </NavWrapper>
