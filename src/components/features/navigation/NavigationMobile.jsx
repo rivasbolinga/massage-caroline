@@ -1,41 +1,42 @@
 import React, { useState } from 'react'
 import NavWrapper from './NavWrapper'
 import { Spin as Hamburger } from 'hamburger-react'
+import { Link } from 'react-router-dom'
 
 const NavigationMobile = () => {
 	const [isOpen, setOpen] = useState(false)
 	return (
 		<NavWrapper>
 			<div className="logo">
-				<span>PlaceHolder</span>
+				<Link to="/">PlaceHolder</Link>
 			</div>
 			<div className="burger">
 				<Hamburger toggled={isOpen} toggle={setOpen} direction="right" />
 			</div>
 			{isOpen && <ul className="menu" onClick={()=>setOpen(false)}>
 				<li className="nav-item">
-					<a href="#">Placeholder</a>
+					<Link to="/">Placeholder</Link>
 				</li>
 				<li className="nav-item">
-					<a href="#">Home</a>
+					<Link to="/">Home</Link>
 				</li>
 				<li className="nav-item">
-					<a href="#">About us</a>
+					<Link to="/about">About us</Link>
 				</li>
 				<li className="nav-item">
-					<a href="#">Contact us</a>
+					<Link to="/contact">Contact us</Link>
 				</li>
 				<li className="nav-item">
-					<a href="#">Bookings</a>
+					<Link to="/bookings">Bookings</Link>
 				</li>
 				<li className="nav-item">
-					<a href="#">Massages</a>
+					<Link to="/massages">Massages</Link>
 				</li>
 				<li className="nav-item">
-					<a href="#">Syphilology</a>
+					<Link to="/syphilology">Syphilology</Link>
 				</li>
 				<li className="nav-item">
-					<a href="#">Gift card</a>
+					<Link to="/gift-card">Gift card</Link>
 				</li>
 			</ul>}
 		</NavWrapper>

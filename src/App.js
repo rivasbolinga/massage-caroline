@@ -1,7 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Navigation from './components/features/Navigation';
-import NavigationMobile from './components/features/NavigationMobile';
+import Navigation from './components/features/navigation/Navigation';
+import NavigationMobile from './components/features/navigation/NavigationMobile';
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
+import Syphilology from './components/Syphilology'
+import Bookings from './components/Bookings'
+import GiftCard from './components/GiftCard'
+import {
+  BrowserRouter,
+  Route, Routes,
+} from 'react-router-dom';
+import Massages from './components/Massages';
+import Default404 from './components/Default404';
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -13,10 +25,27 @@ function App() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   return (
-    <div className="App">
-      {width < 427 ? <NavigationMobile /> : <Navigation />}
-      <h1>hello from app</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        {width < 769 ? <NavigationMobile /> : <Navigation />}
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/bookings' element={<Bookings />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/gift-card' element={<GiftCard />} />
+          <Route path='/syphilology' element={<Syphilology />} />
+          <Route path='/massages' element={<Massages />} />
+          <Route path='*' element={<Default404 />} />
+        </Routes>
+      </BrowserRouter>
+      {/* <Home />
+      <About />
+      <Bookings />
+      <Contact />
+      <GiftCard />
+      <Syphilology /> */}
+    </>
   );
 }
 

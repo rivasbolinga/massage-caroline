@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import NavWrapper from "./NavWrapper";
 
 const Navigation = () => {
-  const [width] = useState(window.innerWidth);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleMouseEnter = () => {
@@ -16,29 +16,29 @@ const Navigation = () => {
   return (
     <NavWrapper className="nav-bar">
       <div className="logo">
-        <span>PlaceHolder</span>
+        <Link to="/">PlaceHolder</Link>
       </div>
       <ul className="menu">
-        <li className="nav-item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={width<769?handleMouseEnter:handleMouseLeave}>
-          <a href="#">Home</a>
+        <li className="nav-item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleMouseLeave}>
+          <Link to="/">Home</Link>
           {isDropdownOpen && (
             <div className="dropdown" onMouseLeave={handleMouseLeave}>
-              <a href="#">About Us</a>
-              <a href="#">Contact Us</a>
+              <Link to="/about">About Us</Link>
+              <Link to="/contact">Contact Us</Link>
             </div>
           )}
         </li>
         <li className="nav-item">
-          <a href="#">Bookings</a>
+          <Link to="/bookings">Bookings</Link>
         </li>
         <li className="nav-item">
-          <a href="#">Massages</a>
+          <Link to="/massages">Massages</Link>
         </li>
         <li className="nav-item">
-          <a href="#">Syphilology</a>
+          <Link to="/syphilology">Syphilology</Link>
         </li>
         <li className="nav-item">
-          <a href="#">Gift card</a>
+          <Link to="/gift-card">Gift card</Link>
         </li>
       </ul>
     </NavWrapper>
