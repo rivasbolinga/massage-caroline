@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import NavWrapper from "./NavWrapper";
 
 const Navigation = () => {
+  const [width] = useState(window.innerWidth);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleMouseEnter = () => {
@@ -18,7 +19,7 @@ const Navigation = () => {
         <span>PlaceHolder</span>
       </div>
       <ul className="menu">
-        <li className="nav-item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleMouseLeave}>
+        <li className="nav-item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={width<769?handleMouseEnter:handleMouseLeave}>
           <a href="#">Home</a>
           {isDropdownOpen && (
             <div className="dropdown" onMouseLeave={handleMouseLeave}>
@@ -43,27 +44,5 @@ const Navigation = () => {
     </NavWrapper>
   );
 };
-
-const NavWrapper = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  .menu {
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    position: relative;
-    a {
-      text-decoration: none;
-    }
-    .dropdown {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-    }
-  }
-`
 
 export default Navigation;
