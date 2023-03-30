@@ -23,25 +23,25 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul className="footer-list">
             <li className="nav-item">
-              <Link to="/#top"><i className="fa-solid fa-angle-right" /> Home</Link>
+              <Link to="#top"><i className="fa-solid fa-angle-right" /> Home</Link>
             </li>
             <li className="nav-item">
-              <Link to="/bookings/#top"><i className="fa-solid fa-angle-right" /> Bookings</Link>
+              <Link to="/bookings#top"><i className="fa-solid fa-angle-right" /> Bookings</Link>
             </li>
             <li className="nav-item">
-              <Link to="/massages/#top"><i className="fa-solid fa-angle-right" /> Massages</Link>
+              <Link to="/massages#top"><i className="fa-solid fa-angle-right" /> Massages</Link>
             </li>
             <li className="nav-item">
-              <Link to="/syphilology/#top"><i className="fa-solid fa-angle-right" /> Syphilology</Link>
+              <Link to="/syphilology#top"><i className="fa-solid fa-angle-right" /> Syphilology</Link>
             </li>
             <li className="nav-item">
-              <Link to="/gift-card/#top"><i className="fa-solid fa-angle-right" /> Gift card</Link>
+              <Link to="/gift-card#top"><i className="fa-solid fa-angle-right" /> Gift card</Link>
             </li>
             <li className="nav-item">
-              <Link to="/about/#top"><i className="fa-solid fa-angle-right" /> About us</Link>
+              <Link to="/about#top"><i className="fa-solid fa-angle-right" /> About us</Link>
             </li>
             <li className="nav-item">
-              <Link to="/contact/#top"><i className="fa-solid fa-angle-right" /> Contact us</Link>
+              <Link to="/contact#top"><i className="fa-solid fa-angle-right" /> Contact us</Link>
             </li>
           </ul>
         </div>
@@ -75,10 +75,17 @@ const FooterWrap = styled.footer`
   border: 1px solid black; // just for adjusting spaces not part of design
   .footer-container {
     display: flex;
-    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+
+    @media screen and (max-width: 768px) {
+      gap: 1rem;
+    }
   }
   .footer-item {
     display: flex;
+    min-width: 100px;
     flex-direction: column;
     .footer-list {
       list-style-type:none;
@@ -87,17 +94,23 @@ const FooterWrap = styled.footer`
       padding: 0;
     }
     margin: .5rem 1rem;
-    
-  }
-  .form {
-      width: 25%;
+    @media screen and (max-width: 571px) {
+      width: 70%;
     }
+  }
   .from-container {
     display: flex;
     flex-direction: column;
     gap: .5rem;
   }
   
+  .form {
+    width: 30%;
+
+    @media screen and (max-width: 768px) {
+      width: 70%;
+    }
+  }
   a {
     text-decoration: none;
   }
