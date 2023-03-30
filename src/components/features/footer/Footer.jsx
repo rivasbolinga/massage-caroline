@@ -47,11 +47,11 @@ const Footer = () => {
         </div>
         <div className="footer-item form">
           <h3>developer's Contact</h3>
-          <form>
+          <form action="https://formspree.io/f/xqkoyerk" method="post">
             <div className="from-container">
-              <input type="text" />
-              <input type="text" />
-              <textarea type="text" />
+              <input name="Visitor Name" type="text" maxLength="30" placeholder="Your Name" required />
+              <input name="Purpose" type="text" maxLength="70" placeholder="Purpose of Contact" required />
+              <textarea name="Massage" maxLength="300" placeholder="Massage" type="text" required />
             </div>
             <button type="submit">contact Developers</button>
           </form>
@@ -106,6 +106,11 @@ const FooterWrap = styled.footer`
   
   .form {
     width: 30%;
+    input,
+    textarea {
+      padding: 0.2rem;
+      font-style: italic;
+    }
 
     @media screen and (max-width: 768px) {
       width: 70%;
