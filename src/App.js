@@ -14,6 +14,7 @@ import {
 } from 'react-router-dom';
 import Massages from './components/Massages';
 import Default404 from './components/Default404';
+import Footer from './components/features/footer/Footer';
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -38,6 +39,7 @@ function App() {
           <Route path='/massages' element={<Massages />} />
           <Route path='*' element={<Default404 />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

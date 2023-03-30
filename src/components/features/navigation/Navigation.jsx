@@ -14,7 +14,7 @@ const Navigation = () => {
   };
 
   return (
-    <NavWrapper className="nav-bar">
+    <NavWrapper className="nav-bar" id="top">
       <div className="logo">
         <Link to="/">PlaceHolder</Link>
       </div>

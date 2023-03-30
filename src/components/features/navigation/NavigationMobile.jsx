@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const NavigationMobile = () => {
 	const [isOpen, setOpen] = useState(false)
 	return (
-		<NavWrapper>
+		<NavWrapper id="top">
 			<div className="logo">
 				<Link to="/">PlaceHolder</Link>
 			</div>
