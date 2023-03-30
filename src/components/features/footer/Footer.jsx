@@ -12,11 +12,11 @@ const Footer = () => {
             {/* Andrea first you have to go here it's important for you */}
             <li>
               <a href="https://goo.gl/maps/qrTwinB554XdUAet8" target="_blank" rel="noreferrer">
-                <i class="fa-solid fa-location-dot" />612 E Mitchell St, Kendallville, IN 46755, United States
+                <i class="fa-solid fa-location-dot" /> 612 E Mitchell St, Kendallville, IN 46755, United States
               </a>
             </li>
-            <li><a href="tel:+012 345 67890"><i class="fa-solid fa-phone-volume" />+012 345 67890</a></li>
-            <li><a href="mailto:info@example.com"><i class="fa-solid fa-envelope-open" />info@example.com</a></li>
+            <li><a href="tel:+012 345 67890"><i class="fa-solid fa-phone-volume" /> +012 345 67890</a></li>
+            <li><a href="mailto:info@example.com"><i class="fa-solid fa-envelope-open" /> info@example.com</a></li>
           </ul>
         </div>
         <div className="footer-item">
