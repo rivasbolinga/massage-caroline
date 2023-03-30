@@ -112,7 +112,7 @@ const FooterWrap = styled.footer`
       font-style: italic;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 962px) {
       width: 70%;
     }
   }
