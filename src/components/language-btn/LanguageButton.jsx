@@ -17,8 +17,9 @@ const LanguageButton = () => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  .languages {
-    display:flex;
+  color: #F6EEEA;
+   .languages {
+    display: flex;
   }
   .language {
     background: none;
