@@ -8,14 +8,23 @@ const About = () => {
     <>
       <LanguageButton />
       <main>
-        <div className="images-container"></div>
+        <div className="images-container">
+          <img
+            className="image image1"
+            src="https://www.lannagaia.com/wp-content/uploads/2020/10/AS4_8727-3.jpg"
+          ></img>
+          <img
+            className="image image2"
+            src="https://www.lannagaia.com/wp-content/uploads/2020/10/AS5_9390-1.jpg"
+          ></img>
+        </div>
         <div className="about-me-container">
           <h1 className="about-me-title">Qui suis je</h1>
           <h3 className="about-me-name">Caroline Aimé</h3>
           <p className="about-me-text">
             Je travaille en tant que masseur depuis 2010, en commençant par une
             formation axée sur le bien-être, puis en me spécialisant dans la
-            thérapie.  Diverses techniques telles que la relaxation, l'anatomie
+            thérapie. Diverses techniques telles que la relaxation, l'anatomie
             palpatoire, ainsi que différents types de massage tels que le
             massage viscéral, détoxifiant et ayurvédique que j'ai appris en
             Inde, m'ont permis d'acquérir une dextérité particulière et une
