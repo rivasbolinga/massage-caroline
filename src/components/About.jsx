@@ -1,9 +1,11 @@
 import React from 'react'
 import SocialLogos from './features/social/SocialLogos'
+import LanguageButton from './language-btn/LanguageButton';
 
 const About = () => {
 	return (
     <>
+    <LanguageButton />
       <div className="images-container"></div>
       <div className="about-me-container">
         <h1 className="about-me-title">Qui suis je</h1>
