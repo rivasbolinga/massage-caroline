@@ -15,7 +15,7 @@ const About = () => {
           <p className="about-me-text">
             Je travaille en tant que masseur depuis 2010, en commençant par une
             formation axée sur le bien-être, puis en me spécialisant dans la
-            thérapie. Diverses techniques telles que la relaxation, l'anatomie
+            thérapie.  Diverses techniques telles que la relaxation, l'anatomie
             palpatoire, ainsi que différents types de massage tels que le
             massage viscéral, détoxifiant et ayurvédique que j'ai appris en
             Inde, m'ont permis d'acquérir une dextérité particulière et une

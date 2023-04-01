@@ -1,7 +1,9 @@
 main {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .images-container {
@@ -10,4 +12,13 @@ main {
 
 .about-me-container {
   width: 40%;
+}
+
+.about-me-title {
+  font-size: 100px;
+  font-weight: 400;
+}
+
+.about-me-name {
+  font-size: 35px;
 }
