@@ -23,7 +23,7 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul className="footer-list">
             <li className="nav-item">
-              <Link to="#top"><i className="fa-solid fa-angle-right" /> Home</Link>
+              <Link to="/#top"><i className="fa-solid fa-angle-right" /> Home</Link>
             </li>
             <li className="nav-item">
               <Link to="/bookings#top"><i className="fa-solid fa-angle-right" /> Bookings</Link>
@@ -103,6 +103,10 @@ const FooterWrap = styled.footer`
     flex-direction: column;
     gap: .5rem;
   }
+
+  button {
+    margin: 0.5rem 0;
+  }
   
   .form {
     width: 30%;
@@ -124,6 +128,11 @@ const FooterWrap = styled.footer`
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+    @media screen and (max-width: 564px) {
+      border: 1px solid black;
+      gap: 0.5rem;
+      flex-direction: column;
+    }
   }
 `;
 

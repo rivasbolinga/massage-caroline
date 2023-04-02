@@ -20,6 +20,10 @@ const NavWrapper = styled.nav`
       display: flex;
       flex-direction: column;
       position: absolute;
+      z-index: 10;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: .4rem;
     }
 
     @media screen and (max-width: 768px) {

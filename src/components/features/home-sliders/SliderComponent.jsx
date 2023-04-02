@@ -4,7 +4,7 @@ import ProductCard from "./ProductCard";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./styles.css";
+import "./styles.scss";
 class ProductSlider extends Component {
   constructor() {
     super();
@@ -81,7 +81,7 @@ class ProductSlider extends Component {
       ]
     };
     return (
-      <div>
+      <div id="massages">
         <h2> Responsive Product Carousel</h2>
         <Slider {...settings}>
           {this.state.slides.map((slide, index) => {
