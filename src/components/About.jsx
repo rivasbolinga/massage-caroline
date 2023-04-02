@@ -1,6 +1,7 @@
-import React from 'react'
-import SocialLogos from './features/social/SocialLogos'
+import React from 'react';
 import './styles/About.scss';
+import { BsArrowRight } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const About = () => {
 	return (
@@ -40,11 +41,12 @@ const About = () => {
             suis maintenant en mesure de vous offrir un soutien personnalisé
             basé sur nos deux aspects : l'esprit et le corps.
           </p>
+          <Link to="/massages#top" type="button" className='massages-button'>
+            LES MASSAGES
+            <BsArrowRight/>
+          </Link>
         </div>
       </main>
-      <div className="social-media-logos">
-        <SocialLogos />
-      </div>
     </>
   )
 }
