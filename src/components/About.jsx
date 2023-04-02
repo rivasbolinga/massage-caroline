@@ -2,8 +2,10 @@ import React from 'react';
 import './styles/About.scss';
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'
 
 const About = () => {
+  const { t } = useTranslation();
 	return (
     <>
       <main>
@@ -18,7 +20,7 @@ const About = () => {
           ></img>
         </div>
         <div className="about-me-container">
-          <h1 className="about-me-title">Qui suis je</h1>
+          <h1 className="about-me-title">{t('Qui suis je')}</h1>
           <h3 className="about-me-name">Caroline Aimé</h3>
           <p className="about-me-text">
             Je travaille en tant que masseur depuis 2010, en commençant par une
@@ -41,9 +43,9 @@ const About = () => {
             suis maintenant en mesure de vous offrir un soutien personnalisé
             basé sur nos deux aspects : l'esprit et le corps.
           </p>
-          <Link to="/massages#top" type="button" className='massages-button'>
+          <Link to="/massages#top" type="button" className="massages-button">
             LES MASSAGES
-            <BsArrowRight/>
+            <BsArrowRight />
           </Link>
         </div>
       </main>

@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import NavWrapper from "./NavWrapper";
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import NavWrapper from './NavWrapper'
 import LanguageButton from '../language-btn/LanguageButton'
 
 const Navigation = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
   const handleMouseEnter = () => {
-    setIsDropdownOpen(true);
-  };
+    setIsDropdownOpen(true)
+  }
 
   const handleMouseLeave = () => {
-    setIsDropdownOpen(false);
-  };
+    setIsDropdownOpen(false)
+  }
 
   return (
     <NavWrapper className="nav-bar">
@@ -20,16 +20,18 @@ const Navigation = () => {
         <Link to="/">PlaceHolder</Link>
       </div>
       <ul className="menu">
-        <li>
-          <LanguageButton />
-        </li>
         <li className="nav-item">
           <Link to="/">Home</Link>
         </li>
         <li className="nav-item">
           <Link to="/bookings">Bookings</Link>
         </li>
-        <li className="nav-item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleMouseLeave}>
+        <li
+          className="nav-item"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          onClick={handleMouseLeave}
+        >
           Services
           {isDropdownOpen && (
             <div className="dropdown" onMouseLeave={handleMouseLeave}>
@@ -46,8 +48,11 @@ const Navigation = () => {
           <Link to="/contact">Contact us</Link>
         </li>
       </ul>
+      <div className="right-menu">
+        <LanguageButton />
+      </div>
     </NavWrapper>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation

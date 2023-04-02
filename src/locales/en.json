@@ -1,0 +1,55 @@
+{
+  "navigation": {
+    "home": "Home",
+    "bookings": "Bookings",
+    "services": "Services",
+    "about-me": "About me",
+    "massages": "Massages",
+    "gift-card": "Gift Card",
+    "sophrology": "Sophrology",
+    "contact": "Contact"
+  },
+  "about": {
+    "about-me" : "About me",
+    "name": "Caroline Aimé",
+    "my-work": "I have been working in massage since 2010, training first in well-being and then in therapy.
+Various techniques, such as relaxation, palpatory anatomy as well as different types of massage, such as visceral, detoxifying and Ayurvedic massage, which I learnt in India, have led me to acquire a particular dexterity and a knack for reading bodies.
+Passionate about my work, I have been privileged enough to work in prestigious establishments throughout the world and in private clinics in Switzerland.
+From there, I developed a desire to explore a more subtle and emotional approach thanks to Sophrology.
+I qualified at the Swiss school of Caycedian Sophrology, and am now able to offer you personalized support based on our dual aspects : mind and body."
+  },
+  "home": {
+    "name":"Caroline Aimé",
+    "practice": "Independent practice in Sophrology and Massage in Crozet",
+    "offer": "Come and discover my practice, get your first 30 minutes customized intuitive massage for free."
+  },
+  "massages": {
+    "wellness-massage":"Wellness Massage",
+    "back-legs":"Relaxing massage, back and/or legs",
+    "entire-body": "Relaxing massage, entire body",
+    "customized": "Customized intuitive massage",
+    "bespoke": "Bespoke massage, tailored to your individual needs",
+    "ayurvedic": "Ayurvedic massage",
+    "ayurvedic-technique": "Whole body massage inspired by Indian medical techniques. The Ayurvedic treatment aims at balancing and harmonizing body and soul",
+  },
+  "sophrology": {
+    "sophrology": "Sophrology",
+    "what-is": "What is Sophrology?",
+    "what-description":"Essentially it is a dual bodily and psychological approach inspired by both Oriental (yoga, zen, …) and Western (relaxation) techniques. The aim is global well-being and individual harmony.",
+    "who-for": "Who is sophrology good for?",
+    "who-description":"Basically for everyone encountering anxiety, poor self-esteem, or experiencing negative emotions in anticipation of situations that we cannot avoid.",
+    "offer": "I offer you a customized care plan, creating a bespoke protocol according to your needs.",
+    "duration": "A Sophrology session lasts between 60 and 90 minutes.",
+    "first-session": "First session 75€ (Medical history + session)",
+    "follow-up": "Follow up session 60€"
+  },
+  "contact": {
+    "opening-hours": "Opening-hors",
+    "week-days": "Mondays, Tuesdays, Thursdays and Fridays",
+    "saturday-wednesday": "Wednesday and Saturday",
+    "sunday": "Sundays close",
+    "address": "Address",
+    "phone":"Phone",
+    "contact-text": "You can contact me by email, WhatsApp or text message and I will revert asap."
+  }
+}
