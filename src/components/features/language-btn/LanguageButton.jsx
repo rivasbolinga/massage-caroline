@@ -1,14 +1,20 @@
 import { GrLanguage } from 'react-icons/gr'
 import styled from 'styled-components';
+import { useDispatch } from 'react-redux';
+import { setLanguage } from './languageSlice'
 
 const LanguageButton = () => {
+   const dispatch = useDispatch();
+   const handleClick = () => {
+    const newLanguage = language === 'fr' ? 'en' : 'fr' 
+   }
   return (
     <Wrapper>
     <GrLanguage/>
     <div className='languages'>
       <button className='fr language'>fr</button>
       <div className='grey-line'></div>
-      <button className='en language'>en</button>
+      <button onClick={handleClick} className='en language'>en</button>
     </div>
     </Wrapper>
   )

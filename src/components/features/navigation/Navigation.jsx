@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import NavWrapper from "./NavWrapper";
-import LanguageButton from '../../language-btn/LanguageButton'
+import LanguageButton from '../language-btn/LanguageButton'
 
 const Navigation = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
