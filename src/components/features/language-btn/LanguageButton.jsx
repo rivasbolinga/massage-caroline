@@ -1,14 +1,13 @@
 import { GrLanguage } from 'react-icons/gr'
 import styled from 'styled-components';
-import { useDispatch } from 'react-redux';
-import { setLanguage } from '../../../redux/languageSlice/languageSlice'
+import { useTranslation } from 'react-i18next'
 
 const LanguageButton = () => {
-   const dispatch = useDispatch();
+ const { i18n } = useTranslation()
 
    const handleClick = (lang) => {
-    dispatch(setLanguage(lang))
-    console.log(lang, 'clicked')
+
+    i18n.changeLanguage(lang)
    }
   return (
     <Wrapper>

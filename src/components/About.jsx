@@ -5,12 +5,10 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'
 import imageCaroline from '../assets/images/image5.jpeg';
 import imageHands from '../assets/images/image0 (1).jpeg';
-import { useSelector } from 'react-redux';
 
 const About = () => {
-  const language = useSelector((state) => state.language);
-  console.log(language)
-  const { t } = useTranslation('translation', { lng:language })
+
+  const { t } = useTranslation('translation')
 	return (
     <>
       <main>
