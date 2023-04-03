@@ -19,7 +19,7 @@ const About = () => {
           ></img>
         </div>
         <div className="about-me-container">
-          <h1 className="about-me-title">{t('Qui suis je')}</h1>
+          <h1 className="about-me-title">{t('about.about-me')}</h1>
           <h3 className="about-me-name">Caroline Aimé</h3>
           <p className="about-me-text">
             Je travaille en tant que masseur depuis 2010, en commençant par une

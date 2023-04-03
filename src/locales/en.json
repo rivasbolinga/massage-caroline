@@ -1,4 +1,5 @@
 {
+  "en-US": {
   "navigation": {
     "home": "Home",
     "bookings": "Bookings",
@@ -50,4 +51,5 @@
     "phone":"Phone",
     "contact-text": "You can contact me by email, WhatsApp or text message and I will revert asap."
   }
+}
 }
