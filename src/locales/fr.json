@@ -1,0 +1,53 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "bookings": "Prendre un rendez-vous",
+    "services": "Prestations",
+    "about-me": "Qui suis-je?",
+    "massages": "Massages",
+    "gift-card": "Carte Cadeau",
+    "sophrology": "Sophrologie",
+    "contact": "Contact"
+  },
+  "about": {
+    "about-me": "Qui suis-je?",
+    "name": "Caroline Aimé",
+    "my-work": "Dans le domaine du massage depuis 2010, j’ai suivi un enseignement, d’abord dans le bien être puis dans la thérapie.",
+    "techniques": " La relaxation, l’anatomie palpatoire, le massage viscéral, détoxiquant ou encore ayurvédique appris en Inde, m’ont permis d’acquérir une dextérité et une certaine lecture du corps.",
+    "passionate": "Passionnée, j’ai eu la chance de pratiquer cet art du massage au sein de prestigieux établissements à travers le monde ainsi qu’en cliniques privées suisses.J’ai ensuite souhaité développer davantage le subtil, l’émotionnel à travers la sophrologie.Diplômée de cette discipline au sein de l’école de sophrologie Caycédienne Suisse, je vous propose un accompagnement individuel axé sur ces deux aspects qui nous constituent: le corps et l’esprit."
+  },
+  "home": {
+    "name": "Caroline Aimé",
+    "practice": "Cabinet de sophrologie et massages à Crozet",
+    "offer": "Venez découvrir le cabinet en profitant de votre premier massage intuitif personnalisé de 30 minutes offert."
+  },
+  "massages": {
+    "wellness-massage": "Massage bien-être",
+    "back-legs": "Massage relaxant du dos et/ou jambes",
+    "entire-body": "Massage relaxant du corps complet",
+    "customized": "Massage intuitif personnalisé",
+    "bespoke": "Massage effectué sur mesure selon les besoins spécifiques de chacun",
+    "ayurvedic": "Massage ayurvédique",
+    "ayurvedic-technique": "Massage du corps complet issue de la médecine indienne. Le soin ayurvédique est avant tout rééquilibrant et permet d’harmoniser corps et esprit"
+  },
+  "sophrology": {
+    "sophrology": "Sophrologie",
+    "what-is": "Qu’est ce que la sophrologie?",
+    "what-description": "C’est une approche psycho corporelle inspirée à la fois de méthodes orientales (yoga,zen..) et occidentales (techniques de relaxation). L’état recherché est le mieux être, une bonne harmonie de l’individu.",
+    "who-for": "La sophrologie pour qui?",
+    "who-description": "Pour toute personne qui rencontre des difficultés, liées notamment à l’anxiété. Une mauvaise estime de soi ou que l’on anticipe négativement des situations auxquelles nous devons pourtant nous adapter.",
+    "offer": "Je vous propose un suivi individuel où j’adapterai un protocole personnalisé en fonction de vos besoins.",
+    "duration": "Une séance de sophrologie dure entre 60 et 90 min.",
+    "first-session": "Première séance 75€(Anamnèse + séance)",
+    "follow-up": "Séance de suivi 60€"
+  },
+  "contact": {
+    "opening-hours": "Horaires",
+    "week-days": "Lundi, Mardi, Jeudi et Vendredi",
+    "saturday-wednesday": "Mercredi et Samedi",
+    "sunday": "Dimanche fermé",
+    "address": "Addresse",
+    "phone": "Téléphone",
+    "contact-text": "N’hésitez pas à m’écrire par mail, WhatsApp ou par message et je vous recontacterai dès que possible."
+  }
+}
