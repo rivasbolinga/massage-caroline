@@ -3,6 +3,8 @@ import './styles/About.scss';
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'
+import imageCaroline from '../assets/images/image5.jpeg';
+import imageHands from '../assets/images/image0 (1).jpeg';
 
 const About = () => {
   const { t } = useTranslation();
@@ -10,13 +12,10 @@ const About = () => {
     <>
       <main>
         <div className="images-container">
+          <img className='image image2' alt="me" src={imageCaroline}></img>
           <img
             className="image image1"
-            src="https://www.lannagaia.com/wp-content/uploads/2020/10/AS4_8727-3.jpg"
-          ></img>
-          <img
-            className="image image2"
-            src="https://www.lannagaia.com/wp-content/uploads/2020/10/AS5_9390-1.jpg"
+            src={imageHands}
           ></img>
         </div>
         <div className="about-me-container">
