@@ -37,6 +37,7 @@ const NavWrapper = styled.nav`
       padding: 0;
       min-width: unset;
       align-items: center;
+      z-index: 5;
     }
   }
 

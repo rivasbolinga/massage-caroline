@@ -37,11 +37,13 @@ const CarouselWrap = styled.div`
     img {
       width: 100%;
       height: 80vh;
+      margin: auto 0;
     }
   }
 
   .slick-slide {
     padding: 0;
+    margin: 0;
   }
 
   .slick-list {

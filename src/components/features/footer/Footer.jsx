@@ -46,7 +46,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-item form">
-          <h3>developer's Contact</h3>
+          <h3>Developer's Contact</h3>
           <form action="https://formspree.io/f/xqkoyerk" method="post">
             <div className="from-container">
               <input name="Visitor Name" type="text" maxLength="30" placeholder="Your Name" required />
@@ -70,9 +70,9 @@ const Footer = () => {
 }
 
 const FooterWrap = styled.footer`
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
   padding: 4rem 0 0 0;
-  border: 1px solid black; // just for adjusting spaces not part of design
+  background-color: #E1BDA7;
   .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -106,6 +106,9 @@ const FooterWrap = styled.footer`
 
   button {
     margin: 0.5rem 0;
+    padding: 0.2rem;
+    border: none;
+    border-radius: 5px;
   }
   
   .form {
