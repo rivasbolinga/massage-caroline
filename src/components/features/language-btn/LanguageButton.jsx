@@ -3,12 +3,11 @@ import styled from 'styled-components';
 import { useTranslation } from 'react-i18next'
 
 const LanguageButton = () => {
- const { i18n } = useTranslation()
+  const { i18n } = useTranslation()
 
-   const handleClick = (lang) => {
-
-   i18n.changeLanguage(lang)
-   }
+  const handleClick = (lang) => {
+    i18n.changeLanguage(lang)
+  }
   return (
     <Wrapper>
       <GrLanguage />
@@ -29,7 +28,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   color: #F6EEEA;
-   .languages {
+  .languages {
     display: flex;
   }
   .language {
