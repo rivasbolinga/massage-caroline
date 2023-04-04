@@ -3,17 +3,24 @@ import NavWrapper from './NavWrapper'
 import { Spin as Hamburger } from 'hamburger-react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
+import LanguageButton from '../language-btn/LanguageButton';
 
 const NavigationMobile = () => {
 	const [isOpen, setOpen] = useState(false);
 	const {t} = useTranslation();
+  const location = useLocation();
+  const currentPath = location.pathname.split('/').reverse()[0];
 	return (
     <NavWrapper>
-      <div id="top" className="logo">
+      <div className="logo">
         <Link to="/">Logo</Link>
+        <span title="Current Page">{!currentPath ? 'Home' : currentPath}</span>
       </div>
+      
       <div className="burger">
-        <Hamburger toggled={isOpen} toggle={setOpen} direction="right" />
+        <LanguageButton />
+        <Hamburger toggled={isOpen} toggle={setOpen} direction="right" size={15} />
       </div>
       {isOpen && (
         <ul className="menu" onClick={() => setOpen(false)}>

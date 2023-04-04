@@ -155,7 +155,7 @@ const FooterWrap = styled.footer`
       padding: 0;
     }
     margin: .5rem 1rem;
-    @media screen and (max-width: 571px) {
+    @media screen and (max-width: 676px) {
       width: 70%;
     }
   }

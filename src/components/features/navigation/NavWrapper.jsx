@@ -7,11 +7,14 @@ const NavWrapper = styled.nav`
   padding: 1rem 2rem;
   position: relative;
   .menu {
-    width: 40%;
-    min-width: 439px;
+    width: 60%;
+    min-width: 653px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style-type: none;
+    margin:0;
+    padding:0;
     position: relative;
     a {
       text-decoration: none;
@@ -31,7 +34,7 @@ const NavWrapper = styled.nav`
       background-color: white;
       width: 100%;
       height: 100vh;
-      position: absolute;
+      position: fixed;
       left: 0;
       top: 0;
       padding: 0;
@@ -42,8 +45,24 @@ const NavWrapper = styled.nav`
   }
 
   .burger {
-    position: relative;
-    z-index: 2;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    color: #D25C33;
+    background-color: rgba(255, 255, 255, 50%);
+    border-radius: 0 0 20px 0;
+    position: fixed;
+    z-index: 4;
+    .logo,
+    .burger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
   }
 `;
 

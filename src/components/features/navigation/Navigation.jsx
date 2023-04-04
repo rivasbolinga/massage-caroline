@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import NavWrapper from './NavWrapper'
 import LanguageButton from '../language-btn/LanguageButton';
 import { useTranslation } from 'react-i18next';
- 
 
 const Navigation = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
@@ -49,10 +48,8 @@ const { t } = useTranslation();
         <li className="nav-item">
           <Link to="/contact">{t('navigation.contact')}</Link>
         </li>
-      </ul>
-      <div className="right-menu">
         <LanguageButton />
-      </div>
+      </ul>
     </NavWrapper>
   )
 }
