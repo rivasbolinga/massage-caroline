@@ -3,9 +3,15 @@ import { Link } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 import '../styles/AboutPhone.scss';
 import AboutImages from "../features/aboutImages/AboutImages";
+import { useState } from 'react';
 
 const AboutPhone = () => {
 const { t } = useTranslation();
+ const [showMore, setShowMore] = useState(false)
+
+ const handleClick = () => {
+   setShowMore(!showMore)
+ }
 
 return (
   <main>
@@ -15,8 +21,9 @@ return (
       <div className="about-text">
         <p>{t('about.my-work')}</p>
         <p>{t('about.techniques')}</p>
-        <button className="read-more-btn">
-          {t('about.read-more')}
+        {showMore && <p>{t('about.passionate')}</p>}
+        <button onClick={handleClick} className="read-more-btn">
+          {showMore ? t('about.see-less') : t('about.read-more')}
           <BsArrowRight className="arrow" />
         </button>
       </div>
