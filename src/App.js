@@ -32,7 +32,7 @@ function App() {
         <hr id="top" />
         <Routes>
           <Route path="/" element={<Home />} />
-          {width < 769 ? (
+          {width < 768 ? (
             <Route path="/about" element={<AboutPhone />} />
           ) : (
             <Route path="/about" element={<About />} />

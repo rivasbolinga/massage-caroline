@@ -22,12 +22,14 @@ return (
       </div>
     </div>
     <AboutImages />
-    <button type="button">
-      <Link to="/massages#top" className="massages-btn">
-        {t('about.go-massages')}
-        <BsArrowRight className="arrow" />
-      </Link>
-    </button>
+    <div className="button-container">
+      <button type="button">
+        <Link to="/massages#top" className="massages-btn">
+          {t('about.go-massages')}
+          <BsArrowRight className="arrow" />
+        </Link>
+      </button>
+    </div>
   </main>
 )
 }
