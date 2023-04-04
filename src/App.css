@@ -1,9 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Red+Rose:wght@300;400;500;600;700&display=swap');
 
-body {
-  background-color: #F6EDEA;
-}
 
 h1,
 h2,
@@ -16,8 +13,46 @@ h4 {
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'DM Sans', sans-serif;
    margin: 0;
    padding: 0;
    color: #30221E;
+}
+
+li
+ {
+  list-style: none;
+   color: #30221E;
+   font-family: 'DM Sans', sans-serif;
+   text-decoration: none;
+}
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+button {
+  background: none;
+  border: none;
+   font-family: 'DM Sans', sans-serif;
+  text-decoration: none;
+  color: #D25C33;
+  font-size: 18px;
+  gap: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 768px) {
+body {
+  background-color: #F6EDEA;
+  overflow-x: hidden;
+}
 }
