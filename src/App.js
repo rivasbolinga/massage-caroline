@@ -3,7 +3,7 @@ import './App.css';
 import Navigation from './components/features/navigation/Navigation';
 import NavigationMobile from './components/features/navigation/NavigationMobile';
 import Home from './components/Home'
-import About from './components/About'
+import About from './components/aboutPage/About'
 import Contact from './components/Contact'
 import Sophrology from './components/Sophrology'
 import Bookings from './components/Bookings'
@@ -15,7 +15,7 @@ import {
 import Massages from './components/Massages';
 import Default404 from './components/Default404';
 import Footer from './components/features/footer/Footer';
-
+import AboutPhone from './components/aboutPage/AboutPhone';
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
@@ -29,21 +29,26 @@ function App() {
     <>
       <BrowserRouter>
         {width < 769 ? <NavigationMobile /> : <Navigation />}
-        <hr id="top"/>
+        <hr id="top" />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/bookings' element={<Bookings />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/gift-card' element={<GiftCard />} />
-          <Route path='/sophrology' element={<Sophrology />} />
-          <Route path='/massages' element={<Massages />} />
-          <Route path='*' element={<Default404 />} />
+          <Route path="/" element={<Home />} />
+          {width < 769 ? (
+            <Route path="/about" element={<AboutPhone />} />
+          ) : (
+            <Route path="/about" element={<About />} />
+          )}
+          
+          <Route path="/bookings" element={<Bookings />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/gift-card" element={<GiftCard />} />
+          <Route path="/sophrology" element={<Sophrology />} />
+          <Route path="/massages" element={<Massages />} />
+          <Route path="*" element={<Default404 />} />
         </Routes>
         <Footer />
       </BrowserRouter>
     </>
-  );
+  )
 }
 
 export default App;

@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import NavWrapper from './NavWrapper'
-import LanguageButton from '../language-btn/LanguageButton'
+import LanguageButton from '../language-btn/LanguageButton';
+import { useTranslation } from 'react-i18next';
+ 
 
 const Navigation = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-
+const { t } = useTranslation();
   const handleMouseEnter = () => {
     setIsDropdownOpen(true)
   }
@@ -17,14 +19,14 @@ const Navigation = () => {
   return (
     <NavWrapper className="nav-bar">
       <div className="logo">
-        <Link to="/">PlaceHolder</Link>
+        <Link to="/">Logo</Link>
       </div>
       <ul className="menu">
         <li className="nav-item">
-          <Link to="/">Home</Link>
+          <Link to="/">{t('navigation.home')}</Link>
         </li>
         <li className="nav-item">
-          <Link to="/bookings">Bookings</Link>
+          <Link to="/bookings">{t('navigation.bookings')}</Link>
         </li>
         <li
           className="nav-item"
@@ -32,20 +34,20 @@ const Navigation = () => {
           onMouseLeave={handleMouseLeave}
           onClick={handleMouseLeave}
         >
-          Services
+          {t('navigation.services')}
           {isDropdownOpen && (
             <div className="dropdown" onMouseLeave={handleMouseLeave}>
-              <Link to="/massages">Massages</Link>
-              <Link to="/gift-card">Gift card</Link>
-              <Link to="/sophrology">Sophrology</Link>
+              <Link to="/massages">{t('navigation.massages')}</Link>
+              <Link to="/gift-card">{t('navigation.gift-card')}</Link>
+              <Link to="/sophrology">{t('navigation.sophrology')}</Link>
             </div>
           )}
         </li>
         <li className="nav-item">
-          <Link to="/about">About me</Link>
+          <Link to="/about">{t('navigation.about-me')}</Link>
         </li>
         <li className="nav-item">
-          <Link to="/contact">Contact us</Link>
+          <Link to="/contact">{t('navigation.contact')}</Link>
         </li>
       </ul>
       <div className="right-menu">

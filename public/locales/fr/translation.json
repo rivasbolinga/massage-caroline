@@ -15,7 +15,8 @@
     "my-work": "Dans le domaine du massage depuis 2010, j’ai suivi un enseignement, d’abord dans le bien être puis dans la thérapie.",
     "techniques": " La relaxation, l’anatomie palpatoire, le massage viscéral, détoxiquant ou encore ayurvédique appris en Inde, m’ont permis d’acquérir une dextérité et une certaine lecture du corps.",
     "passionate": "Passionnée, j’ai eu la chance de pratiquer cet art du massage au sein de prestigieux établissements à travers le monde ainsi qu’en cliniques privées suisses.J’ai ensuite souhaité développer davantage le subtil, l’émotionnel à travers la sophrologie.Diplômée de cette discipline au sein de l’école de sophrologie Caycédienne Suisse, je vous propose un accompagnement individuel axé sur ces deux aspects qui nous constituent: le corps et l’esprit.",
-    "go-massages": "Les massages"
+    "go-massages": "Les massages",
+    "read-more":"En savoir plus"
   },
   "home": {
     "name": "Caroline Aimé",
@@ -50,5 +51,17 @@
     "address": "Addresse",
     "phone": "Téléphone",
     "contact-text": "N’hésitez pas à m’écrire par mail, WhatsApp ou par message et je vous recontacterai dès que possible."
+  },
+  "footer": {
+    "home": "Accueil",
+    "bookings": "Prendre un rendez-vous",
+    "services": "Prestations",
+    "about-me": "Qui suis-je?",
+    "massages": "Massages",
+    "gift-card": "Carte Cadeau",
+    "sophrology": "Sophrologie",
+    "contact": "Contact",
+    "touch": "Entrer en contact",
+    "links": "Liens directs"
   }
 }

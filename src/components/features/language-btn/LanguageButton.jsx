@@ -7,7 +7,7 @@ const LanguageButton = () => {
 
    const handleClick = (lang) => {
 
-   i18n.changeLanguage('en-US')
+   i18n.changeLanguage(lang)
    }
   return (
     <Wrapper>
