@@ -19,12 +19,14 @@ const About = () => {
         <div className="about-me-container">
           <h1 className="about-me-title">{t('about.about-me')}</h1>
           <h3 className="about-me-name">{t('about.name')}</h3>
-          <div className='about-me-text'>
+          <div className="about-me-text">
             <p>{t('about.my-work')}</p>
+            <p>{t('about.techniques')}</p>
+            <p>{t('about.passionate')}</p>
           </div>
-  
+
           <Link to="/massages#top" type="button" className="massages-button">
-            LES MASSAGES
+            {t('about.go-massages')}
             <BsArrowRight />
           </Link>
         </div>
