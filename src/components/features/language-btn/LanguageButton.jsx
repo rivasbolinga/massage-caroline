@@ -1,47 +1,44 @@
-import { GrLanguage } from 'react-icons/gr'
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next'
 
 const LanguageButton = () => {
- const { i18n } = useTranslation()
+  const { i18n } = useTranslation()
 
-   const handleClick = (lang) => {
+  const handleClick = () => {
+    const currentLang = i18n.language;
+    const newLang = currentLang === 'fr' ? 'en' : 'fr';
+    i18n.changeLanguage(newLang);
+  }
 
-   i18n.changeLanguage(lang)
-   }
   return (
-    <Wrapper>
-      <GrLanguage />
-      <div className="languages">
-        <button onClick={() => handleClick('fr')} className="fr language">
-          fr
-        </button>
-        <div className="grey-line"></div>
-        <button onClick={() => handleClick('en')} className="en language">
-          en
-        </button>
-      </div>
-    </Wrapper>
+    <ToggleButton onClick={handleClick}>
+      <i className="fa-sharp fa-solid fa-globe" />
+      <ToggleText>{i18n.language.toUpperCase()}</ToggleText>
+    </ToggleButton>
   )
 }
 
-const Wrapper = styled.div`
+const ToggleButton = styled.button`
   display: flex;
-  flex-direction: row;
-  color: #F6EEEA;
-   .languages {
-    display: flex;
-  }
-  .language {
-    background: none;
-    border: none;
-  }
+  align-items: center;
+  background-color: #fff;
+  padding: 0 0.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px inset #D25C33;
 
-  .grey-line {
-    width: 1px;
-    background-color: grey;
-    height: 20px;
+  &:hover {
+    background-color: #dfbc8b;
+    color: #30221E;
   }
-`
+`;
+
+const ToggleText = styled.span`
+  font-weight: bold;
+  margin-left: 10px;
+  text-transform: uppercase;
+`;
+
 
 export default LanguageButton

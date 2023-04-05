@@ -2,9 +2,9 @@ import React from 'react'
 
 const Sophrology = () => {
 	return (
-		<div>
+		<main>
 			<h1>Hello form Sophrology</h1>
-		</div>
+		</main>
 	)
 }
 

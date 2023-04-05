@@ -1,12 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { useTransition, useTranslation } from 'react-i18next';
-
- 
+import { useTranslation } from 'react-i18next';
+import SocialLogos from '../social/SocialLogos';
 const Footer = () => {
 
-const { t } = useTranslation()
+  const { t } = useTranslation()
   return (
     <FooterWrap>
       <div className="footer-container">
@@ -35,6 +34,12 @@ const { t } = useTranslation()
               </a>
             </li>
           </ul>
+          <div className="logo-wrap">
+            <div className="client">
+              <Link to="/">Logo</Link>
+            </div>
+            <SocialLogos color="#D25C33"/>
+          </div>
         </div>
         <div className="footer-item">
           <h3>{t('footer.links')}</h3>
@@ -78,7 +83,7 @@ const { t } = useTranslation()
           </ul>
         </div>
         <div className="footer-item form">
-          <h3>developer's Contact</h3>
+          <h3>Developer's Contact</h3>
           <form action="https://formspree.io/f/xqkoyerk" method="post">
             <div className="from-container">
               <input
@@ -133,9 +138,9 @@ const { t } = useTranslation()
 }
 
 const FooterWrap = styled.footer`
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
   padding: 4rem 0 0 0;
-  border: 1px solid black; // just for adjusting spaces not part of design
+  background-color: #E1BDA7;
   .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -145,6 +150,25 @@ const FooterWrap = styled.footer`
     @media screen and (max-width: 768px) {
       gap: 1rem;
     }
+  }
+
+  .client {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+
+    @media screen and (max-width: 390px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .logo-wrap {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
   }
   .footer-item {
     display: flex;
@@ -157,7 +181,7 @@ const FooterWrap = styled.footer`
       padding: 0;
     }
     margin: .5rem 1rem;
-    @media screen and (max-width: 571px) {
+    @media screen and (max-width: 676px) {
       width: 70%;
     }
   }
@@ -165,6 +189,13 @@ const FooterWrap = styled.footer`
     display: flex;
     flex-direction: column;
     gap: .5rem;
+  }
+
+  button {
+    margin: 0.5rem 0;
+    padding: 0.2rem;
+    border: none;
+    border-radius: 5px;
   }
   
   .form {
@@ -175,7 +206,7 @@ const FooterWrap = styled.footer`
       font-style: italic;
     }
 
-    @media screen and (max-width: 962px) {
+    @media screen and (max-width: 1054px) {
       width: 70%;
     }
   }
@@ -187,6 +218,11 @@ const FooterWrap = styled.footer`
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+    @media screen and (max-width: 564px) {
+      border: 1px solid black;
+      gap: 0.5rem;
+      flex-direction: column;
+    }
   }
 `;
 

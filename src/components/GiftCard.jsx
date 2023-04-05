@@ -1,11 +1,11 @@
 import React from 'react'
 
 const GiftCard = () => {
-	return (
-		<div>
-			<h1>Hello form GiftCard</h1>
-		</div>
-	)
+  return (
+    <main>
+      <h1>Hello form GiftCard</h1>
+    </main>
+  )
 }
 
 export default GiftCard

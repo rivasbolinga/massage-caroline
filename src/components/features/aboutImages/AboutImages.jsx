@@ -5,8 +5,8 @@ import imageHands from '../../../assets/images/image0 (1).jpeg';
 const AboutImages = () => {
   return (
     <div className="images-container">
-      <img className="image image2" alt="image of me" src={imageCaroline}></img>
-      <img className="image image1" alt="image hands" src={imageHands}></img>
+      <img className="image image2" alt="myself" src={imageCaroline}></img>
+      <img className="image image1" alt="giving a massage" src={imageHands}></img>
     </div>
   )
 }
