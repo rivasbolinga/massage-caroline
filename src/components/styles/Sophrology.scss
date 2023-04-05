@@ -1,0 +1,83 @@
+@import './common.scss';
+
+.sp-section {
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  .sophrology-title-container {
+  background-color: $pink;
+  color: $chocolate;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+   .sophrology-title {
+    color: #453227;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px;
+}
+   .horizontal-line {
+    background-color: $chocolate;
+    width: 100px;
+    height: 2px;
+   }
+}
+  .sophrology-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  .what-is, 
+  .who-for {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .what-is-question,
+    .who-for-question {
+      font-size: 25px;
+      color: #AB7A5F;
+    }
+  }
+  .offer-container {
+    background-color: #7E654B;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 150px;
+    .offer-text {
+      color: white;
+      text-align: center;
+    }
+  }
+  .duration-container {
+    background-color: #25251F;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    margin-left: 20%;
+    .duration-text {
+      color: #7E654B;
+      width: 150px;
+      text-align: center;
+    }
+  }
+}
+}
+
+
+

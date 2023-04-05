@@ -5,7 +5,7 @@ import NavigationMobile from './components/features/navigation/NavigationMobile'
 import Home from './components/Home'
 import About from './components/aboutPage/About'
 import Contact from './components/Contact'
-import Sophrology from './components/Sophrology'
+import Sophrology from './components/sophrology/Sophrology'
 import Bookings from './components/Bookings'
 import GiftCard from './components/GiftCard'
 import {
