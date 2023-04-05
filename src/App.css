@@ -47,13 +47,17 @@ a {
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+main {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
   body {
     background-color: #F6EDEA;
     overflow-x: hidden;
   }
-}
 
-main {
-  margin-top: 56px;
+  main {
+    margin-top: 56px;
+  }
 }

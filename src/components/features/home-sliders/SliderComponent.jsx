@@ -5,6 +5,8 @@ import ProductCard from "./ProductCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./styles.scss";
+import TitleWrap from "../../styles/HomeTitle";
+
 class ProductSlider extends Component {
   constructor() {
     super();
@@ -51,8 +53,8 @@ class ProductSlider extends Component {
       slidesToShow: 4,
       slidesToScroll: 2,
       initialSlide: 0,
-			autoplay: true, 
-			autoplaySpeed: 2000, 
+      autoplay: true,
+      autoplaySpeed: 2000,
       responsive: [
         {
           breakpoint: 1024,
@@ -82,7 +84,9 @@ class ProductSlider extends Component {
     };
     return (
       <div id="massages">
-        <h2> Responsive Product Carousel</h2>
+        <TitleWrap className="about-title">
+          <h2>Our Massages</h2>
+        </TitleWrap>
         <Slider {...settings}>
           {this.state.slides.map((slide, index) => {
             return (

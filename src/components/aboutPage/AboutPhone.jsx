@@ -5,8 +5,9 @@ import '../styles/AboutPhone.scss';
 import AboutImages from "../features/aboutImages/AboutImages";
 import { useState } from 'react';
 import { AiOutlineUpCircle, AiOutlineDownCircle } from 'react-icons/ai';
+import styled from "styled-components";
 
-const AboutPhone = () => {
+const AboutPhone = ({ home }) => {
   const { t } = useTranslation();
   const [showMore, setShowMore] = useState(false)
 
@@ -15,7 +16,7 @@ const AboutPhone = () => {
   }
 
   return (
-    <main>
+    <AboutWrap home={home}>
       <div className="about-container">
         <h1 className="about-title">{t('about.about-me')}</h1>
         <div className="line-title"></div>
@@ -31,16 +32,28 @@ const AboutPhone = () => {
         </div>
       </div>
       <AboutImages />
-      <div className="button-container">
+      {!home && <div className="button-container">
         <button type="button">
           <Link to="/massages#top" className="massages-btn">
             {t('about.go-massages')}
             <BsArrowRight className="arrow" />
           </Link>
         </button>
-      </div>
-    </main>
+      </div>}
+    </AboutWrap>
   )
 }
+const AboutWrap = styled.main`
+  @media screen and (max-width: 768px) {
+    .about-title {
+      border-radius: ${props => props.home ? '15px' : '0px'};
+    }
+
+    .about-text {
+      text-align: ${props => props.home ? 'left' : 'center'} !important;
+    }
+  }
+
+`;
 
 export default AboutPhone;

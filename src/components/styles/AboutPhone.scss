@@ -70,6 +70,14 @@
         justify-content: center;
         gap: 6px;
         align-items: center;
+        border: 1px outset $orange;
+        border-radius: 5px;
+        padding: 0.2rem 0.5rem;
+        text-decoration: none;
+
+        &:hover {
+          background-color: #dfbc8b;
+        }
       }
     }
   }
