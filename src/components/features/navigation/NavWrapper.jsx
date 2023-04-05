@@ -63,6 +63,10 @@ const NavWrapper = styled.nav`
       align-items: center;
       gap: 1rem;
     }
+
+    .burger {
+      max-width: 120px;
+    }
   }
 `;
 

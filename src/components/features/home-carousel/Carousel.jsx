@@ -75,12 +75,12 @@ const CarouselWrap = styled.div`
 
       @media screen and (max-width: 769px) {
         font-size: 4rem;
-        bottom: 0;
+        bottom: 5% !important;
         top: 60% !important;
       }
 
-      @media screen and (max-width: 769px) {
-        font-size: 2.4rem;
+      @media screen and (max-width: 426px) {
+        font-size: 2.23rem;
         font-weight: 800;
         line-spacing: 200;
       }
