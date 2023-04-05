@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import AboutImages from '../features/aboutImages/AboutImages'
 
 const About = () => {
-  const { t } = useTranslation('translation')
+  const { t } = useTranslation()
 	return (
     <>
       <main>
