@@ -2,9 +2,9 @@ import React from 'react'
 
 const Massages = () => {
   return (
-    <div>
+    <main>
       <h1>hello from Massages</h1>
-    </div>
+    </main>
   )
 }
 

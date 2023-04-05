@@ -7,40 +7,40 @@ import { useState } from 'react';
 import { AiOutlineUpCircle, AiOutlineDownCircle } from 'react-icons/ai';
 
 const AboutPhone = () => {
-const { t } = useTranslation();
- const [showMore, setShowMore] = useState(false)
+  const { t } = useTranslation();
+  const [showMore, setShowMore] = useState(false)
 
- const handleClick = () => {
-   setShowMore(!showMore)
- }
+  const handleClick = () => {
+    setShowMore(!showMore)
+  }
 
-return (
-  <main>
-    <div className="about-container">
-      <h1 className="about-title">{t('about.about-me')}</h1>
-      <div className="line-title"></div>
-      <h3 className="about-name">{t('about.name')}</h3>
-      <div className="about-text">
-        <p>{t('about.my-work')}</p>
-        <p>{t('about.techniques')}</p>
-        {showMore && <p>{t('about.passionate')}</p>}
-        <button onClick={handleClick} className="read-more-btn">
-          {showMore ? t('about.see-less') : t('about.read-more')}
-          {showMore ? <AiOutlineUpCircle /> : <AiOutlineDownCircle />}
+  return (
+    <main>
+      <div className="about-container">
+        <h1 className="about-title">{t('about.about-me')}</h1>
+        <div className="line-title"></div>
+        <h3 className="about-name">{t('about.name')}</h3>
+        <div className="about-text">
+          <p>{t('about.my-work')}</p>
+          <p>{t('about.techniques')}</p>
+          {showMore && <p>{t('about.passionate')}</p>}
+          <button onClick={handleClick} className="read-more-btn">
+            {showMore ? t('about.see-less') : t('about.read-more')}
+            {showMore ? <AiOutlineUpCircle /> : <AiOutlineDownCircle />}
+          </button>
+        </div>
+      </div>
+      <AboutImages />
+      <div className="button-container">
+        <button type="button">
+          <Link to="/massages#top" className="massages-btn">
+            {t('about.go-massages')}
+            <BsArrowRight className="arrow" />
+          </Link>
         </button>
       </div>
-    </div>
-    <AboutImages />
-    <div className="button-container">
-      <button type="button">
-        <Link to="/massages#top" className="massages-btn">
-          {t('about.go-massages')}
-          <BsArrowRight className="arrow" />
-        </Link>
-      </button>
-    </div>
-  </main>
-)
+    </main>
+  )
 }
 
 export default AboutPhone;

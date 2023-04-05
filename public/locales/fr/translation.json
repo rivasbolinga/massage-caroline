@@ -9,6 +9,18 @@
     "sophrology": "Sophrologie",
     "contact": "Contact"
   },
+
+  "routes": {
+    "home": "Accueil",
+    "bookings": "Prendre un rendez-vous",
+    "services": "Prestations",
+    "about": "Qui suis-je?",
+    "massages": "Massages",
+    "gift-card": "Carte Cadeau",
+    "sophrology": "Sophrologie",
+    "contact": "Contact"
+  },
+
   "about": {
     "about-me": "Qui suis-je?",
     "name": "Caroline Aimé",

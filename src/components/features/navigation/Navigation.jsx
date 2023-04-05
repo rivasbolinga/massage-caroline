@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 const Navigation = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-const { t } = useTranslation();
+  const { t } = useTranslation();
   const handleMouseEnter = () => {
     setIsDropdownOpen(true)
   }

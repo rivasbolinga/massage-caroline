@@ -15,7 +15,7 @@ const NavigationMobile = () => {
     <NavWrapper>
       <div className="logo">
         <Link to="/">Logo</Link>
-        <span title="Current Page">{!currentPath ? 'Home' : currentPath}</span>
+        <span title="Current Page">{!currentPath ? t('routes.home') : t(`routes.${currentPath}`)}</span>
       </div>
       
       <div className="burger">
@@ -38,7 +38,7 @@ const NavigationMobile = () => {
             <Link to="/massages">{t('navigation.massages')}</Link>
           </li>
           <li className="nav-item">
-            <Link to="/syphilology">{t('navigation.sophrology')}</Link>
+            <Link to="/sophrology">{t('navigation.sophrology')}</Link>
           </li>
           <li className="nav-item">
             <Link to="/gift-card">{t('navigation.gift-card')}</Link>

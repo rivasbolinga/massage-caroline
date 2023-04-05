@@ -5,11 +5,11 @@ import About from './aboutPage/About'
 
 const Home = () => {
   return (
-    <>
+    <main>
       <Carousel />
       <About />
       <SliderComponents />
-    </>
+    </main>
   )
 }
 
