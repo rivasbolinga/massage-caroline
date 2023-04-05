@@ -1,33 +1,28 @@
 @import './common.scss';
 
 .sp-section {
- 
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: center;
   align-items: center;
   .sophrology-title-container {
-  background-color: $pink;
+  background-image: url('https://puremind.fr/wp-content/uploads/2021/12/sophrologie-stress-4.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
   color: $chocolate;
-  height: 120px;
+  height: 160px;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
   align-items: center;
    .sophrology-title {
     color: #453227;
     font-size: 40px;
     text-align: center;
-    padding: 5px;
+    padding-left: 2%;
 }
-   .horizontal-line {
-    background-color: $chocolate;
-    width: 100px;
-    height: 2px;
-   }
 }
   .sophrology-main {
   display: flex;
@@ -44,7 +39,8 @@
     .what-is-question,
     .who-for-question {
       font-size: 25px;
-      color: #AB7A5F;
+      color: $chocolate;
+      font-family: $text-font;
     }
   }
   .offer-container {
