@@ -62,6 +62,7 @@ const NavWrapper = styled.nav`
       justify-content: center;
       align-items: center;
       gap: 1rem;
+      margin-right: .5rem;
     }
 
     .burger {

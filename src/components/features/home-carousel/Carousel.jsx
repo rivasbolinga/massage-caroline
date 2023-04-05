@@ -9,7 +9,7 @@ const Carousel = () => {
   const peelers = [
     {
       image: banner1,
-      quote: `Want to Relax, <br /> you are at right place`,
+      quote: `Want to Relax, <br /> you are at <br /> right place`,
       style: {backgroundColor:'rgba(255, 255, 255, 20%)',color: '#D25C33', top: 0, right: 0, borderRadius: "2rem 0 0 2rem"}
     },
     {
@@ -51,18 +51,25 @@ const CarouselWrap = styled.div`
     position: relative;
     width: 100%;
     height: 90vh;
+    @media screen and (max-width: 426px) {
+      height: 50vh !important;
+    }
   }
   .slick-slider {
     width: 100%;
     margin: 0;
     img {
       width: 100%;
-      height: 80vh;
+      height: 90vh;
       position: absolute;
       margin: auto 0;
       z-index: -1;
       @media screen and (max-width: 768px) {
         height: 90vh;
+      }
+
+      @media screen and (max-width: 426px) {
+        height: 50vh !important;
       }
     }
 
@@ -70,17 +77,17 @@ const CarouselWrap = styled.div`
       display: inline-block;
       position: absolute;
       z-index: 3;
-      font-size: 5rem;
+      font-size: 4rem;
       padding: 1rem;
 
       @media screen and (max-width: 769px) {
-        font-size: 4rem;
+        font-size: 2.5rem;
         bottom: 5% !important;
         top: 60% !important;
       }
 
       @media screen and (max-width: 426px) {
-        font-size: 2.23rem;
+        font-size: 1.5rem;
         font-weight: 800;
         line-spacing: 200;
       }
