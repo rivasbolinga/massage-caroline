@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { useTransition, useTranslation } from 'react-i18next';
+import SocialLogos from '../social/SocialLogos';
 const Footer = () => {
 
-const { t } = useTranslation()
+  const { t } = useTranslation()
   return (
     <FooterWrap>
       <div className="footer-container">
@@ -33,6 +34,12 @@ const { t } = useTranslation()
               </a>
             </li>
           </ul>
+          <div className="logo-wrap">
+            <div className="client">
+              <Link to="/">Logo</Link>
+            </div>
+            <SocialLogos color="#D25C33"/>
+          </div>
         </div>
         <div className="footer-item">
           <h3>{t('footer.links')}</h3>
@@ -143,6 +150,25 @@ const FooterWrap = styled.footer`
     @media screen and (max-width: 768px) {
       gap: 1rem;
     }
+  }
+
+  .client {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+
+    @media screen and (max-width: 390px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .logo-wrap {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
   }
   .footer-item {
     display: flex;

@@ -15,12 +15,12 @@ const Carousel = () => {
     {
       image: banner2,
       quote: `We don't compromise <br />in costumer comfort`,
-      style: {backgroundColor:'rgba(255, 255, 255, 20%)',color: '#30221E', bottom: 0, right: 0, borderRadius: "2rem 0 0 2rem"}
+      style: {backgroundColor:'rgba(255, 255, 255, 20%)',color: '#30221E', bottom: '15%', right: 0, borderRadius: "2rem 0 0 2rem"}
     },
     {
       image: banner3,
       quote: `We can beautify your <br /> each muscles`,
-      style: {backgroundColor:'rgba(255, 255, 255, 20%)',color: '#D25C33', bottom: 0, left: 0, borderRadius: "0 2rem 2rem 0"}
+      style: {backgroundColor:'rgba(255, 255, 255, 20%)',color: '#D25C33', bottom: '15%', left: 0, borderRadius: "0 2rem 2rem 0"}
     }
   ];
 
@@ -50,7 +50,7 @@ const CarouselWrap = styled.div`
   .carousel {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
   }
   .slick-slider {
     width: 100%;
@@ -72,6 +72,18 @@ const CarouselWrap = styled.div`
       z-index: 3;
       font-size: 5rem;
       padding: 1rem;
+
+      @media screen and (max-width: 769px) {
+        font-size: 4rem;
+        bottom: 0;
+        top: 60% !important;
+      }
+
+      @media screen and (max-width: 769px) {
+        font-size: 2.4rem;
+        font-weight: 800;
+        line-spacing: 200;
+      }
     }
   }
 
