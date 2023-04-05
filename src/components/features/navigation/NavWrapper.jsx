@@ -28,20 +28,6 @@ const NavWrapper = styled.nav`
       padding: 1rem;
       border-radius: .4rem;
     }
-
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-      background-color: white;
-      width: 100%;
-      height: 100vh;
-      position: fixed;
-      left: 0;
-      top: 0;
-      padding: 0;
-      min-width: unset;
-      align-items: center;
-      z-index: 5;
-    }
   }
 
   .burger {
@@ -50,7 +36,7 @@ const NavWrapper = styled.nav`
     right: 0;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     color: #D25C33;
     background-color: rgba(255, 255, 255, 50%);
     border-radius: 0 0 20px 0;
@@ -67,6 +53,75 @@ const NavWrapper = styled.nav`
 
     .burger {
       max-width: 120px;
+    }
+
+    .mobile-menu {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      background-color: #30221E;
+      opacity: 96%;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding: 0;
+      min-width: unset;
+      align-items: center;
+      z-index: 5;
+      a {
+        color: #F5ECE9;
+      }
+      .menu {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        min-width: unset;
+      }
+
+      .mobile-logo {
+        margin-top: 4rem;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 1rem;
+        display: grid;
+        place-items: center;
+      }
+
+      .deck {
+        img {
+          width: 100%;
+          border-radius: 50%;
+        }
+
+        position: absolute;
+      }
+
+      .one {
+        left: 0;
+        top: 20%;
+        width: 129px;
+        padding: 1rem;
+        border-radius: 50%;
+      }
+      .two {
+        right: 0;
+        bottom: 20%;
+        width: 100px;
+      }
+      .three {
+        left: 20%;
+        bottom: 0%;
+        width: 70px;
+      }
+      .four {
+        left: 0;
+        top: 0;
+        width: 70px;
+      }
     }
   }
 `;
