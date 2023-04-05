@@ -1,4 +1,4 @@
-import { BsFacebook, BsWhatsapp, BsMailbox, BsInstagram } from 'react-icons/bs'
+import { BsFacebook, BsWhatsapp, BsInstagram } from 'react-icons/bs'
 import styled from 'styled-components';
 import { AiOutlineMail } from 'react-icons/ai';
 

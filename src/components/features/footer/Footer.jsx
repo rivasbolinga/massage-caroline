@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { useTransition, useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import SocialLogos from '../social/SocialLogos';
 const Footer = () => {
 
