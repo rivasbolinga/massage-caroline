@@ -25,11 +25,13 @@ const Sophrology = () => {
             className="sp-image"
             src="https://be-sophro.com/wp-content/uploads/2023/01/What-is-Sophrology-Infographic-960x960.png"
           ></img>
-          <div className="offer-container">
-            <p className="offer-text">{t('sophrology.offer')}</p>
-          </div>
-          <div className="duration-container">
-            <p className="duration-text">{t('sophrology.duration')}</p>
+          <div className="extra-info-container">
+            <div className="offer-container">
+              <p className="offer-text">{t('sophrology.offer')}</p>
+            </div>
+            <div className="duration-container">
+              <p className="duration-text">{t('sophrology.duration')}</p>
+            </div>
           </div>
         </div>
         <div className="sessions">
