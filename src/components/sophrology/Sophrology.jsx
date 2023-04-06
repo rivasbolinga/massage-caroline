@@ -22,6 +22,7 @@ const Sophrology = () => {
         </div>
         <div className="image-container">
           <img
+            alt="sophrology chart"
             className="sp-image"
             src="https://be-sophro.com/wp-content/uploads/2023/01/What-is-Sophrology-Infographic-960x960.png"
           ></img>

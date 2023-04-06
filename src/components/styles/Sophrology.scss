@@ -1,4 +1,5 @@
-@import './common.scss';
+@import 'common.scss';
+
 
 .sp-section {
   padding: 0;
@@ -117,6 +118,13 @@
     width: 200px;
     height: 50px;
     margin-top: 40px;
+    transition: all ease .4s;
+  }
+  .book-now-btn:hover {
+    border:1px solid #F9A392;
+    color: #F9A392;
+    background-color: white;
+   
   }
 }
 }
@@ -131,9 +139,13 @@
      font-size: 100px;
    }
    }
+   .image-container {
+    width: 80%;
+   
    .sp-image {
-    width: 70%;
+    width: 200px;
    }
+  }
   .extra-info-container {
     display: flex;
     justify-content: center;
@@ -192,17 +204,6 @@
   .image-container {
    margin-top: 50px;
    display: grid;
-  border: 1px solid;
-  .sp-image {
-    width: 70%;
-    box-shadow: 0px 8px 16px 0px rgba(249,163,146,.2);
-    grid-column: 1/5;
-    grid-row: 1/5;
-  .extra-info-container {
-    grid-column: 5/10;
-    grid-row: 5/10;
-    }
-  }
 }
 }
 

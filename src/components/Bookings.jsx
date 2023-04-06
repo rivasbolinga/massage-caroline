@@ -1,5 +1,4 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import { InlineWidget } from 'react-calendly'
 const Bookings = () => {
   return (
