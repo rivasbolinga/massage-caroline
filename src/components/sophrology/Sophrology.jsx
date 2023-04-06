@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/Sophrology.scss';
+import { Link } from 'react-router-dom';
+
 const Sophrology = () => {
 	const { t } = useTranslation()
 	return (
@@ -45,7 +47,9 @@ const Sophrology = () => {
             <p className="follow-text">{t('sophrology.follow-up')}</p>
           </div>
         </div>
-        <button className="book-now-btn">Book now</button>
+        <Link to="/bookings">
+          <button className="book-now-btn">Book now</button>
+        </Link>
       </main>
     </section>
   )

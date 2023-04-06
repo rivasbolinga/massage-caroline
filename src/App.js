@@ -16,6 +16,7 @@ import Massages from './components/Massages';
 import Default404 from './components/Default404';
 import Footer from './components/features/footer/Footer';
 import AboutPhone from './components/aboutPage/AboutPhone';
+
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
