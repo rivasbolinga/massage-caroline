@@ -1,76 +1,87 @@
 @import 'common.scss';
-
-
+.sessions-container {
+  display: none;
+}
 .sp-section {
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+}
+
   .sophrology-title-container {
   background-image: url('https://puremind.fr/wp-content/uploads/2021/12/sophrologie-stress-4.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   color: $chocolate;
-  height: 160px;
+  height: 200px;
   width: 100%;
   display: flex;
   align-items: center;
    box-shadow: 0px 8px 16px 0px rgba(249,163,146,.2);
+  }
+
    .sophrology-title {
     color: #453227;
     font-size: 40px;
     text-align: center;
-    padding-left: 2%;
+    padding: 10% 4% 0 4%;
 }
-}
+
   .sophrology-main {
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: center;
   align-items: center;
+  }
+
   .what-is, 
   .who-for {
-    padding: 5%;
+    padding: 0 5% 0 5%;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 800px;
+  }
     .what-is-question,
     .who-for-question {
       font-size: 25px;
       color: $chocolate;
       font-family: $header-text;
     }
-  }
+  
   .image-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
   .sp-image {
      width: 90%;
      box-shadow: 0px 8px 16px 0px rgba(249,163,146,.2);
   }
   .offer-container {
     background-color: #F9A392;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 150px;
+    width: 100%;
+    height: 170px;
     box-shadow: 0px 8px 16px 0px rgba(249,163,146,.2);
+  }
+
     .offer-text {
       color: white;
       text-align: center;
       font-size: 20px;
       line-height: 25px;
     }
-  }
+  
   .duration-container {
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(249,163,146,.2);
@@ -80,8 +91,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -40px;
+    margin-top: -30px;
     margin-left: 20%;
+  }
     .duration-text {
       color: #F9A392;
       width: 150px;
@@ -89,8 +101,6 @@
       line-height: 30px;
       text-align: center;
     }
-  }
-}
   .sessions {
     display: flex;
     flex-direction: column;
@@ -98,19 +108,21 @@
     gap :30px;
     justify-content: center;
     align-items: center;
+  }
     .follow-up,
     .first-session {
       display: flex;
       width: 60%;
       font-size: 20px;
       gap: 10px;
+    }
       .fa-circle-dot {
         color:#F9A392;
         font-size: 16px;
         padding-top: 5px;
       }
-    }
-  }
+  
+  
   .book-now-btn {
     background-color: #F9A392;
     color: white;
@@ -124,86 +136,124 @@
     border:1px solid #F9A392;
     color: #F9A392;
     background-color: white;
-   
+
   }
-}
-}
+
 
 @media (min-width: 768px) {
   .sp-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .sophrology-main {
+    margin: 0;
+  }
+  .sp-section {
     background-color: white;
+  }
    .sophrology-title-container {
     height: 300px;
+   }
     .sophrology-title {
-     color: #4b392e9a;
+     color: #4b392ecf;
      font-size: 100px;
    }
-   }
-   .image-container {
-    width: 80%;
    
-   .sp-image {
-    width: 200px;
-   }
-  }
-  .extra-info-container {
+   .image-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+   }
+
+   .sp-image {
+    width: 50%;
+   }
+  
+  .extra-info-container {
+    display: grid;
   }
    .offer-container {
-    width: 30%;
     padding: 0;
     margin: 0;
    }
-
-   .first-session,
-   .follow-up {
-    width: 120px;
+   .sessions {
     margin-top: 50px;
-    font-size: 25px;
+    gap: 0;
    }
-}
+  
 }
 
-@media (min-width:1000px) {
-  .explanation-container {
-    display: grid;
+@media (min-width: 1000px) {
+  .sophrology-title-container {
+  background-size: 100%;
+  background-position: 0 -200px;
   }
-   .what-is {
-    background-color: white;
-    box-shadow: 0px 8px 16px 0px rgba(249,163,146,.2);
-    height: 250px;
-    grid-column: 1/4;
-    grid-row: 1/4;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-     gap: 30px;
-     max-width: 700px;
-   }
-  .who-for {
-    height: 200px;
-    text-align: center;
-    background-color: #E1BDA7;
-    box-shadow: 0px 8px 16px 0px rgba(249,163,146,.2);
-    grid-row: 3/8;
-    grid-column: 3/5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    max-width: 700px;
+  .sophrology-title {
+    padding: 0% 0% 0% 3%;
+    font-size: 80px;
   }
-  .what-is-question,
-    .who-for-question {
-      width: 200px;
-    }
-  .image-container {
-   margin-top: 50px;
-   display: grid;
+  .sessions-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 40px;
+  gap: 100px;
 }
+.icon-div {
+  height: 200px;
+  width: 200px;
 }
 
+@keyframes square {
+  0%    {top: 20%; left: 0}
+  25%   {top: 20%; left: 100%;}
+  50%   {top: 70%; left: 100%;}
+  75%   {top: 70%; left: 0px;}
+  100%  {top: 0px; left: 0px;}
+}
+.massage-icon {
+  width: 160px;
+  position: relative;
+  animation-name: square;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: reverse;
+}
+.sessions {
+  width: 300px;
+  height: 240px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  padding: 20px;
+  gap: 10px;
+}
+.follow-text,
+.first-text {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.book-now-btn {
+  width: 300px;
+}
+}
+@media (min-width: 1440px) {
+  .sessions-container {
+    width: 60%;
+  }
+   .sophrology-title-container {
+
+  background-position: 0 -300px;
+  }
+  .sophrology-title {
+ 
+    font-size: 120px;
+  }
+}

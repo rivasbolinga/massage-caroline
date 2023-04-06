@@ -9,7 +9,7 @@ import Sophrology from './components/sophrology/Sophrology'
 import Bookings from './components/Bookings'
 import GiftCard from './components/GiftCard'
 import {
-  BrowserRouter,
+  HashRouter,
   Route, Routes,
 } from 'react-router-dom';
 import Massages from './components/Massages';
@@ -28,7 +28,7 @@ function App() {
   }, []);
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         {width < 769 ? <NavigationMobile /> : <Navigation />}
         <hr id="top" />
         <Routes>
@@ -47,7 +47,7 @@ function App() {
           <Route path="*" element={<Default404 />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
