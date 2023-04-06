@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import NavWrapper from './NavWrapper'
 import LanguageButton from '../language-btn/LanguageButton';
 import { useTranslation } from 'react-i18next';
@@ -50,6 +50,7 @@ const Navigation = () => {
         </li>
         <LanguageButton />
       </ul>
+      <Outlet />
     </NavWrapper>
   )
 }

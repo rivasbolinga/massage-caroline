@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import SocialLogos from '../social/SocialLogos';
+
 const Footer = () => {
 
   const { t } = useTranslation()

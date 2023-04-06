@@ -5,17 +5,18 @@ import NavigationMobile from './components/features/navigation/NavigationMobile'
 import Home from './components/Home'
 import About from './components/aboutPage/About'
 import Contact from './components/Contact'
-import Sophrology from './components/Sophrology'
+import Sophrology from './components/sophrology/Sophrology'
 import Bookings from './components/Bookings'
 import GiftCard from './components/GiftCard'
 import {
-  BrowserRouter,
+  HashRouter,
   Route, Routes,
 } from 'react-router-dom';
 import Massages from './components/Massages';
 import Default404 from './components/Default404';
 import Footer from './components/features/footer/Footer';
 import AboutPhone from './components/aboutPage/AboutPhone';
+
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
@@ -27,7 +28,7 @@ function App() {
   }, []);
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         {width < 769 ? <NavigationMobile /> : <Navigation />}
         <hr id="top" />
         <Routes>
@@ -46,7 +47,7 @@ function App() {
           <Route path="*" element={<Default404 />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
