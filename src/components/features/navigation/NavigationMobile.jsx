@@ -9,7 +9,7 @@ import deck1 from '../../../assets/images/image0 (1).jpeg';
 import deck2 from '../../../assets/images/image1.jpeg';
 
 const NavigationMobile = () => {
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
   const { t } = useTranslation();
   const location = useLocation();
   const currentPath = location.pathname.split('/').reverse()[0];

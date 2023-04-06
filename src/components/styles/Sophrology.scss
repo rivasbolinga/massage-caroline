@@ -129,26 +129,27 @@
 
 }
 @media (min-width: 768px) {
+  .sophrology-main {
+    margin: 0;
+  }
   .sp-section {
     background-color: white;
    .sophrology-title-container {
     height: 300px;
     .sophrology-title {
-     color: #4b392e9a;
+     color: #4b392ecf;
      font-size: 100px;
    }
    }
    .image-container {
-    width: 80%;
-   
+    display: flex;
+    flex-direction: row;
    .sp-image {
-    width: 200px;
+    width: 50%;
    }
   }
   .extra-info-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
   }
    .offer-container {
     width: 30%;
