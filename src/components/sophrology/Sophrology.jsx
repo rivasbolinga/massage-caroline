@@ -2,6 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/Sophrology.scss';
 import { Link } from 'react-router-dom';
+import MassageIcon from '../../assets/icons/massage.png';
+import MassageIconFace from '../../assets/icons/massage (1).png';
 
 const Sophrology = () => {
 	const { t } = useTranslation()
@@ -37,16 +39,26 @@ const Sophrology = () => {
             </div>
           </div>
         </div>
-        <div className="sessions">
-          <div className="first-session">
-            <i className="fa-solid fa-circle-dot"></i>
-            <p className="first-text">{t('sophrology.first-session')}</p>
+        <div className="sessions-container">
+          <div className="icon-div">
+            <img
+              className="massage-icon"
+              src={MassageIcon}
+              alt="massage icon"
+            ></img>
           </div>
-          <div className="follow-up">
-            <i className="fa-solid fa-circle-dot"></i>
-            <p className="follow-text">{t('sophrology.follow-up')}</p>
+          <div className="sessions">
+            <div className="first-session">
+              <i className="fa-solid fa-circle-dot"></i>
+              <p className="first-text">{t('sophrology.first-session')}</p>
+            </div>
+            <div className="follow-up">
+              <i className="fa-solid fa-circle-dot"></i>
+              <p className="follow-text">{t('sophrology.follow-up')}</p>
+            </div>
           </div>
         </div>
+
         <Link to="/bookings">
           <button className="book-now-btn">Book now</button>
         </Link>
