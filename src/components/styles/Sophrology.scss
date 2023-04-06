@@ -1,20 +1,19 @@
 @import 'common.scss';
 
-
+@media (max-width: 768px) {
 .sp-section {
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+}
   .sophrology-title-container {
   background-image: url('https://puremind.fr/wp-content/uploads/2021/12/sophrologie-stress-4.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   color: $chocolate;
-  height: 160px;
+  height: 200px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -23,7 +22,7 @@
     color: #453227;
     font-size: 40px;
     text-align: center;
-    padding-left: 2%;
+    padding: 10% 4% 0 4%;
 }
 }
   .sophrology-main {
@@ -34,7 +33,7 @@
   align-items: center;
   .what-is, 
   .who-for {
-    padding: 5%;
+    padding: 0 5% 0 5%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -56,13 +55,13 @@
   }
   .offer-container {
     background-color: #F9A392;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 150px;
+    width: 100%;
+    height: 170px;
     box-shadow: 0px 8px 16px 0px rgba(249,163,146,.2);
     .offer-text {
       color: white;
@@ -127,8 +126,8 @@
    
   }
 }
-}
 
+}
 @media (min-width: 768px) {
   .sp-section {
     background-color: white;
