@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import '../styles/Sophrology.scss';
 import { Link } from 'react-router-dom';
 import MassageIcon from '../../assets/icons/massage.png';
-import MassageIconFace from '../../assets/icons/massage (1).png';
 
 const Sophrology = () => {
 	const { t } = useTranslation()
