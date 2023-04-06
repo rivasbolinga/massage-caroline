@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import NavWrapper from './NavWrapper'
 import LanguageButton from '../language-btn/LanguageButton';
 import { useTranslation } from 'react-i18next';
@@ -53,6 +53,7 @@ const { t } = useTranslation();
       <div className="right-menu">
         <LanguageButton />
       </div>
+      <Outlet />
     </NavWrapper>
   )
 }
