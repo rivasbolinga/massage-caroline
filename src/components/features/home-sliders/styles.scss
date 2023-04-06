@@ -1,0 +1,44 @@
+  #massages .slick-track {
+    display: flex;
+  }
+
+  #massages .slick-slider {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    cursor: grab;
+  }
+
+  #massages .slick-slide {
+    padding-right: 10px;
+  }
+
+  #massages .slick-slide:last-child {
+    padding-right: 0;
+  }
+
+  #massages .slick-slide img {
+    display: block;
+  }
+
+  #massages .slick-list {
+    margin: 0 15px;
+  }
+
+  .slick-arrow {
+    display: none !important;
+  }
+  #massages .product-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* #massages .hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+  } */

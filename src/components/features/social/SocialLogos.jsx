@@ -1,14 +1,14 @@
-import { BsFacebook, BsWhatsapp, BsMailbox, BsInstagram } from 'react-icons/bs'
+import { BsFacebook, BsWhatsapp, BsInstagram } from 'react-icons/bs'
 import styled from 'styled-components';
 import { AiOutlineMail } from 'react-icons/ai';
 
-const SocialLogos = () => {
+const SocialLogos = ({color}) => {
   return (
     <Wrapper className="social-logos-container">
-      <BsFacebook className="logo" />
-      <BsWhatsapp className="logo" />
-      <BsInstagram className="logo" />
-      <AiOutlineMail className="logo mail" />
+      <BsFacebook className="logo" color={color} />
+      <BsWhatsapp className="logo" color={color} />
+      <BsInstagram className="logo" color={color} />
+      <AiOutlineMail className="logo mail" color={color} />
     </Wrapper>
   )
 }
