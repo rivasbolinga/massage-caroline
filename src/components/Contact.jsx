@@ -12,10 +12,16 @@ const Contact = () => {
           <div className="opening-hours-text-container">
             <h3 className="week-days">{t('contact.week-days')}</h3>
             <p className="week-days-hours">{t('contact.week-days-hours')}</p>
-            <h3 className=""></h3>
-            <h3 className=""></h3>
-            <p className=""></p>
-            <h3 className=""></h3>
+            <h3 className="saturday-wednesday">
+              {t('contact.saturday-wednesday')}
+            </h3>
+            <p className="saturday-wednesday-hours">
+              {t('contact.saturday-wednesday-hours')}
+            </p>
+            <h3 className="sunday">{t('contact.sunday')}</h3>
+            <p className="close">
+              {t('contact.close')}
+            </p>
           </div>
         </div>
       </article>
