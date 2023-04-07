@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import SocialLogos from './features/social/SocialLogos';
 
 const Contact = () => {
    const { t } = useTranslation()
@@ -35,10 +36,11 @@ const Contact = () => {
           <h3 className="phone-title">{t('contact.phone')}</h3>
           <p className="phone-number">0033/6 74 81 20 09</p>
           <p className="contact-text">{t('contact.contact-text')}</p>
+          <SocialLogos />
         </article>
       </article>
        <div className="footer-item form">
-          <h3>Developer's Contact</h3>
+          <h3>Contact</h3>
           <form action="https://formspree.io/f/xqkoyerk" method="post">
             <div className="from-container">
               <input
