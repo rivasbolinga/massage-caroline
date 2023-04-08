@@ -36,6 +36,7 @@ const Contact = () => {
         </article>
         <article className="location-container">
           <h2>{t('contact.address')}</h2>
+          <div className="title-line"></div>
           <p className="location-text">
             606 route de la Télécabine 01170 Crozet
           </p>
@@ -50,10 +51,15 @@ const Contact = () => {
             <SocialLogos />
           </article>
         </article>
-        <div className="footer-item form">
-          <h3>Contact</h3>
+        <div className=" form">
+          <h3>{t('footer.touch')}</h3>
+          <div className="title-line"></div>
+          <p className="form-text">
+            Have any questions? Feel free to use the contact form below to get
+            in touch with us. We will answer you as soon as possible!
+          </p>
           <form action="https://formspree.io/f/xqkoyerk" method="post">
-            <div className="from-container">
+            <div className="form-container">
               <input
                 name="Visitor Name"
                 type="text"
@@ -62,21 +68,21 @@ const Contact = () => {
                 required
               />
               <input
-                name="Purpose"
-                type="text"
-                maxLength="70"
-                placeholder="Purpose of Contact"
+                name="email"
+                type="email"
+                maxLength="120"
+                placeholder="Your email"
                 required
               />
               <textarea
                 name="Massage"
                 maxLength="300"
-                placeholder="Massage"
+                placeholder="Your message"
                 type="text"
                 required
               />
             </div>
-            <button type="submit">contact Developers</button>
+            <button className="book-now-btn submit" type="submit">Submit</button>
           </form>
         </div>
       </main>
