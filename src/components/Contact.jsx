@@ -82,8 +82,10 @@ const Contact = () => {
                 required
               />
             </div>
-            <button className="book-now-btn submit" type="submit">Submit</button>
           </form>
+          <button className="book-now-btn submit" type="submit">
+            Submit
+          </button>
         </div>
       </main>
     </section>
