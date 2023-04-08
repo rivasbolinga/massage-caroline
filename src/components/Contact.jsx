@@ -20,14 +20,14 @@ const Contact = () => {
             <div className="opening-hours-text-container">
               <h3 className="week-days">{t('contact.week-days')}</h3>
               <div className="hours-div">
-                <BiTimeFive className='time-icon' />
+                <BiTimeFive className="time-icon" />
                 <p className="hours">7am - 19pm</p>
               </div>
               <h3 className="saturday-wednesday">
                 {t('contact.saturday-wednesday')}
               </h3>
               <div className="hours-div">
-                <BiTimeFive className='time-icon' />
+                <BiTimeFive className="time-icon" />
                 <p className="hours">10am - 13pm</p>
               </div>
               <h3 className="sunday">{t('contact.sunday')}</h3>
@@ -44,6 +44,7 @@ const Contact = () => {
         <article className="contact-container">
           <article className="phone-container">
             <h3 className="phone-title">{t('contact.phone')}</h3>
+            <div className="title-line"></div>
             <p className="phone-number">0033/6 74 81 20 09</p>
             <p className="contact-text">{t('contact.contact-text')}</p>
             <SocialLogos />
