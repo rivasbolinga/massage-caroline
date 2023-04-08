@@ -8,10 +8,16 @@
     max-width: 1200px;
     margin: 0 auto;
     cursor: grab;
+    @media screen and (max-width:426px) {
+      width: 80%;
+    }
   }
 
   #massages .slick-slide {
     padding-right: 10px;
+    @media screen and (max-width:426px) {
+      padding: 5px;
+    }
   }
 
   #massages .slick-slide:last-child {
@@ -34,11 +40,6 @@
     justify-content: space-between;
   }
 
-  /* #massages .hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-  } */
+  #massages .slick-dots {
+    display: none !important;
+  }

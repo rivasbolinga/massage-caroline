@@ -6,7 +6,6 @@ const TitleWrap = styled.div`
     font-size: 40px;
     background-color: $clear-pink;
     margin: 10px;
-    width: 86%;
     padding: 30px 10px 30px 10px;
     text-align: center;
   }
