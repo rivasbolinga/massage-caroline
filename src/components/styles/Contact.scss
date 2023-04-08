@@ -141,3 +141,49 @@ textarea {
   width: 500px;
 }
 }
+
+@media (min-width: 1000px) {
+   .contact-title-container {
+    height: 300px;
+    background-position: 0 -280px;
+  }
+
+  .contact-title {
+    font-size: 120px;
+  }
+
+  .contact-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .hours-location-container,
+  .contact-container {
+    width: 100%;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+  }
+
+  .opening-hours-container,
+  .phone-container {
+    height: 320px;
+    width: 400px;
+  }
+
+  .form-text {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+    .contact-title-container {
+    background-position: 0 -500px;
+  }
+}
