@@ -90,10 +90,12 @@ class ProductSlider extends Component {
           {this.state.slides.map((slide, index) => {
             return (
               <div key={index}>
-                <ProductCard imgSrc={slide.img} />
+                <ProductCard
+                  imgSrc={slide.img}
+                />
                 {/* <img src={slide.img} alt={`slide${index}`} /> */}
               </div>
-            );
+            )
           })}
         </Slider>
       </div>
