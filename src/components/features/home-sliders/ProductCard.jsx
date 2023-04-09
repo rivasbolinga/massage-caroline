@@ -9,7 +9,7 @@ const ProductCard = ({ imgSrc, data }) => {
   return (
     <>
       <Card style={{ width: "inherit" }}>
-        <img className="massage-img" src={imgSrc} />
+        <img className="massage-img" src={imgSrc} alt="massage images"/>
         <Card.Body>
           <Card.Title>Massage Title</Card.Title>
           <Card.Text>
