@@ -91,7 +91,7 @@ const initialState = {
     ],
   },
 
-  details: [],
+  detailsTypeId: {type: null, id: null},
 }
 
 const massagesSlice = createSlice({
