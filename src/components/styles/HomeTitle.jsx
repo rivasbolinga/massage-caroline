@@ -8,6 +8,9 @@ const TitleWrap = styled.div`
     margin: 10px;
     padding: 30px 10px 30px 10px;
     text-align: center;
+    @media screen and (max-width: 426px) {
+      font-size:25px;
+    }
   }
 `;
 
