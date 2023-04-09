@@ -37,7 +37,6 @@ const Navigation = () => {
           {isDropdownOpen && (
             <div className="dropdown" onMouseLeave={handleMouseLeave}>
               <Link to="/massages">{t('navigation.massages')}</Link>
-              <Link to="/gift-card">{t('navigation.gift-card')}</Link>
               <Link to="/sophrology">{t('navigation.sophrology')}</Link>
             </div>
           )}

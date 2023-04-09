@@ -1,4 +1,4 @@
-  #massages .slick-track {
+#massages .slick-track {
     display: flex;
   }
 
@@ -8,10 +8,18 @@
     max-width: 1200px;
     margin: 0 auto;
     cursor: grab;
+
+    @media screen and (max-width:426px) {
+      width: 80%;
+    }
   }
 
   #massages .slick-slide {
     padding-right: 10px;
+
+    @media screen and (max-width:426px) {
+      padding: 5px;
+    }
   }
 
   #massages .slick-slide:last-child {
@@ -29,16 +37,52 @@
   .slick-arrow {
     display: none !important;
   }
+
   #massages .product-actions {
-    display: flex;
-    justify-content: space-between;
+    button {
+      width: 100%;
+    }
   }
 
-  /* #massages .hidden {
+  #massages .massage-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  #massages .slick-dots {
+    display: none !important;
+  }
+
+  #feedback .slick-slider {
+
+
+
+    .image-wrap {
+      position: relative;
+      display: grid !important;
+      place-items: center;
+
+      .quotes {
+        display: none;
+        position: absolute;
+        padding: 1rem;
+      }
+
+      &:hover {
+        .quotes {
+          display: block;
+        }
+      }
+    }
+  }
+
+#massages {
+  position: relative;
+  .backgroundImage {
     position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-  } */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  padding: 2rem 0;
+}

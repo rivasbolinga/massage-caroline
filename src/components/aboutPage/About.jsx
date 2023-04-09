@@ -7,9 +7,10 @@ import AboutImages from '../features/aboutImages/AboutImages'
 
 const About = () => {
   const { t } = useTranslation()
-	return (
+  return (
     <>
-      <main>
+      <main data-aos="fade-up"
+        data-aos-duration="1000">
         <AboutImages />
         <div className="about-me-container">
           <h1 className="about-me-title">{t('about.about-me')}</h1>
