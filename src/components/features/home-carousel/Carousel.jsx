@@ -82,9 +82,9 @@ const CarouselWrap = styled.div`
     padding: 1rem;
 
     @media screen and (max-width: 769px) {
-      font-size: 2.5rem;
-      bottom: 5% !important;
-      top: 60% !important;
+      font-size:${props=>props.massage?"2.4rem":"2.5rem"};
+      bottom:${props=>props.massage?"0":"5% !important"} ;
+      top:${props=>props.massage?"15% !important":"60% !important"};
     }
 
     @media screen and (max-width: 426px) {
