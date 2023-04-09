@@ -7,7 +7,6 @@ import About from './components/aboutPage/About'
 import Contact from './components/Contact'
 import Sophrology from './components/sophrology/Sophrology'
 import Bookings from './components/Bookings'
-import GiftCard from './components/GiftCard'
 import {
   HashRouter,
   Route, Routes,
@@ -41,7 +40,6 @@ function App() {
           
           <Route path="/bookings" element={<Bookings />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/gift-card" element={<GiftCard />} />
           <Route path="/sophrology" element={<Sophrology />} />
           <Route path="/massages" element={<Massages />} />
           <Route path="*" element={<Default404 />} />
