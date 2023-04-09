@@ -4,10 +4,8 @@ import backgroundImage from "../../../assets/massage-banners/background-makups.j
 import TitleWrap from '../../styles/HomeTitle';
 import Slider from 'react-slick';
 import ProductCard from './ProductCard';
-
 const ProductSlider = () => {
-  const massagesData = useSelector(store => store.massageReducer.massagesData)
-  console.log(massagesData)
+  const massagesData = useSelector(store => store.massageReducer.massagesData);
   var settings = {
     dots: false,
     infinite: true,
