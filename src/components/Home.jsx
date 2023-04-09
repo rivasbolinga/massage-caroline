@@ -1,6 +1,6 @@
 import React from 'react'
 import SliderComponents from './features/home-sliders/SliderComponent';
-import Carousel from './features/home-carousel/Carousel';
+import {Carousel} from './features/home-carousel/Carousel';
 import About from './aboutPage/About'
 import AboutPhone from './aboutPage/AboutPhone';
 import { useState, useEffect } from 'react';
