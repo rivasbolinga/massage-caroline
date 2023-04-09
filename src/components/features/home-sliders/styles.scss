@@ -1,4 +1,4 @@
-  #massages .slick-track {
+#massages .slick-track {
     display: flex;
   }
 
@@ -75,3 +75,14 @@
       }
     }
   }
+
+#massages {
+  position: relative;
+  .backgroundImage {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  padding: 2rem 0;
+}

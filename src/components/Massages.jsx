@@ -18,7 +18,8 @@ const Massages = () => {
           quote: `${'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!'}`,
         }} />
       <main>
-        <h1>Hello from home</h1>
+        <h1>Massages WE Offer</h1>
+        <p>You are our valuable customer choice A massage that suits your body</p>
       </main>
     </>
   )

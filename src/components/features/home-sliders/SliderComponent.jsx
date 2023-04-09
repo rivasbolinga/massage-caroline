@@ -14,6 +14,7 @@ import img7 from '../../../assets/massage-banners/banner-2.jpg'
 import img8 from '../../../assets/massage-banners/banner-1.webp'
 import img9 from '../../../assets/massage-banners/banner-3.avif'
 import img10 from '../../../assets/images/image5.jpeg'
+import backgroundImage from "../../../assets/massage-banners/background-makups.jpg";
 
 class ProductSlider extends Component {
   constructor() {
@@ -89,6 +90,7 @@ class ProductSlider extends Component {
     };
     return (
       <div id="massages">
+        <img src={backgroundImage} alt="" className="backgroundImage" />
         <TitleWrap className="about-title">
           <h2>Our Massages</h2>
         </TitleWrap>
