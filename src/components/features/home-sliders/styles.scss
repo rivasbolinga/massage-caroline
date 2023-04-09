@@ -8,6 +8,7 @@
     max-width: 1200px;
     margin: 0 auto;
     cursor: grab;
+
     @media screen and (max-width:426px) {
       width: 80%;
     }
@@ -15,6 +16,7 @@
 
   #massages .slick-slide {
     padding-right: 10px;
+
     @media screen and (max-width:426px) {
       padding: 5px;
     }
@@ -35,6 +37,7 @@
   .slick-arrow {
     display: none !important;
   }
+
   #massages .product-actions {
     display: flex;
     justify-content: space-between;
@@ -42,4 +45,29 @@
 
   #massages .slick-dots {
     display: none !important;
+  }
+
+  #feedback .slick-slider {
+
+
+
+    .image-wrap {
+      position: relative;
+      display: grid !important;
+      place-items: center;
+
+      .qoutes {
+        display: none;
+        position: absolute;
+        padding: 1rem;
+      }
+
+      &:hover {
+        .quotes {
+          display: block;
+        }
+      }
+    }
+
+
   }
