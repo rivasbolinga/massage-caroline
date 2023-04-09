@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import '../styles/Sophrology.scss';
 import { Link } from 'react-router-dom';
 import MassageIcon from '../../assets/icons/massage.png';
+import ButtonBookNow from '../styles/ButtonBookNow';
 
 const Sophrology = () => {
 	const { t } = useTranslation()
@@ -59,7 +60,7 @@ const Sophrology = () => {
         </div>
 
         <Link to="/bookings">
-          <button className="book-now-btn">Book now</button>
+          <ButtonBookNow className="book-now-btn">Book now</ButtonBookNow>
         </Link>
       </main>
     </section>

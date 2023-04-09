@@ -7,7 +7,6 @@ import About from './components/aboutPage/About'
 import Contact from './components/Contact'
 import Sophrology from './components/sophrology/Sophrology'
 import Bookings from './components/Bookings'
-import GiftCard from './components/GiftCard'
 import {
   HashRouter,
   Route, Routes,
@@ -16,6 +15,8 @@ import Massages from './components/Massages';
 import Default404 from './components/Default404';
 import Footer from './components/features/footer/Footer';
 import AboutPhone from './components/aboutPage/AboutPhone';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -23,6 +24,7 @@ function App() {
     function handleResize() {
       setWidth(window.innerWidth);
     }
+    AOS.init();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -41,7 +43,6 @@ function App() {
           
           <Route path="/bookings" element={<Bookings />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/gift-card" element={<GiftCard />} />
           <Route path="/sophrology" element={<Sophrology />} />
           <Route path="/massages" element={<Massages />} />
           <Route path="*" element={<Default404 />} />

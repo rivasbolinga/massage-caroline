@@ -55,9 +55,6 @@ const NavigationMobile = () => {
               <Link to="/sophrology">{t('navigation.sophrology')}</Link>
             </li>
             <li className="nav-item" onClick={() => setOpen(false)}>
-              <Link to="/gift-card">{t('navigation.gift-card')}</Link>
-            </li>
-            <li className="nav-item" onClick={() => setOpen(false)}>
               <Link to="/about">{t('navigation.about-me')}</Link>
             </li>
             <li className="nav-item" onClick={() => setOpen(false)}>
