@@ -52,7 +52,7 @@ const ProductSlider = () => {
         {massagesData.map((slide, index) => {
           return (
             <div data-aos="flip-left" data-aos-duration="2000" key={index}>
-              <ProductCard imgSrc={slide.image} />
+              <ProductCard imgSrc={slide.image} data={slide}/>
               {/* <img src={slide.img} alt={`slide${index}`} /> */}
             </div>
           );
