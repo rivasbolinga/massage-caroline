@@ -10,8 +10,7 @@ import img6 from '../../../assets/home-massage-pics/banner.png'
 
 const Gallery = () => {
   return (
-    <WrapSection data-aos="fade-up"
-      data-aos-duration="1000">
+    <WrapSection>
       <TitleWrap>
         <h2>Latest Work</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!</p>
@@ -54,7 +53,7 @@ const Gallery = () => {
 }
 
 const WrapSection = styled.section`
-  p{
+  p {
     text-align: center;
     width: 60%;
     margin: 0 auto 1rem auto;
@@ -137,7 +136,6 @@ const WrapSection = styled.section`
       }
     }
   }
-  z-index: -10;
 `
 
 export default Gallery
