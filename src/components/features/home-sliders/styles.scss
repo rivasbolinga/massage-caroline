@@ -39,8 +39,14 @@
   }
 
   #massages .product-actions {
-    display: flex;
-    justify-content: space-between;
+    button {
+      width: 100%;
+    }
+  }
+
+  #massages .massage-img {
+    width: 100%;
+    height: 200px;
   }
 
   #massages .slick-dots {

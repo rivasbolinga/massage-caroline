@@ -5,6 +5,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./styles.scss";
 import TitleWrap from "../../styles/HomeTitle";
+import img1 from '../../../assets/home-massage-pics/massage-1.jpg'
+import img2 from '../../../assets/home-massage-pics/massage-2.jpg'
+import img3 from '../../../assets/home-massage-pics/massage-4.jpg'
+import img4 from '../../../assets/home-massage-pics/massage-3.jpg'
+import img5 from '../../../assets/home-massage-pics/massage-5.jpg'
+import img7 from '../../../assets/massage-banners/banner-2.jpg'
+import img8 from '../../../assets/massage-banners/banner-1.webp'
+import img9 from '../../../assets/massage-banners/banner-3.avif'
+import img10 from '../../../assets/images/image5.jpeg'
 
 class ProductSlider extends Component {
   constructor() {
@@ -12,34 +21,31 @@ class ProductSlider extends Component {
     this.state = {
       slides: [
         {
-          img: "https://dummyimage.com/600x400/000/7CFC00"
+          img: img1
         },
         {
-          img: "https://dummyimage.com/600x400/000/ccccc"
+          img: img2
         },
         {
-          img: "https://dummyimage.com/600x400/000/dddddd"
+          img: img3
         },
         {
-          img: "https://dummyimage.com/600x400/000/fff"
+          img: img4
         },
         {
-          img: "https://dummyimage.com/600x400/000/B22222"
+          img: img5
         },
         {
-          img: "https://dummyimage.com/600x400/000/7CFC00"
+          img: img7
         },
         {
-          img: "https://dummyimage.com/600x400/000/ccccc"
+          img: img8
         },
         {
-          img: "https://dummyimage.com/600x400/000/dddddd"
+          img: img9
         },
         {
-          img: "https://dummyimage.com/600x400/000/B22222"
-        },
-        {
-          img: "https://dummyimage.com/600x400/000/7CFC00"
+          img: img10
         }
       ]
     };
@@ -51,7 +57,7 @@ class ProductSlider extends Component {
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 2,
-      initialSlide: 0,
+      initialSlide: 1,
       autoplay: true,
       autoplaySpeed: 2000,
       responsive: [
@@ -65,7 +71,7 @@ class ProductSlider extends Component {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,

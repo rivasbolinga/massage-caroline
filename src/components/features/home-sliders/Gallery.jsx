@@ -12,7 +12,7 @@ const Gallery = () => {
   return (
     <WrapSection>
       <TitleWrap>
-        <h2>Latest Project</h2>
+        <h2>Latest Work</h2>
       </TitleWrap>
       <div className="gallery">
         <div className="container-item">
