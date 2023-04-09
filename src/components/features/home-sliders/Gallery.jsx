@@ -10,7 +10,8 @@ import img6 from '../../../assets/home-massage-pics/banner.png'
 
 const Gallery = () => {
   return (
-    <WrapSection>
+    <WrapSection data-aos="fade-up"
+      data-aos-duration="1000">
       <TitleWrap>
         <h2>Latest Work</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!</p>

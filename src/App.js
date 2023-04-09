@@ -15,6 +15,8 @@ import Massages from './components/Massages';
 import Default404 from './components/Default404';
 import Footer from './components/features/footer/Footer';
 import AboutPhone from './components/aboutPage/AboutPhone';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -22,6 +24,7 @@ function App() {
     function handleResize() {
       setWidth(window.innerWidth);
     }
+    AOS.init();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);

@@ -97,7 +97,7 @@ class ProductSlider extends Component {
         <Slider {...settings}>
           {this.state.slides.map((slide, index) => {
             return (
-              <div key={index}>
+              <div data-aos="flip-left" data-aos-duration="2000" key={index}>
                 <ProductCard imgSrc={slide.img} />
                 {/* <img src={slide.img} alt={`slide${index}`} /> */}
               </div>

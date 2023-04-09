@@ -11,17 +11,17 @@ const Carousel = () => {
     {
       image: banner1,
       quote: `Want to Relax, <br /> you are at <br /> right place`,
-      style: {backgroundColor:'rgba(255, 255, 255, 20%)',color: '#D25C33', top: 0, right: 0, borderRadius: "2rem 0 0 2rem"}
+      style: { backgroundColor: 'rgba(255, 255, 255, 20%)', color: '#D25C33', top: 0, right: 0, borderRadius: "2rem 0 0 2rem" }
     },
     {
       image: banner2,
       quote: `We don't compromise <br />in costumer comfort`,
-      style: {backgroundColor:'rgba(255, 255, 255, 20%)',color: '#30221E', bottom: '15%', right: 0, borderRadius: "2rem 0 0 2rem"}
+      style: { backgroundColor: 'rgba(255, 255, 255, 20%)', color: '#30221E', bottom: '15%', right: 0, borderRadius: "2rem 0 0 2rem" }
     },
     {
       image: banner3,
       quote: `We can beautify your <br /> each muscles`,
-      style: {backgroundColor:'rgba(255, 255, 255, 20%)',color: '#D25C33', bottom: '15%', left: 0, borderRadius: "0 2rem 2rem 0"}
+      style: { backgroundColor: 'rgba(255, 255, 255, 20%)', color: '#D25C33', bottom: '15%', left: 0, borderRadius: "0 2rem 2rem 0" }
     }
   ];
 
@@ -35,9 +35,10 @@ const Carousel = () => {
     autoplaySpeed: 3000,
   }
   return (
-    <CarouselWrap>
+    <CarouselWrap data-aos="fade-down"
+      data-aos-duration="1000">
       <Slider {...settings} >
-        {peelers.map((item, index) => <Banner item={item} index={index} /> )
+        {peelers.map((item, index) => <Banner item={item} index={index} />)
         }
       </Slider>
     </CarouselWrap>
@@ -82,9 +83,9 @@ const CarouselWrap = styled.div`
     padding: 1rem;
 
     @media screen and (max-width: 769px) {
-      font-size:${props=>props.massage?"2.4rem":"2.5rem"};
-      bottom:${props=>props.massage?"0":"5% !important"} ;
-      top:${props=>props.massage?"15% !important":"60% !important"};
+      font-size:${props => props.massage ? "2.4rem" : "2.5rem"};
+      bottom:${props => props.massage ? "0" : "5% !important"} ;
+      top:${props => props.massage ? "15% !important" : "60% !important"};
     }
 
     @media screen and (max-width: 426px) {
@@ -108,4 +109,4 @@ const CarouselWrap = styled.div`
   }
 `
 
-export {Carousel, CarouselWrap}
+export { Carousel, CarouselWrap }

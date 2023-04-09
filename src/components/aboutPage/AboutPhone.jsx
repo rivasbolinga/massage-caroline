@@ -16,7 +16,8 @@ const AboutPhone = ({ home }) => {
   }
 
   return (
-    <AboutWrap home={home}>
+    <AboutWrap home={home} data-aos="fade-up"
+      data-aos-duration="1000">
       <div className="about-container">
         <h1 className="about-title">{t('about.about-me')}</h1>
         <div className="line-title"></div>

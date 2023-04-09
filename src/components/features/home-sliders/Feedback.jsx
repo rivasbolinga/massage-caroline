@@ -77,7 +77,7 @@ class Feedback extends Component {
         <Slider {...settings}>
           {this.state.slides.map((slide, index) => {
             return (
-              <div key={index} className="image-wrap">
+              <div data-aos="flip-right" data-aos-duration="2000" key={index} className="image-wrap">
                 <img src={slide.img} alt={`slide${index}`} />
                 <div className="quotes">{slide.feedback}</div>
               </div>
