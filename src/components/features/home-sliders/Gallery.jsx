@@ -61,6 +61,7 @@ const WrapSection = styled.section`
     padding: 0;
     font-size: 1.5rem;
   }
+  position: relative;
   width: 100%;
   margin: 2rem auto;
   padding: 0;
@@ -136,7 +137,7 @@ const WrapSection = styled.section`
       }
     }
   }
-  
+  z-index: -10;
 `
 
 export default Gallery
