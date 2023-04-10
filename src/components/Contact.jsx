@@ -59,6 +59,7 @@ const Contact = () => {
           <form action="https://formspree.io/f/xqkoyerk" method="post">
             <div className="form-container">
               <input
+                className="input name"
                 name="Visitor Name"
                 type="text"
                 maxLength="30"
@@ -66,6 +67,7 @@ const Contact = () => {
                 required
               />
               <input
+                className="input email"
                 name="email"
                 type="email"
                 maxLength="120"
@@ -73,6 +75,7 @@ const Contact = () => {
                 required
               />
               <textarea
+                className="input textarea"
                 name="Massage"
                 maxLength="300"
                 placeholder="Your message"
