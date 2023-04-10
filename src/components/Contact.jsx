@@ -21,14 +21,14 @@ const Contact = () => {
               <h3 className="week-days">{t('contact.week-days')}</h3>
               <div className="hours-div">
                 <BiTimeFive className="time-icon" />
-                <p className="hours">7am - 19pm</p>
+                <p className="hours">{t('contact.week-days-hours')}</p>
               </div>
               <h3 className="saturday-wednesday">
                 {t('contact.saturday-wednesday')}
               </h3>
               <div className="hours-div">
                 <BiTimeFive className="time-icon" />
-                <p className="hours">10am - 13pm</p>
+                <p className="hours">{t('contact.weekend-hours')}</p>
               </div>
               <h3 className="sunday">{t('contact.sunday')}</h3>
               <p className="hours">{t('contact.close')}</p>
@@ -55,10 +55,7 @@ const Contact = () => {
         <div className=" form">
           <h3>{t('footer.touch')}</h3>
           <div className="title-line"></div>
-          <p className="form-text">
-            Have any questions? Feel free to use the contact form below to get
-            in touch with us. We will answer you as soon as possible!
-          </p>
+          <p className="form-text">{t('contact.form')}</p>
           <form action="https://formspree.io/f/xqkoyerk" method="post">
             <div className="form-container">
               <input

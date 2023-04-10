@@ -67,7 +67,7 @@
     "address": "Address",
     "phone": "Phone",
     "contact-text": "You can contact me by email, WhatsApp or text message and I will revert asap.",
-    "contact-form":"Have any questions? Feel free to use the contact form below to get in touch with us. We will answer you as soon as possible!"
+    "form":"Have any questions? Feel free to use the contact form below to get in touch with us. We will answer you as soon as possible!"
   },
   "footer": {
     "home": "Home",
