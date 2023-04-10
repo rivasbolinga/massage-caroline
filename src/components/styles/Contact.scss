@@ -56,7 +56,6 @@
 .opening-hours-text-container {
   margin-top: 20px;
   width: 90%;
-  height: 180px;
 }
 
 .hours-div {
@@ -94,7 +93,8 @@
 
 }
 .form-text {
-  margin-top: 20px;
+  padding-top: 20px;
+  max-width: 600px;
 }
 .form-container {
   display: flex;
@@ -128,6 +128,10 @@
   margin-top: 20px;
 }
 
+.map-container {
+  height: 300px;
+}
+
 @media (min-width: 768px) {
   .contact-title-container {
     height: 300px;
@@ -137,7 +141,8 @@
   .contact-title {
     font-size: 100px;
   }
-  input, textarea {
+
+  .input {
   width: 500px;
 }
 }
@@ -176,14 +181,24 @@
   }
 
   .form-text {
-    margin-top: 20px;
     font-size: 18px;
     text-align: center;
+  }
+
+  .map-container {
+    width: 500px;
+    height: 260px;
   }
 }
 
 @media (min-width: 1440px) {
     .contact-title-container {
     background-position: 0 -500px;
+  }
+
+  .opening-hours-container,
+  .phone-container {
+    height: 320px;
+    width: 300px;
   }
 }
