@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import SocialLogos from './features/social/SocialLogos';
 import './styles/Contact.scss';
 import { BiTimeFive } from 'react-icons/bi';
+import Map from './features/map/Map'
 const Contact = () => {
    const { t } = useTranslation()
   return (
@@ -41,7 +42,9 @@ const Contact = () => {
           <p className="location-text">
             606 route de la Télécabine 01170 Crozet
           </p>
-          <div className="map-container">map here</div>
+          <div className="map-container">
+            <Map />
+          </div>
         </article>
         <article className="contact-container">
           <article className="phone-container">
