@@ -183,7 +183,7 @@ const FooterWrap = styled.footer`
     }
     margin: .5rem 1rem;
     @media screen and (max-width: 676px) {
-      width: 70%;
+      width: 70% ;
     }
   }
   .from-container {
@@ -203,6 +203,7 @@ const FooterWrap = styled.footer`
     width: 30%;
     input,
     textarea {
+      width: 100%;
       padding: 0.2rem;
       font-style: italic;
     }

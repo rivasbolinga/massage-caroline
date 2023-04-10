@@ -59,11 +59,15 @@
   "contact": {
     "opening-hours": "Opening hors",
     "week-days": "Mondays, Tuesdays, Thursdays and Fridays",
+    "week-days-hours": "7am-7pm",
     "saturday-wednesday": "Wednesday and Saturday",
-    "sunday": "Sundays close",
+    "weekend-hours": "9am-1pm",
+    "sunday": "Sundays",
+    "close": "Close",
     "address": "Address",
     "phone": "Phone",
-    "contact-text": "You can contact me by email, WhatsApp or text message and I will revert asap."
+    "contact-text": "You can contact me by email, WhatsApp or text message and I will revert asap.",
+    "form":"Have any questions? Feel free to use the contact form below to get in touch with us. We will answer you as soon as possible!"
   },
   "footer": {
     "home": "Home",
