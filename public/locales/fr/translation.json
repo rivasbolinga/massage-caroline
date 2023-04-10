@@ -59,11 +59,15 @@
   "contact": {
     "opening-hours": "Horaires",
     "week-days": "Lundi, Mardi, Jeudi et Vendredi",
+    "week-days-hours": "7h-19h",
     "saturday-wednesday": "Mercredi et Samedi",
-    "sunday": "Dimanche fermé",
+    "weekend-hours": "9h-13h",
+    "sunday": "Dimanche",
+    "close": "Fermé",
     "address": "Addresse",
     "phone": "Téléphone",
-    "contact-text": "N’hésitez pas à m’écrire par mail, WhatsApp ou par message et je vous recontacterai dès que possible."
+    "contact-text": "N’hésitez pas à m’écrire par mail, WhatsApp ou par message et je vous recontacterai dès que possible.",
+    "contact-form": "Avez-vous des questions ? N'hésitez pas à utiliser le formulaire de contact ci-dessous pour nous contacter. Nous vous répondrons dès que possible !"
   },
   "footer": {
     "home": "Accueil",

@@ -31,6 +31,7 @@ const Contact = () => {
                 <p className="hours">10am - 13pm</p>
               </div>
               <h3 className="sunday">{t('contact.sunday')}</h3>
+              <p className="hours">{t('contact.close')}</p>
             </div>
           </div>
         </article>
