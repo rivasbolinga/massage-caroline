@@ -59,10 +59,10 @@ Through our attention to detail and passion for creating a visually appealing an
 
 <!-- > Describe between 1-3 key features of the application.-->
 
-- [ ] **Rocket page: where you can see a full list of all the rockets and its details, book a rocket or cancel the booking**
-- [ ] **Dragon page: where you can see a full list of all the dragons and its details, book a dragon or cancel the booking**
-- [ ] **Missions page: where you can see a full list of all the missions and its details, join a mission or cancel it**
-- [ ] **My profile: you can see al your bookings**
+- [ ] **Totally responsive: tablet, phone and desktop**
+- [ ] **Navigation Routes: Home, About me, Contact, Massages and Shoprology**
+- [ ] **Switch language option: English and French**
+- [ ] **Book a massage option**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
