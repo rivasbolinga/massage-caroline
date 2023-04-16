@@ -12,7 +12,9 @@
  <a name="about-project"></a>
 <!-- PROJECT DESCRIPTION -->
   
-**Caroline Aime Healing** is a website as part of a freelance job which objetive is to create a user-friendly massage website that provides clients with a relaxing and rejuvenating experience through professional massage services. Created by pair, it provided us with experience in designing and developing a massage website, coupled with our skills in web design and development, search engine optimization, and communication, make me an excellent candidate for creating a successful massage website.
+Caroline Aime Healing is a website created as part of a freelance project with the objective of providing clients with a user-friendly platform for professional massage services that promote relaxation and rejuvenation. As a team, we gained valuable experience in designing and developing a massage website, utilizing our expertise in web design and development, search engine optimization, and communication to create an exceptional online experience for clients.
+Through our attention to detail and passion for creating a visually appealing and easy-to-navigate website, we have successfully created a platform that provides clients with detailed information about our massage services, pricing, and availability. Our online booking system enables clients to schedule and manage appointments with ease, while our customer review section allows for valuable feedback and continual improvement.
+  In summary, Caroline Aime Healing is the ideal website for clients seeking a professional and relaxing massage experience. With our expertise in web design and development, search engine optimization, and communication, we have created a platform that is both visually appealing and user-friendly, providing clients with a rejuvenating and stress-free experience.
 
 </div>
 
@@ -69,7 +71,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-You can see the live version 📍 [here](https://space-travel-hub-react-redux.netlify.app/)
+You can see the live version 📍 [here](https://ubiquitous-malabi-6bd866.netlify.app/)
+(still under construction)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
