@@ -44,6 +44,7 @@
   - [🔭 Future Features ](#-future-features-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -196,6 +197,16 @@ If you like this project, please don't forget to follow us and give it a star.
 
 I would like to thank Caroline to make this possible
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
