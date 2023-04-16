@@ -4,6 +4,16 @@
           src="https://user-images.githubusercontent.com/103900838/232329006-da6685dd-e72a-4eb9-a15a-457d2d2b555d.png"
           width="140"  height="auto" 
         />
+         <img
+          alt="Caroline Aime logo"
+          src="https://user-images.githubusercontent.com/103900838/232334733-a5a82cb8-0af9-460a-b2dd-d9e5767d1d6c.png"
+          width="140"  height="auto" 
+        />
+         <img
+          alt="Caroline Aime logo"
+          src="https://user-images.githubusercontent.com/103900838/232334727-5b585af7-847f-4ae3-a8a8-46c1d7813b3a.jpeg"
+          width="140"  height="auto" 
+        />
 
 
 
@@ -13,6 +23,7 @@
  <a name="about-project"></a>
 
 </div>
+
 
 <a name="readme-top"></a>
 
