@@ -1,46 +1,207 @@
-# Getting Started with Create React App and Redux
+<div align="center">
+  <img
+          alt="world glove icon"
+          src="https://user-images.githubusercontent.com/103900838/227566312-0ecb18dc-64b8-4bb4-948d-ecdd8a540638.png"
+          width="140"  height="auto" 
+        />
+  <br/>
+  
+# 🚀🚀🚀🚀 SPACE TRAVEL HUB  <a name="about-project"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+ <a name="about-project"></a>
+<!-- PROJECT DESCRIPTION -->
+**SPACE TRAVEL HUB** is a webapp where you can read about our rockets, missions, and rockets and you can book your favourite ones and store them in your profile.
 
-## Available Scripts
+![laptop](https://user-images.githubusercontent.com/103900838/227567521-4a59b1d3-e582-4898-b1c6-004629c40ce4.png)
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+<a name="readme-top"></a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- TABLE OF CONTENTS -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 📗 Table of Contents
 
-### `npm test`
+  - [🛠 Built With ](#-built-with-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-project)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 🛠 Built With <a name="built-with"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tech Stack <a name="tech-stack"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<a href="https://www.w3.org/html/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="55" height="55"/></a><a href="https://www.w3schools.com/css/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="55" height="55"/></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="55" height="55"/></a>
+<a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+<img align="center" src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png" alt="react" width="60" height="60"/></a>
+<a href="https://redux-toolkit.js.org/" target="_blank" rel="noreferrer">
+<img align="center" src="https://user-images.githubusercontent.com/103900838/222968100-66b1cdba-dcbe-4047-a88f-3f55ccf983ee.svg" alt="redux" width="60" height="60"/></a>
+<a href="https://jestjs.io/" target="_blank"><img align="center" src="https://user-images.githubusercontent.com/103900838/219062261-8a9b9a82-2967-4e21-abff-42005e4e6048.svg" alt="jest" width="55" height="55"/></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- Features -->
+### Key Features <a name="key-features"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- > Describe between 1-3 key features of the application.-->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [ ] **Rocket page: where you can see a full list of all the rockets and its details, book a rocket or cancel the booking**
+- [ ] **Dragon page: where you can see a full list of all the dragons and its details, book a dragon or cancel the booking**
+- [ ] **Missions page: where you can see a full list of all the missions and its details, join a mission or cancel it**
+- [ ] **My profile: you can see al your bookings**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- LIVE DEMO -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚀 Live Demo <a name="live-demo"></a>
+
+You can see the live version 📍 [here](https://space-travel-hub-react-redux.netlify.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+
+<!-- PREREQUISITES -->
+
+### Prerequisites
+
+In order to run this project you need:
+
+- [ ] A PC running any operating system like Windows, Linux, or MacOS
+- [ ] An Internet connection
+- [ ] Git installed
+- [ ] Webpack installed
+- [ ] Knowledge of some basic Git commands
+
+<!-- SETUP -->
+
+### Setup
+
+- [ ] Link your PC to GitHub
+- [ ] Clone this repository to your desired folder:
+
+
+```
+git clone https://github.com/rivasbolinga/redux-toolkit.git
+```
+
+- [ ] Open the file in your code editor
+  
+<!-- INSTALL -->
+
+### Install
+
+Install this project with:
+
+```
+npm install
+```
+
+###  Instal linters for React and Redux:
+
+Here the link to install your linters: https://github.com/microverseinc/linters-config
+
+<!-- USAGE -->
+
+### Usage
+To run the project, execute the following command:
+
+```
+npm start
+```
+<!-- RUN TESTS -->
+
+###  Run tests
+
+To run Stylelint and ESLint tests, run the following commands respectively:
+
+```
+npx stylelint "**/*.{css,scss}"
+```
+
+```
+npx eslint "**/*.{js,jsx}"
+```
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Bigizi Nduwayo Crispin**
+
+- GitHub: [@Crispin](https://github.com/Bigizi)
+- LinkedIn: [@Crispin](https://linkedin.com/)
+
+👤 **Mladan Ilic**
+
+- GitHub: [@Ilic](https://github.com/djo1975)
+- Twitter: [@Ilic](https://twitter.com/MladanIlic)
+- LinkedIn: [@Ilic] (https://www.linkedin.com/in/mladan-ilic-0528a2256/)
+
+👤 **Andrea Rivas**
+
+- GitHub: [@Ilic](https://github.com/rivasbolinga)
+- LinkedIn: [@Ilic] (https://www.linkedin.com/in/andrearivaspalacios/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Features -->
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **mobile version**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [Issues](https://github.com/Bigizi/Space-Travel-Hub/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, please don't forget to follow us and give it a star.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank [Microverse](https://www.microverse.org/)
+I would like to thank our parents and supporters for their support
+I would like to thank All my coding partners
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
