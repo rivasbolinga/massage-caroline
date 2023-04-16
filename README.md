@@ -132,19 +132,7 @@ To run the project, execute the following command:
 ```
 npm start
 ```
-<!-- RUN TESTS -->
 
-###  Run tests
-
-To run Stylelint and ESLint tests, run the following commands respectively:
-
-```
-npx stylelint "**/*.{css,scss}"
-```
-
-```
-npx eslint "**/*.{js,jsx}"
-```
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
@@ -158,7 +146,7 @@ npx eslint "**/*.{js,jsx}"
 👤 **Andrea Rivas**
 
 - GitHub: [@rivasbolinga](https://github.com/rivasbolinga)
-- LinkedIn: [Andrea Rivas] (https://www.linkedin.com/in/andrearivaspalacios/)
+- LinkedIn: [Andrea Rivas](https://www.linkedin.com/in/andrearivaspalacios/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
