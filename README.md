@@ -1,18 +1,18 @@
 <div align="center">
   <img
-          alt="world glove icon"
-          src="https://user-images.githubusercontent.com/103900838/227566312-0ecb18dc-64b8-4bb4-948d-ecdd8a540638.png"
+          alt="Caroline Aime logo"
+          src="https://user-images.githubusercontent.com/103900838/232329006-da6685dd-e72a-4eb9-a15a-457d2d2b555d.png"
           width="140"  height="auto" 
         />
-  <br/>
+
+
   
-# 🚀🚀🚀🚀 SPACE TRAVEL HUB  <a name="about-project"></a>
+#  💆🏼‍♀️ Caroline Aimé Healing  <a name="about-project"></a>
 
  <a name="about-project"></a>
 <!-- PROJECT DESCRIPTION -->
-**SPACE TRAVEL HUB** is a webapp where you can read about our rockets, missions, and rockets and you can book your favourite ones and store them in your profile.
-
-![laptop](https://user-images.githubusercontent.com/103900838/227567521-4a59b1d3-e582-4898-b1c6-004629c40ce4.png)
+  
+**Caroline Aime Healing** is a website as part of a freelance job which objetive is to create a user-friendly massage website that provides clients with a relaxing and rejuvenating experience through professional massage services. Created by pair, it provided us with experience in designing and developing a massage website, coupled with our skills in web design and development, search engine optimization, and communication, make me an excellent candidate for creating a successful massage website.
 
 </div>
 
