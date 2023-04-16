@@ -140,7 +140,7 @@ npm start
 👤 **Adarsh Pathak**
 
 - GitHub: [@PowerLevel9000](https://github.com/PowerLevel9000)
-- LinkedIn: [Adarsh](https://www.linkedin.com/powerlevel/)
+- LinkedIn: [Adarsh](https://www.linkedin.com/in/powerlevel/)
 
 
 👤 **Andrea Rivas**
