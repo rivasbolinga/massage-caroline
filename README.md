@@ -104,7 +104,7 @@ In order to run this project you need:
 
 
 ```
-git clone https://github.com/rivasbolinga/redux-toolkit.git
+git clone git@github.com:rivasbolinga/massage-caroline.git
 ```
 
 - [ ] Open the file in your code editor
@@ -153,16 +153,11 @@ npx eslint "**/*.{js,jsx}"
 - GitHub: [@Crispin](https://github.com/Bigizi)
 - LinkedIn: [@Crispin](https://linkedin.com/)
 
-👤 **Mladan Ilic**
-
-- GitHub: [@Ilic](https://github.com/djo1975)
-- Twitter: [@Ilic](https://twitter.com/MladanIlic)
-- LinkedIn: [@Ilic] (https://www.linkedin.com/in/mladan-ilic-0528a2256/)
 
 👤 **Andrea Rivas**
 
-- GitHub: [@Ilic](https://github.com/rivasbolinga)
-- LinkedIn: [@Ilic] (https://www.linkedin.com/in/andrearivaspalacios/)
+- GitHub: [@rivasbolinga](https://github.com/rivasbolinga)
+- LinkedIn: [@Andrea Rivas] (https://www.linkedin.com/in/andrearivaspalacios/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
