@@ -21,6 +21,7 @@
 # 📗 Table of Contents
  - [📖 Project Description](#-project-description-)
   - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
@@ -32,7 +33,6 @@
   - [🔭 Future Features ](#-future-features-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
