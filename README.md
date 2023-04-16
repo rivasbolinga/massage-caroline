@@ -5,12 +5,12 @@
           width="140"  height="auto" 
         />
          <img
-          alt="Caroline Aime logo"
+          alt="Andrea Rivas logo"
           src="https://user-images.githubusercontent.com/103900838/232334733-a5a82cb8-0af9-460a-b2dd-d9e5767d1d6c.png"
           width="140"  height="auto" 
         />
          <img
-          alt="Caroline Aime logo"
+          alt="Adarsh logo"
           src="https://user-images.githubusercontent.com/103900838/232334939-059645e2-75cf-4ab4-884a-6510f2211f81.png"
           width="140"  height="auto" 
         />
