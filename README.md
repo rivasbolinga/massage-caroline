@@ -50,6 +50,8 @@ Through our attention to detail and passion for creating a visually appealing an
 <img align="center" src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png" alt="react" width="60" height="60"/></a>
 <a href="https://redux-toolkit.js.org/" target="_blank" rel="noreferrer">
 <img align="center" src="https://user-images.githubusercontent.com/103900838/222968100-66b1cdba-dcbe-4047-a88f-3f55ccf983ee.svg" alt="redux" width="60" height="60"/></a>
+<a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
+<img align="center" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="sass" width="60" height="60"/></a>
 
 
 
