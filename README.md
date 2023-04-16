@@ -11,7 +11,7 @@
         />
          <img
           alt="Caroline Aime logo"
-          src="https://user-images.githubusercontent.com/103900838/232334727-5b585af7-847f-4ae3-a8a8-46c1d7813b3a.jpeg"
+          src="https://user-images.githubusercontent.com/103900838/232334939-059645e2-75cf-4ab4-884a-6510f2211f81.png"
           width="140"  height="auto" 
         />
 
