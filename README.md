@@ -147,23 +147,25 @@ npx eslint "**/*.{js,jsx}"
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Bigizi Nduwayo Crispin**
+👤 **Adarsh Pathak**
 
-- GitHub: [@Crispin](https://github.com/Bigizi)
-- LinkedIn: [@Crispin](https://linkedin.com/)
+- GitHub: [@PowerLevel9000](https://github.com/PowerLevel9000)
+- LinkedIn: [Adarsh](https://www.linkedin.com/powerlevel/)
 
 
 👤 **Andrea Rivas**
 
 - GitHub: [@rivasbolinga](https://github.com/rivasbolinga)
-- LinkedIn: [@Andrea Rivas] (https://www.linkedin.com/in/andrearivaspalacios/)
+- LinkedIn: [Andrea Rivas] (https://www.linkedin.com/in/andrearivaspalacios/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Features -->
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **mobile version**
+- [ ] **Finish desing**
+- [ ] **Gift card sections with optin to pay online**
+- [ ] **Yoga classes section**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -189,9 +191,8 @@ If you like this project, please don't forget to follow us and give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [Microverse](https://www.microverse.org/)
-I would like to thank our parents and supporters for their support
-I would like to thank All my coding partners
+I would like to thank Caroline to make this possible
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
