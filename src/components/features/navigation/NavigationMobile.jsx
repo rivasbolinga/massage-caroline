@@ -30,7 +30,7 @@ const NavigationMobile = () => {
       {isOpen && (
         <div className="mobile-menu">
           <Link to="/">
-            <img className="logo-navbar" alt="logo" src={Logo} />
+            <img className="logo-mobile" alt="logo" src={Logo} />
           </Link>
           <ul className="menu">
             <li className="nav-item">

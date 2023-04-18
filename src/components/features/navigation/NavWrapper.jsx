@@ -69,7 +69,6 @@ const NavWrapper = styled.nav`
     font-size: 20px;
     margin-right: 10px;
     .hamburger-react {
-
       color: rgb(246,234,225);
     }
     .burger {
@@ -78,6 +77,11 @@ const NavWrapper = styled.nav`
       align-items: center;
       gap: 0;
       margin-right: 0.5rem;
+    }
+
+    .logo-mobile {
+      width: 120px;
+      margin-top: 50px;
     }
 
     .burger {
@@ -99,7 +103,7 @@ const NavWrapper = styled.nav`
       align-items: center;
       z-index: 5;
       a {
-        color: #9E8053;
+        color: rgb(160,154,150);
       }
       .menu {
         height: 70vh;
