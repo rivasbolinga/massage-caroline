@@ -43,94 +43,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
-//     justify-content: space-around;
-//     flex-direction: column;
-//     color: #9e8053;
-//     width: 100%;
-//     height: 100vh;
-//     position: fixed;
-//     left: 0;
-//     top: 0;
-//     padding: 0;
-//     min-width: unset;
-//     align-items: center;
-//     z-index: 5;
 
 .menu {
   width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 25px;
   align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   position: relative;
+  justify-content: space-around;
 }
 
-a {
+.menu a {
   text-decoration: none;
   font-family: 'Playfair Display', sans-serif;
-  color: white;
   font-size: 20px;
+  color: #30221e;
 }
-
-// .dropdown {
-//   display: flex;
-//   flex-direction: column;
-//   position: absolute;
-//   z-index: 10;
-//   background-color: rgb(91, 78, 70);
-//   color: brown;
-//   padding: 1rem;
-//   border-radius: 0.4rem;
-// }
-
-//   .hamburger-react {
-//     color: rgb(246, 234, 225);
-//   }
-
-//   .burger {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 0;
-//     margin-right: 0.5rem;
-//   }
-
-//   .logo-mobile {
-//     width: 120px;
-//     margin-top: 50px;
-//   }
-
-//   .burger {
-//     max-width: 120px;
-//   }
-
-//   .mobile-menu {
-//     display: flex;
-//     justify-content: space-around;
-//     flex-direction: column;
-//     color: #9e8053;
-//     width: 100%;
-//     height: 100vh;
-//     position: fixed;
-//     left: 0;
-//     top: 0;
-//     padding: 0;
-//     min-width: unset;
-//     align-items: center;
-//     z-index: 5;
-//   }
-
-//   a {
-//     color: #30221e;
-//   }
-
-//   .menu {
-//     height: 70vh;
-//     display: flex;
-//     flex-direction: column;
-//     min-width: unset;
-//   }
