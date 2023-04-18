@@ -12,7 +12,7 @@
 //   <WrapSection>
 //     <TitleWrap>
 //       <h2>Latest Work</h2>
-//       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!</p>
+
 //     </TitleWrap>
 //     <div className="gallery">
 //       <div className="container-item">
@@ -63,7 +63,6 @@
 //   margin: 2rem auto;
 //   padding: 0;
 //   background: rgb(231,221,221);
-//   background: radial-gradient(circle, rgba(231,221,221,0.7792366946778712) 59%, rgba(242,210,189,1) 100%);
 //   img:not(.banner) {
 //     width: 100%;
 //     height: 100%;

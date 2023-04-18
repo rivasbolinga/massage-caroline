@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -12,19 +13,23 @@ class Feedback extends Component {
       slides: [
         {
           img: 'https://dummyimage.com/400x300/fff/7CFC00',
-          feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
+          feedback:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
         },
         {
           img: 'https://dummyimage.com/400x300/0f8/ccccc',
-          feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
+          feedback:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
         },
         {
           img: 'https://dummyimage.com/400x300/595/dddddd',
-          feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
+          feedback:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
         },
         {
           img: 'https://dummyimage.com/400x300/808/fff',
-          feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
+          feedback:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
         },
       ],
     };
@@ -76,7 +81,12 @@ class Feedback extends Component {
         </TitleWrap>
         <Slider {...settings}>
           {this.state.slides.map((slide, index) => (
-            <div data-aos="flip-right" data-aos-duration="2000" key={index} className="image-wrap">
+            <div
+              data-aos="flip-right"
+              data-aos-duration="2000"
+              key={slide.name}
+              className="image-wrap"
+            >
               <img src={slide.img} alt={`slide${index}`} />
               <div className="quotes">{slide.feedback}</div>
             </div>

@@ -41,12 +41,20 @@ const Carousel = () => {
     autoplaySpeed: 3000,
   };
   return (
-    <CarouselWrap
-      data-aos="fade-down"
-      data-aos-duration="1000"
-    >
-      <Slider {...settings}>
-        {peelers.map((item, index) => <Banner item={item} index={index} />)}
+    <CarouselWrap data-aos="fade-down" data-aos-duration="1000">
+      <Slider
+        dots={settings.dots}
+        infinite={settings.infinite}
+        speed={settings.speed}
+        slidesToShow={settings.slidesToShow}
+        slidesToScroll={settings.slidesToScroll}
+        initialSlide={settings.initialSlide}
+        autoplay={settings.autoplay}
+        autoplaySpeed={settings.autoplaySpeed}
+      >
+        {peelers.map((item, index) => (
+          <Banner item={item} index={index} key={item} />
+        ))}
       </Slider>
     </CarouselWrap>
   );

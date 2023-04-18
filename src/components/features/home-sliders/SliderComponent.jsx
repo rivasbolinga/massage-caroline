@@ -49,11 +49,21 @@ const ProductSlider = () => {
       <TitleWrap className="about-title">
         <h2>Our Massages</h2>
       </TitleWrap>
-      <Slider {...settings}>
-        {massagesData.map((slide, index) => (
-          <div data-aos="flip-left" data-aos-duration="2000" key={index}>
+
+      <Slider
+        dots={settings.dots}
+        infinite={settings.infinite}
+        speed={settings.speed}
+        slidesToShow={settings.slidesToShow}
+        slidesToScroll={settings.slidesToScroll}
+        initialSlide={settings.initialSlide}
+        autoplay={settings.autoplay}
+        autoplaySpeed={settings.autoplaySpeed}
+        responsive={settings.responsive}
+      >
+        {massagesData.map((slide) => (
+          <div data-aos="flip-left" data-aos-duration="2000" key={slide.id}>
             <ProductCard imgSrc={slide.image} data={slide} />
-            {/* <img src={slide.img} alt={`slide${index}`} /> */}
           </div>
         ))}
       </Slider>

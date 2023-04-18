@@ -52,7 +52,7 @@ const AboutPhone = ({ home }) => {
 };
 
 AboutPhone.propTypes = {
-  home: PropTypes.string.isRequired,
+  home: PropTypes.bool.isRequired,
 };
 
 const AboutWrap = styled.main`

@@ -1,113 +1,31 @@
-import React, { useState } from 'react';
-import { Spin as Hamburger } from 'hamburger-react';
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import NavWrapper from './NavWrapper';
-import LanguageButton from '../language-btn/LanguageButton';
-import Logo from '../../../assets/icons/logo2.jpeg';
+import { BsFacebook, BsWhatsapp, BsInstagram } from 'react-icons/bs';
+import styled from 'styled-components';
+import { AiOutlineMail } from 'react-icons/ai';
+import PropTypes from 'prop-types';
 
-const NavigationMobile = () => {
-  const [isOpen, setOpen] = useState(false);
-  const { t } = useTranslation();
+const SocialLogos = ({ color }) => (
+  <Wrapper className="social-logos-container">
+    <BsFacebook className="logo" color={color} />
+    <BsWhatsapp className="logo" color={color} />
+    <BsInstagram className="logo" color={color} />
+    <AiOutlineMail className="logo mail" color={color} />
+  </Wrapper>
+);
 
-  return (
-    <NavWrapper>
-      <div className="logo">
-        <Link to="/">
-          <img className="logo-navbar" alt="logo" src={Logo} />
-        </Link>
-      </div>
-
-      <div className="burger">
-        <LanguageButton />
-        <Hamburger
-          toggled={isOpen}
-          toggle={setOpen}
-          direction="right"
-          size={20}
-        />
-      </div>
-      {isOpen && (
-        <div className="mobile-menu">
-          <Link to="/">
-            <img className="logo-navbar" alt="logo" src={Logo} />
-          </Link>
-          <ul className="menu">
-            <li className="nav-item">
-              <Link
-                tabIndex="0"
-                onClick={() => setOpen(false)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    setOpen(false);
-                  }
-                }}
-                to="/"
-              >
-                {t('navigation.home')}
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                tabIndex="0"
-                onClick={() => setOpen(false)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    setOpen(false);
-                  }
-                }}
-                to="/massages"
-              >
-                {t('navigation.massages')}
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                tabIndex="0"
-                onClick={() => setOpen(false)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    setOpen(false);
-                  }
-                }}
-                to="/sophrology"
-              >
-                {t('navigation.sophrology')}
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                tabIndex="0"
-                onClick={() => setOpen(false)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    setOpen(false);
-                  }
-                }}
-                to="/about"
-              >
-                {t('navigation.about-me')}
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                tabIndex="0"
-                onClick={() => setOpen(false)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    setOpen(false);
-                  }
-                }}
-                to="/contact"
-              >
-                {t('navigation.contact')}
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
-    </NavWrapper>
-  );
+SocialLogos.propTypes = {
+  color: PropTypes.string.isRequired,
 };
 
-export default NavigationMobile;
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  .logo {
+    font-size: 30px;
+  }
+  .mail {
+    font-size: 35px;
+  }
+`;
+
+export default SocialLogos;

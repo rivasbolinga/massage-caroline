@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import ButtonBookNow from '../../styles/ButtonBookNow';
 import { setDetails } from '../../redux/massages/massageSlice';
 
@@ -24,5 +25,16 @@ const ProductCard = ({ imgSrc, data }) => {
     </>
   );
 };
-
+ProductCard.propTypes = {
+  imgSrc: PropTypes.string.isRequired,
+  data: PropTypes.shape({
+    description: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+    image: PropTypes.string.isRequired,
+    prices: PropTypes.arrayOf(PropTypes.number).isRequired,
+    time: PropTypes.arrayOf(PropTypes.string).isRequired,
+    title: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+  }).isRequired,
+};
 export default ProductCard;
