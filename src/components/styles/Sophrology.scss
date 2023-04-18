@@ -1,7 +1,36 @@
 @import 'common.scss';
+
 .sessions-container {
   display: none;
 }
+
+@keyframes square {
+  0% {
+    top: 20%;
+    left: 0;
+  }
+
+  25% {
+    top: 20%;
+    left: 100%;
+  }
+
+  50% {
+    top: 70%;
+    left: 100%;
+  }
+
+  75% {
+    top: 70%;
+    left: 0;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
 .sp-section {
   padding: 0;
   margin: 0;
@@ -10,7 +39,7 @@
   justify-content: flex-start;
 }
 
-  .sophrology-title-container {
+.sophrology-title-container {
   background-image: url('https://puremind.fr/wp-content/uploads/2021/12/sophrologie-stress-4.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -19,237 +48,242 @@
   width: 100%;
   display: flex;
   align-items: center;
-   box-shadow: 0px 8px 16px 0px rgba(249,163,146,.2);
-  }
-
-   .sophrology-title {
-    color: #453227;
-    font-size: 40px;
-    text-align: center;
-    padding: 10% 4% 0 4%;
+  box-shadow: 0 8px 16px 0 rgba(249, 163, 146, 0.2);
 }
 
-  .sophrology-main {
+.sophrology-title {
+  color: #453227;
+  font-size: 40px;
+  text-align: center;
+  padding: 10% 4% 0 4%;
+}
+
+.sophrology-main {
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: center;
   align-items: center;
-  }
+}
 
-  .what-is, 
-  .who-for {
-    padding: 0 5% 0 5%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 800px;
-  }
-    .what-is-question,
-    .who-for-question {
-      font-size: 25px;
-      color: $chocolate;
-      font-family: $header-text;
-    }
-  
-  .image-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.what-is,
+.who-for {
+  padding: 0 5% 0 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 800px;
+}
 
-  .sp-image {
-     width: 90%;
-     box-shadow: 0px 8px 16px 0px rgba(249,163,146,.2);
-  }
-  .offer-container {
-    background-color:$salmon;
-    margin-top: 40px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 170px;
-    box-shadow: 0px 8px 16px 0px rgba(249,163,146,.2);
-  }
+.what-is-question,
+.who-for-question {
+  font-size: 25px;
+  color: $chocolate;
+  font-family: $header-text;
+}
 
-    .offer-text {
-      color: white;
-      text-align: center;
-      font-size: 20px;
-      line-height: 25px;
-    }
-  
-  .duration-container {
-    background-color: white;
-    box-shadow: 0px 8px 16px 0px rgba(249,163,146,.2);
-    width: 200px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -30px;
-    margin-left: 20%;
-  }
-    .duration-text {
-      color: $salmon;
-      width: 150px;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: center;
-    }
-  .sessions {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    gap :30px;
-    justify-content: center;
-    align-items: center;
-  }
-    .follow-up,
-    .first-session {
-      display: flex;
-      width: 60%;
-      font-size: 20px;
-      gap: 10px;
-    }
-      .fa-circle-dot {
-        color:#F9A392;
-        font-size: 16px;
-        padding-top: 5px;
-      }
-  
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .book-now-btn {
-    background-color:$salmon; 
-    color: white;
-    font-size: 20px;
-    width: 200px;
-    height: 50px;
-    margin-top: 40px;
-    transition: all ease .4s;
-  }
-  .book-now-btn:hover {
-    border:1px solid $salmon;
-    color: $salmon;
-    background-color: white;
-  }
+.sp-image {
+  width: 90%;
+  box-shadow: 0 8px 16px 0 rgba(249, 163, 146, 0.2);
+}
+
+.offer-container {
+  background-color: $salmon;
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 170px;
+  box-shadow: 0 8px 16px 0 rgba(249, 163, 146, 0.2);
+}
+
+.offer-text {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.duration-container {
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(249, 163, 146, 0.2);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+  margin-left: 20%;
+}
+
+.duration-text {
+  color: $salmon;
+  width: 150px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.sessions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow-up,
+.first-session {
+  display: flex;
+  width: 60%;
+  font-size: 20px;
+  gap: 10px;
+}
+
+.fa-circle-dot {
+  color: #f9a392;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.book-now-btn {
+  background-color: $salmon;
+  color: white;
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  margin-top: 40px;
+  transition: all ease 0.4s;
+}
+
+.book-now-btn:hover {
+  border: 1px solid $salmon;
+  color: $salmon;
+  background-color: white;
+}
+
 @media (min-width: 768px) {
   .sp-section {
     display: flex;
     flex-direction: column;
   }
+
   .sophrology-main {
     margin: 0;
   }
-  .sp-section {
-    background-color: white;
-  }
-   .sophrology-title-container {
+
+  .sophrology-title-container {
     height: 300px;
-   }
-    .sophrology-title {
-     color: #4b392ecf;
-     font-size: 100px;
-   }
-   
-   .image-container {
+  }
+
+  .sophrology-title {
+    color: #4b392ecf;
+    font-size: 100px;
+  }
+
+  .image-container {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-   }
+  }
 
-   .sp-image {
+  .sp-image {
     width: 50%;
-   }
-  
+  }
+
   .extra-info-container {
     display: grid;
   }
-   .offer-container {
+
+  .offer-container {
     padding: 0;
     margin: 0;
-   }
-   .sessions {
+  }
+
+  .sessions {
     margin-top: 50px;
     gap: 0;
-   }
-  
+  }
 }
 
 @media (min-width: 1000px) {
-  
   .sophrology-title-container {
-  background-size: 100%;
-  background-position: 0 -200px;
+    background-size: 100%;
+    background-position: 0 -200px;
   }
 
   .sophrology-title {
     padding: 0% 0% 0% 3%;
     font-size: 80px;
   }
+
   .sessions-container {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin-top: 40px;
-  gap: 100px;
-}
-.icon-div {
-  height: 200px;
-  width: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 40px;
+    gap: 100px;
+  }
+
+  .icon-div {
+    height: 200px;
+    width: 200px;
+  }
+
+  .massage-icon {
+    width: 160px;
+    position: relative;
+    animation-name: square;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+  }
+
+  .sessions {
+    width: 300px;
+    height: 240px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .follow-text,
+  .first-text {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .book-now-btn {
+    width: 300px;
+  }
 }
 
-@keyframes square {
-  0%    {top: 20%; left: 0}
-  25%   {top: 20%; left: 100%;}
-  50%   {top: 70%; left: 100%;}
-  75%   {top: 70%; left: 0px;}
-  100%  {top: 0px; left: 0px;}
-}
-.massage-icon {
-  width: 160px;
-  position: relative;
-  animation-name: square;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: reverse;
-}
-.sessions {
-  width: 300px;
-  height: 240px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid;
-  padding: 20px;
-  gap: 10px;
-}
-.follow-text,
-.first-text {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.book-now-btn {
-  width: 300px;
-}
-}
 @media (min-width: 1440px) {
   .sessions-container {
     width: 60%;
   }
 
-   .sophrology-title-container {
-  background-position: 0 -300px;
+  .sophrology-title-container {
+    background-position: 0 -300px;
   }
 
   .sophrology-title {
