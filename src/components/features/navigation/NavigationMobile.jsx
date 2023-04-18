@@ -25,12 +25,13 @@ const NavigationMobile = () => {
           toggle={setOpen}
           direction="right"
           size={20}
+          className="hamburger-icon"
         />
       </div>
       {isOpen && (
         <div className="mobile-menu">
           <Link to="/">
-            <img className="logo-mobile" alt="logo" src={Logo} />
+            <img className="logo-mobile-popup" alt="logo" src={Logo} />
           </Link>
           <ul className="menu">
             <li className="nav-item">
