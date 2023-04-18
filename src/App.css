@@ -63,6 +63,9 @@ a {
   background-image: url('./assets/images/massage6.png');
   background-repeat: no-repeat;
   background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 main {

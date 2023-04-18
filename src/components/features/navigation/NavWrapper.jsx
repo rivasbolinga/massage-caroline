@@ -45,7 +45,7 @@ const NavWrapper = styled.nav`
   .burger {
     position: fixed;
     z-index: 10;
-    right: 0;
+    right: 10px;
   }
 
   .logo-navbar {
@@ -103,7 +103,7 @@ const NavWrapper = styled.nav`
       align-items: center;
       z-index: 5;
       a {
-        color: rgb(160,154,150);
+        color: #30221e;
       }
       .menu {
         height: 70vh;
