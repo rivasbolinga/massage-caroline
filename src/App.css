@@ -46,7 +46,6 @@ a {
   text-decoration: none !important;
 }
 
-
 .nav-bar.sticky {
   background-color: #e0d8d3;
   color: rgb(188, 180, 174);
@@ -58,7 +57,6 @@ a {
 
 .nav-bar.sticky a {
   color: rgb(118, 114, 111);
-  
 }
 
 .mobile-menu {
