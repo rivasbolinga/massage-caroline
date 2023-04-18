@@ -1,10 +1,10 @@
 import React from 'react';
 import Slider from 'react-slick';
-import styled from 'styled-components';
 import banner1 from '../../../assets/massage-banners/banner-1.webp';
 import banner2 from '../../../assets/massage-banners/banner-2.jpg';
 import banner3 from '../../../assets/massage-banners/banner-3.avif';
 import Banner from './Banner';
+import CarouselWrap from './CarouselWrap';
 
 const Carousel = () => {
   const peelers = [
@@ -53,75 +53,11 @@ const Carousel = () => {
         autoplaySpeed={settings.autoplaySpeed}
       >
         {peelers.map((item, index) => (
-          <Banner item={item} index={index} key={item} />
+          <Banner item={item} index={index} key={item.quote} />
         ))}
       </Slider>
     </CarouselWrap>
   );
 };
 
-const CarouselWrap = styled.div`
-  .carousel {
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    @media screen and (max-width: 426px) {
-      height: 50vh !important;
-    }
-  }
-  .slick-slider {
-    width: 100%;
-    margin: 0;
-    }
-  }
-
-  img {
-    width: 100%;
-    height: 90vh;
-    position: absolute;
-    margin: auto 0;
-    z-index: -1;
-    @media screen and (max-width: 768px) {
-      height: 90vh;
-    }
-
-    @media screen and (max-width: 426px) {
-      height: 50vh !important;
-    }
-  }
-
-  h1 {
-    display: inline-block;
-    position: absolute;
-    z-index: 3;
-    font-size: 4rem;
-    padding: 1rem;
-
-    @media screen and (max-width: 769px) {
-      font-size:${(props) => (props.massage ? '2.4rem' : '2.5rem')};
-      bottom:${(props) => (props.massage ? '0' : '5% !important')} ;
-      top:${(props) => (props.massage ? '15% !important' : '60% !important')};
-    }
-
-    @media screen and (max-width: 426px) {
-      font-size: 1.5rem;
-      font-weight: 800;
-      line-spacing: 200;
-    }
-
-  .slick-slide {
-    padding: 0;
-    margin: 0;
-  }
-
-  .slick-list {
-    margin: 0;
-  }
-
-  .banner-massage {
-    width: 100%;
-    height: 90vh;
-  }
-`;
-
-export { Carousel, CarouselWrap };
+export default Carousel;

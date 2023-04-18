@@ -78,7 +78,17 @@ class Feedback extends Component {
         <TitleWrap className="about-title">
           <h2>Costumer Feedback</h2>
         </TitleWrap>
-        <Slider {...settings}>
+        <Slider
+          dots={settings.dots}
+          infinite={settings.infinite}
+          speed={settings.speed}
+          slidesToShow={settings.slidesToShow}
+          slidesToScroll={settings.slidesToScroll}
+          initialSlide={settings.initialSlide}
+          autoplay={settings.autoplay}
+          autoplaySpeed={settings.autoplaySpeed}
+          responsive={settings.responsive}
+        >
           {this.state.slides.map((slide, index) => (
             <div
               data-aos="flip-right"
