@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
-import NavWrapper from './NavWrapper'
-import { Spin as Hamburger } from 'hamburger-react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Spin as Hamburger } from 'hamburger-react';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { useLocation } from 'react-router-dom';
+import NavWrapper from './NavWrapper';
 import LanguageButton from '../language-btn/LanguageButton';
 import deck1 from '../../../assets/images/image0 (1).jpeg';
 import deck2 from '../../../assets/images/image1.jpeg';
@@ -65,7 +64,7 @@ const NavigationMobile = () => {
 
       )}
     </NavWrapper>
-  )
-}
+  );
+};
 
-export default NavigationMobile
+export default NavigationMobile;

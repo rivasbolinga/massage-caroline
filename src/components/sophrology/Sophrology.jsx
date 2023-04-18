@@ -6,12 +6,12 @@ import MassageIcon from '../../assets/icons/massage.png';
 import ButtonBookNow from '../styles/ButtonBookNow';
 
 const Sophrology = () => {
-	const { t } = useTranslation()
-	return (
+  const { t } = useTranslation();
+  return (
     <section className="sp-section">
       <header className="sophrology-title-container">
         <h1 className="sophrology-title">{t('sophrology.sophrology')}</h1>
-        <div className="horizontal-line"></div>
+        <div className="horizontal-line" />
       </header>
       <main className="sophrology-main">
         <div className="explanation-container">
@@ -29,7 +29,7 @@ const Sophrology = () => {
             alt="sophrology chart"
             className="sp-image"
             src="https://be-sophro.com/wp-content/uploads/2023/01/What-is-Sophrology-Infographic-960x960.png"
-          ></img>
+          />
           <div className="extra-info-container">
             <div className="offer-container">
               <p className="offer-text">{t('sophrology.offer')}</p>
@@ -45,15 +45,15 @@ const Sophrology = () => {
               className="massage-icon"
               src={MassageIcon}
               alt="massage icon"
-            ></img>
+            />
           </div>
           <div className="sessions">
             <div className="first-session">
-              <i className="fa-solid fa-circle-dot"></i>
+              <i className="fa-solid fa-circle-dot" />
               <p className="first-text">{t('sophrology.first-session')}</p>
             </div>
             <div className="follow-up">
-              <i className="fa-solid fa-circle-dot"></i>
+              <i className="fa-solid fa-circle-dot" />
               <p className="follow-text">{t('sophrology.follow-up')}</p>
             </div>
           </div>
@@ -64,7 +64,7 @@ const Sophrology = () => {
         </Link>
       </main>
     </section>
-  )
-}
+  );
+};
 
-export default Sophrology
+export default Sophrology;

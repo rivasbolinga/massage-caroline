@@ -1,12 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SocialLogos from '../social/SocialLogos';
 
 const Footer = () => {
-
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <FooterWrap>
       <div className="footer-container">
@@ -20,18 +19,24 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className='fa-solid fa-location-dot' /> 612 E Mitchell St,
+                <i className="fa-solid fa-location-dot" />
+                {' '}
+                612 E Mitchell St,
                 Kendallville, IN 46755, United States
               </a>
             </li>
             <li>
               <a href="tel:+012 345 67890">
-                <i className="fa-solid fa-phone-volume" /> +012 345 67890
+                <i className="fa-solid fa-phone-volume" />
+                {' '}
+                +012 345 67890
               </a>
             </li>
             <li>
               <a href="mailto:info@example.com">
-                <i className="fa-solid fa-envelope-open" /> info@example.com
+                <i className="fa-solid fa-envelope-open" />
+                {' '}
+                info@example.com
               </a>
             </li>
           </ul>
@@ -39,7 +44,7 @@ const Footer = () => {
             <div className="client">
               <Link to="/">Logo</Link>
             </div>
-            <SocialLogos color="#D25C33"/>
+            <SocialLogos color="#D25C33" />
           </div>
         </div>
         <div className="footer-item">
@@ -48,43 +53,56 @@ const Footer = () => {
             <li className="nav-item">
               <Link to="#top">
                 <i className="fa-solid fa-angle-right" />
-                {t('footer.home')}{' '}
+                {t('footer.home')}
+                {' '}
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/bookings#top">
-                <i className="fa-solid fa-angle-right" /> {t('footer.bookings')}
+                <i className="fa-solid fa-angle-right" />
+                {' '}
+                {t('footer.bookings')}
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/massages#top">
-                <i className="fa-solid fa-angle-right" /> Massages
+                <i className="fa-solid fa-angle-right" />
+                {' '}
+                Massages
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/syphilology#top">
-                <i className="fa-solid fa-angle-right" /> Syphilology
+                <i className="fa-solid fa-angle-right" />
+                {' '}
+                Syphilology
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/gift-card#top">
-                <i className="fa-solid fa-angle-right" /> Gift card
+                <i className="fa-solid fa-angle-right" />
+                {' '}
+                Gift card
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/about#top">
-                <i className="fa-solid fa-angle-right" /> About us
+                <i className="fa-solid fa-angle-right" />
+                {' '}
+                About us
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/contact#top">
-                <i className="fa-solid fa-angle-right" /> Contact us
+                <i className="fa-solid fa-angle-right" />
+                {' '}
+                Contact us
               </Link>
             </li>
           </ul>
         </div>
         <div className="footer-item form">
-          <h3>Developer's Contact</h3>
+          <h3>Contact</h3>
           <form action="https://formspree.io/f/xqkoyerk" method="post">
             <div className="from-container">
               <input
@@ -116,15 +134,18 @@ const Footer = () => {
       <div className="copyright-section">
         <div>© Caroline Massage Hub, All Right Reserved.</div>
         <div>
-          Design by{' '}
+          Design by
+          {' '}
           <a
             href="https://www.linkedin.com/in/andrearivaspalacios/"
             target="_blank"
             rel="noreferrer"
           >
             Andrea
-          </a>{' '}
-          and{' '}
+          </a>
+          {' '}
+          and
+          {' '}
           <a
             href="https://www.linkedin.com/in/adarsh-pathak-powerlevel/"
             target="_blank"
@@ -135,8 +156,8 @@ const Footer = () => {
         </div>
       </div>
     </FooterWrap>
-  )
-}
+  );
+};
 
 const FooterWrap = styled.footer`
   margin: 1rem 0 0 0;
@@ -228,4 +249,4 @@ const FooterWrap = styled.footer`
   }
 `;
 
-export default Footer
+export default Footer;

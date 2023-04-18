@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const ButtonBookNow = styled.button`
   background-color: #F9A392;
@@ -14,4 +14,4 @@ const ButtonBookNow = styled.button`
   background-color: white;
 `;
 
-export default ButtonBookNow
+export default ButtonBookNow;

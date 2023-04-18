@@ -1,45 +1,39 @@
-import React, { useState } from 'react'
-import { Link, Outlet } from 'react-router-dom'
-import NavWrapper from './NavWrapper'
-import LanguageButton from '../language-btn/LanguageButton';
+import React, { useState } from 'react';
+import { Link, Outlet } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import NavWrapper from './NavWrapper';
+import LanguageButton from '../language-btn/LanguageButton';
+import Logo from '../../../assets/icons/logo2.jpeg';
 
 const Navigation = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useTranslation();
-  const handleMouseEnter = () => {
-    setIsDropdownOpen(true)
-  }
 
-  const handleMouseLeave = () => {
-    setIsDropdownOpen(false)
-  }
+  const handleScroll = () => {
+    if (window.scrollY >= 800) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+  window.addEventListener('scroll', handleScroll);
 
   return (
-    <NavWrapper className="nav-bar">
+    <NavWrapper className={`nav-bar ${isScrolled ? 'sticky' : ''}`}>
       <div className="logo">
-        <Link to="/">Logo</Link>
+        <Link to="/">
+          <img className="logo-navbar" alt="logo" src={Logo} />
+        </Link>
       </div>
       <ul className="menu">
         <li className="nav-item">
           <Link to="/">{t('navigation.home')}</Link>
         </li>
         <li className="nav-item">
-          <Link to="/bookings">{t('navigation.bookings')}</Link>
+          <Link to="/massages">{t('navigation.massages')}</Link>
         </li>
-        <li
-          className="nav-item"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          onClick={handleMouseLeave}
-        >
-          {t('navigation.services')}
-          {isDropdownOpen && (
-            <div className="dropdown" onMouseLeave={handleMouseLeave}>
-              <Link to="/massages">{t('navigation.massages')}</Link>
-              <Link to="/sophrology">{t('navigation.sophrology')}</Link>
-            </div>
-          )}
+        <li className="nav-item">
+          <Link to="/sophrology">{t('navigation.sophrology')}</Link>
         </li>
         <li className="nav-item">
           <Link to="/about">{t('navigation.about-me')}</Link>
@@ -51,7 +45,7 @@ const Navigation = () => {
       </ul>
       <Outlet />
     </NavWrapper>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

@@ -1,11 +1,9 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import SliderComponents from './features/home-sliders/SliderComponent';
-import {Carousel} from './features/home-carousel/Carousel';
-import About from './aboutPage/About'
+import { Carousel } from './features/home-carousel/Carousel';
+import About from './aboutPage/About';
 import AboutPhone from './aboutPage/AboutPhone';
-import { useState, useEffect } from 'react';
 import Feedback from './features/home-sliders/Feedback';
-import Gallery from './features/home-sliders/Gallery';
 
 const Home = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -19,14 +17,11 @@ const Home = () => {
   return (
     <>
       <Carousel />
-      {width<768?<AboutPhone home />:<About />}
+      {width < 768 ? <AboutPhone home /> : <About />}
       <SliderComponents />
-      <Gallery />
       <Feedback />
     </>
-  )
-}
+  );
+};
 
-export default Home
-
-
+export default Home;

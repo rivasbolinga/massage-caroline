@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
 import { useSelector } from 'react-redux';
-import backgroundImage from "../../../assets/massage-banners/background-makups.jpg"
-import TitleWrap from '../../styles/HomeTitle';
 import Slider from 'react-slick';
+import backgroundImage from '../../../assets/massage-banners/background-makups.jpg';
+import TitleWrap from '../../styles/HomeTitle';
 import ProductCard from './ProductCard';
+
 const ProductSlider = () => {
-  const massagesData = useSelector(store => store.massageReducer.massagesData);
-  var settings = {
+  const massagesData = useSelector((store) => store.massageReducer.massagesData);
+  const settings = {
     dots: false,
     infinite: true,
     speed: 500,
@@ -22,25 +23,25 @@ const ProductSlider = () => {
           slidesToShow: 3,
           slidesToScroll: 2,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 426,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div id="massages">
@@ -49,17 +50,15 @@ const ProductSlider = () => {
         <h2>Our Massages</h2>
       </TitleWrap>
       <Slider {...settings}>
-        {massagesData.map((slide, index) => {
-          return (
-            <div data-aos="flip-left" data-aos-duration="2000" key={index}>
-              <ProductCard imgSrc={slide.image} data={slide}/>
-              {/* <img src={slide.img} alt={`slide${index}`} /> */}
-            </div>
-          );
-        })}
+        {massagesData.map((slide, index) => (
+          <div data-aos="flip-left" data-aos-duration="2000" key={index}>
+            <ProductCard imgSrc={slide.image} data={slide} />
+            {/* <img src={slide.img} alt={`slide${index}`} /> */}
+          </div>
+        ))}
       </Slider>
     </div>
-  )
-}
+  );
+};
 
-export default ProductSlider
+export default ProductSlider;

@@ -1,11 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { BiTimeFive } from 'react-icons/bi';
 import SocialLogos from './features/social/SocialLogos';
 import './styles/Contact.scss';
-import { BiTimeFive } from 'react-icons/bi';
-import Map from './features/map/Map'
+import Map from './features/map/Map';
+
 const Contact = () => {
-   const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <section className="contact-section">
       <article className="contact-title-container">
@@ -17,7 +18,7 @@ const Contact = () => {
             <h2 className="opening-hours-title">
               {t('contact.opening-hours')}
             </h2>
-            <div className="title-line"></div>
+            <div className="title-line" />
             <div className="opening-hours-text-container">
               <h3 className="week-days">{t('contact.week-days')}</h3>
               <div className="hours-div">
@@ -38,7 +39,7 @@ const Contact = () => {
         </article>
         <article className="location-container">
           <h2>{t('contact.address')}</h2>
-          <div className="title-line"></div>
+          <div className="title-line" />
           <p className="location-text">
             606 route de la Télécabine 01170 Crozet
           </p>
@@ -49,7 +50,7 @@ const Contact = () => {
         <article className="contact-container">
           <article className="phone-container">
             <h3 className="phone-title">{t('contact.phone')}</h3>
-            <div className="title-line"></div>
+            <div className="title-line" />
             <p className="phone-number">0033/6 74 81 20 09</p>
             <p className="contact-text">{t('contact.contact-text')}</p>
             <SocialLogos />
@@ -57,7 +58,7 @@ const Contact = () => {
         </article>
         <div className=" form">
           <h3>{t('footer.touch')}</h3>
-          <div className="title-line"></div>
+          <div className="title-line" />
           <p className="form-text">{t('contact.form')}</p>
           <form action="https://formspree.io/f/xqkoyerk" method="post">
             <div className="form-container">
@@ -93,7 +94,7 @@ const Contact = () => {
         </div>
       </main>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

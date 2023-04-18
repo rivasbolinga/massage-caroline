@@ -1,5 +1,4 @@
-const Map = () => {
-return (
+const Map = () => (
   <iframe
     title="Google Maps"
     width="100%"
@@ -9,8 +8,7 @@ return (
     allowFullScreen=""
     loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
-)
-}
+  />
+);
 
 export default Map;
