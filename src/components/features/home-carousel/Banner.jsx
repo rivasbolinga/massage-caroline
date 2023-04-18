@@ -5,8 +5,18 @@ import CarouselWrap from './CarouselWrap';
 const Banner = ({ massage, item, index }) => (
   <CarouselWrap massage={massage}>
     <div className="carousel">
-      <img className="banner-massage" key={index} src={item.image} alt="Banner Carousel" />
-      <h1 style={item.style} className="carousel-title" dangerouslySetInnerHTML={{ __html: item.quote }} />
+      <img
+        className="banner-massage"
+        key={index}
+        src={item.image}
+        alt="Banner Carousel"
+      />
+      <h1
+        style={item.style}
+        className="carousel-title"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: item.quote }}
+      />
     </div>
   </CarouselWrap>
 );
