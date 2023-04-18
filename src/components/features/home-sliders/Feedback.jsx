@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -84,7 +83,7 @@ class Feedback extends Component {
             <div
               data-aos="flip-right"
               data-aos-duration="2000"
-              key={slide.name}
+              key={index}
               className="image-wrap"
             >
               <img src={slide.img} alt={`slide${index}`} />
