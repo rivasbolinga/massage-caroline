@@ -55,7 +55,6 @@
     .image2 {
       grid-column: 2/6;
       grid-row: 3/6;
-      z-index: 4;
       width: 100%;
       height: auto;
     }
@@ -90,7 +89,6 @@
       grid-row: 1/5;
       grid-column: 1/5;
       filter: opacity(0.6);
-      z-index: 0;
     }
   }
 

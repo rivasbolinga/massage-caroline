@@ -29,7 +29,7 @@ const NavigationMobile = () => {
         />
       </div>
       {isOpen && (
-        <div className="mobile-menu">
+        <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
           <Link to="/">
             <img className="logo-mobile-popup" alt="logo" src={Logo} />
           </Link>

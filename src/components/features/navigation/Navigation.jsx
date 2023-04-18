@@ -3,6 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageButton from '../language-btn/LanguageButton';
 import Logo from '../../../assets/icons/logo2.jpeg';
+import '../../styles/Navigation.scss';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,7 +25,7 @@ const Navigation = () => {
           <img className="logo-navbar" alt="logo" src={Logo} />
         </Link>
       </div>
-      <ul className="menu">
+      <ul className="menu-navbar">
         <li className="nav-item">
           <Link to="/">{t('navigation.home')}</Link>
         </li>
