@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import NavWrapper from './NavWrapper';
 import LanguageButton from '../language-btn/LanguageButton';
 import Logo from '../../../assets/icons/logo2.jpeg';
 
@@ -19,7 +18,7 @@ const Navigation = () => {
   window.addEventListener('scroll', handleScroll);
 
   return (
-    <NavWrapper className={`nav-bar ${isScrolled ? 'sticky' : ''}`}>
+    <nav className={`nav-bar ${isScrolled ? 'sticky' : ''}`}>
       <div className="logo">
         <Link to="/">
           <img className="logo-navbar" alt="logo" src={Logo} />
@@ -44,7 +43,7 @@ const Navigation = () => {
         <LanguageButton />
       </ul>
       <Outlet />
-    </NavWrapper>
+    </nav>
   );
 };
 

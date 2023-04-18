@@ -2,23 +2,23 @@ import React, { useState } from 'react';
 import { Spin as Hamburger } from 'hamburger-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import NavWrapper from './NavWrapper';
 import LanguageButton from '../language-btn/LanguageButton';
 import Logo from '../../../assets/icons/logo2.jpeg';
+import '../../styles/NavigationMobile.scss';
 
 const NavigationMobile = () => {
   const [isOpen, setOpen] = useState(false);
   const { t } = useTranslation();
 
   return (
-    <NavWrapper>
-      <div className="logo">
+    <nav className="nav-mobile">
+      <div className="logo-mobile">
         <Link to="/">
-          <img className="logo-navbar" alt="logo" src={Logo} />
+          <img className="logo-navbar-mobile" alt="logo" src={Logo} />
         </Link>
       </div>
 
-      <div className="burger">
+      <div className="burger-container">
         <LanguageButton />
         <Hamburger
           toggled={isOpen}
@@ -106,7 +106,7 @@ const NavigationMobile = () => {
           </ul>
         </div>
       )}
-    </NavWrapper>
+    </nav>
   );
 };
 
