@@ -11,7 +11,7 @@ const Banner = ({ massage, item, index }) => (
   </CarouselWrap>
 );
 
-Banner.protoTypes = {
+Banner.propTypes = {
   item: PropTypes.shape({
     image: PropTypes.string.isRequired,
     style: PropTypes.shape({
@@ -24,6 +24,7 @@ Banner.protoTypes = {
     quote: PropTypes.string.isRequired,
   }).isRequired,
   index: PropTypes.number.isRequired,
+  massage: PropTypes.bool.isRequired,
 };
 
 export default Banner;

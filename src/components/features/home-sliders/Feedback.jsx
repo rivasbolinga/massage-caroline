@@ -73,6 +73,8 @@ class Feedback extends Component {
         },
       ],
     };
+
+    const { slides } = this.state;
     return (
       <div id="feedback">
         <TitleWrap className="about-title">
@@ -89,15 +91,15 @@ class Feedback extends Component {
           autoplaySpeed={settings.autoplaySpeed}
           responsive={settings.responsive}
         >
-          {this.state.slides.map((slide, index) => (
+          {slides.map(({ img, feedback }, index) => (
             <div
               data-aos="flip-right"
               data-aos-duration="2000"
-              key={index}
+              key={img}
               className="image-wrap"
             >
-              <img src={slide.img} alt={`slide${index}`} />
-              <div className="quotes">{slide.feedback}</div>
+              <img src={img} alt={`slide${index}`} />
+              <div className="quotes">{feedback}</div>
             </div>
           ))}
         </Slider>
