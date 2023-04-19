@@ -54,26 +54,6 @@
     display: none !important;
   }
 
-  #feedback .slick-slider {
-    .image-wrap {
-      position: relative;
-      display: grid !important;
-      place-items: center;
-
-      .quotes {
-        display: none;
-        position: absolute;
-        padding: 1rem;
-      }
-
-      &:hover {
-        .quotes {
-          display: block;
-        }
-      }
-    }
-  }
-
   position: relative;
 
   .backgroundImage {
@@ -84,4 +64,28 @@
   }
 
   padding: 2rem 0;
+}
+
+#feedback .slick-slider {
+  .image-wrap {
+    position: relative;
+    display: grid !important;
+    place-items: center;
+
+    .quotes {
+      display: none;
+      position: absolute;
+      padding: 1rem;
+    }
+
+    &:hover {
+      .quotes {
+        display: block;
+      }
+    }
+  }
+}
+
+.slick-prev, .slick-next {
+  display: none !important;
 }
