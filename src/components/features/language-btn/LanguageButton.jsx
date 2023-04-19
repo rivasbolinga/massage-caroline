@@ -1,22 +1,22 @@
 import styled from 'styled-components';
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
 
 const LanguageButton = () => {
-  const { i18n } = useTranslation()
+  const { i18n } = useTranslation();
 
   const handleClick = () => {
     const currentLang = i18n.language;
     const newLang = currentLang === 'fr' ? 'en' : 'fr';
     i18n.changeLanguage(newLang);
-  }
+  };
 
   return (
     <ToggleButton onClick={handleClick}>
       <i className="fa-sharp fa-solid fa-globe" />
       <ToggleText>{i18n.language.toUpperCase()}</ToggleText>
     </ToggleButton>
-  )
-}
+  );
+};
 
 const ToggleButton = styled.button`
   display: flex;
@@ -40,5 +40,4 @@ const ToggleText = styled.span`
   text-transform: uppercase;
 `;
 
-
-export default LanguageButton
+export default LanguageButton;

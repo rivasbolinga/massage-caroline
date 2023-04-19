@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Red+Rose:wght@300;400;500;600;700&display=swap');
 
-
 h1,
 h2,
 h3,
@@ -8,25 +7,25 @@ h4 {
   font-family: 'Red Rose', sans-serif;
   margin: 0;
   padding: 0;
-  color: #30221E;
+  color: #30221e;
 }
 
 p {
   font-family: 'DM Sans', sans-serif;
   margin: 0;
   padding: 0;
-  color: #30221E;
+  color: #30221e;
 }
 
 li {
   list-style: none;
-  color: #30221E;
+  color: #30221e;
   font-family: 'DM Sans', sans-serif;
   text-decoration: none;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   overflow-x: hidden;
 }
 
@@ -35,7 +34,7 @@ button {
   border: none;
   font-family: 'DM Sans', sans-serif;
   text-decoration: none;
-  color: #D25C33;
+  color: #d25c33;
   font-size: 18px;
   gap: 6px;
   display: flex;
@@ -53,8 +52,8 @@ main {
 
 @media (max-width: 768px) {
   body {
-    background-color: #F6EDEA;
-    overflow-x: hidden;
+    background-color: #f6edea;
+    overflow-x: hidden !important;
   }
 
   main {

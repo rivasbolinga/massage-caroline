@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Navigation from './components/features/navigation/Navigation';
-import NavigationMobile from './components/features/navigation/NavigationMobile';
-import Home from './components/Home'
-import About from './components/aboutPage/About'
-import Contact from './components/Contact'
-import Sophrology from './components/sophrology/Sophrology'
-import Bookings from './components/Bookings'
 import {
   HashRouter,
   Route, Routes,
 } from 'react-router-dom';
+import AOS from 'aos';
+import Navigation from './components/features/navigation/Navigation';
+import NavigationMobile from './components/features/navigation/NavigationMobile';
+import Home from './components/Home';
+import About from './components/aboutPage/About';
+import Contact from './components/Contact';
+import Sophrology from './components/sophrology/Sophrology';
+import Bookings from './components/Bookings';
 import Massages from './components/Massages';
 import Default404 from './components/Default404';
 import Footer from './components/features/footer/Footer';
 import AboutPhone from './components/aboutPage/AboutPhone';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
           ) : (
             <Route path="/about" element={<About />} />
           )}
-          
+
           <Route path="/bookings" element={<Bookings />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/sophrology" element={<Sophrology />} />
@@ -50,7 +50,7 @@ function App() {
         <Footer />
       </HashRouter>
     </>
-  )
+  );
 }
 
 export default App;

@@ -1,0 +1,47 @@
+@import './common.scss';
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6% 2%;
+  background-color: rgba(250, 235, 215, 0.012);
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+}
+
+.logo-navbar {
+  width: 80px;
+}
+
+.menu-navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.menu-navbar a {
+  font-family: $playfair;
+  font-size: 20px;
+  color: white;
+}
+
+.nav-bar.sticky {
+  background-color: #e0d8d3;
+  color: rgba(188, 180, 174, 0.677);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  position: fixed;
+}
+
+.nav-bar.sticky a {
+  font-family: $playfair;
+  font-size: 20px;
+  color: $chocolate;
+}

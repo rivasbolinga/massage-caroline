@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-const Default404 = () => {
-  return (
-    <main>
-      <h1>Hello from 404</h1>
-    </main>
-  )
-}
+const Default404 = () => (
+  <main>
+    <h1>Hello from 404</h1>
+  </main>
+);
 
-export default Default404
+export default Default404;

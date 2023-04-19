@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-const Sophrology = () => {
-	return (
-		<main>
-			<h1>Hello form Sophrology</h1>
-		</main>
-	)
-}
+const Sophrology = () => (
+  <main>
+    <h1>Hello form Sophrology</h1>
+  </main>
+);
 
-export default Sophrology
+export default Sophrology;
