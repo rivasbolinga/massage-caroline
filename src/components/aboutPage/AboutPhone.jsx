@@ -6,7 +6,6 @@ import { useState } from 'react';
 import { AiOutlineUpCircle, AiOutlineDownCircle } from 'react-icons/ai';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import AboutImages from '../features/aboutImages/AboutImages';
 
 const AboutPhone = ({ home }) => {
   const { t } = useTranslation();
@@ -36,7 +35,6 @@ const AboutPhone = ({ home }) => {
           </button>
         </div>
       </div>
-      <AboutImages />
       {!home && (
       <div className="button-container">
         <button type="button">

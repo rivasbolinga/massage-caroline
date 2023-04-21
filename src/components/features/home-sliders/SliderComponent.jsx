@@ -1,21 +1,22 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Slider from 'react-slick';
-import backgroundImage from '../../../assets/massage-banners/background-makups.jpg';
+import { useTranslation } from 'react-i18next';
 import TitleWrap from '../../styles/HomeTitle';
 import ProductCard from './ProductCard';
 
 const ProductSlider = () => {
+  const { t } = useTranslation();
   const massagesData = useSelector((store) => store.massageReducer.massagesData);
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 2,
     initialSlide: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1024,
@@ -45,9 +46,8 @@ const ProductSlider = () => {
   };
   return (
     <div id="massages">
-      <img src={backgroundImage} alt="" className="backgroundImage" />
       <TitleWrap className="about-title">
-        <h2>Our Massages</h2>
+        <h2>{t('navigation.massages')}</h2>
       </TitleWrap>
 
       <Slider

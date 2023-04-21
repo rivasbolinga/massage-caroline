@@ -1,7 +1,7 @@
-import { createSlice } from '@reduxjs/toolkit'
-import img1 from '../../../assets/images/massage1.jpeg'
-import img2 from '../../../assets/images/massage2.jpeg'
-import img3 from '../../../assets/images/massage3.jpeg'
+import { createSlice } from '@reduxjs/toolkit';
+import img1 from '../../../assets/images/massage1.jpeg';
+import img2 from '../../../assets/images/massage2.jpeg';
+import img3 from '../../../assets/images/massage3.jpeg';
 
 const initialState = {
   massagesData: [
@@ -35,7 +35,7 @@ const initialState = {
   ],
 
   detailsTypeId: null,
-}
+};
 
 const massagesSlice = createSlice({
   name: 'redux/massagesSlice',
@@ -46,7 +46,7 @@ const massagesSlice = createSlice({
       detailsTypeId: payload,
     }),
   },
-})
+});
 
-export const { setDetails } = massagesSlice.actions
-export default massagesSlice.reducer
+export const { setDetails } = massagesSlice.actions;
+export default massagesSlice.reducer;
