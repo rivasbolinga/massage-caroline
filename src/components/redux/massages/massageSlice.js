@@ -1,12 +1,14 @@
-import { createSlice } from '@reduxjs/toolkit';
-import img1 from '../../../assets/customer.png';
+import { createSlice } from '@reduxjs/toolkit'
+import img1 from '../../../assets/images/massage1.jpeg'
+import img2 from '../../../assets/images/massage2.jpeg'
+import img3 from '../../../assets/images/massage3.jpeg'
 
 const initialState = {
   massagesData: [
     {
       id: 0,
-      title: 'Massage Title',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
+      title: 'wellness-massage',
+      description: 'wellness-massage',
       prices: [10, 20, 30],
       time: ['30 min', '1 hour', '2 hour'],
       image: img1,
@@ -14,82 +16,26 @@ const initialState = {
     },
     {
       id: 1,
-      title: 'Massage Title',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
+      title: 'customized',
+      description: 'customized',
       prices: [10, 20, 30],
       time: ['30 min', '1 hour', '2 hour'],
-      image: img1,
+      image: img2,
       type: 'Sports',
     },
     {
       id: 2,
-      title: 'Massage Title',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
+      title: 'ayurvedic',
+      description: 'ayurvedic',
       prices: [10, 20, 30],
       time: ['30 min', '1 hour', '2 hour'],
-      image: img1,
+      image: img3,
       type: 'Sports',
-    },
-    {
-      id: 3,
-      title: 'Massage Title',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
-      prices: [10, 20, 30],
-      time: ['30 min', '1 hour', '2 hour'],
-      image: img1,
-      type: 'Sports',
-    },
-
-    {
-      id: 4,
-      title: 'Massage Title',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
-      prices: [10, 20, 30],
-      time: ['30 min', '1 hour', '2 hour'],
-      image: img1,
-      type: 'Beautify',
-    },
-    {
-      id: 5,
-      title: 'Massage Title',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
-      prices: [10, 20, 30],
-      time: ['30 min', '1 hour', '2 hour'],
-      image: img1,
-      type: 'Beautify',
-    },
-    {
-      id: 6,
-      title: 'Massage Title',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
-      prices: [10, 20, 30],
-      time: ['30 min', '1 hour', '2 hour'],
-      image: img1,
-      type: 'Beautify',
-    },
-
-    {
-      id: 7,
-      title: 'Massage Title',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
-      prices: [10, 20, 30],
-      time: ['30 min', '1 hour', '2 hour'],
-      image: img1,
-      type: 'ayurvedic',
-    },
-    {
-      id: 8,
-      title: 'Massage Title',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!',
-      prices: [10, 20, 30],
-      time: ['30 min', '1 hour', '2 hour'],
-      image: img1,
-      type: 'ayurvedic',
     },
   ],
 
   detailsTypeId: null,
-};
+}
 
 const massagesSlice = createSlice({
   name: 'redux/massagesSlice',
@@ -100,7 +46,7 @@ const massagesSlice = createSlice({
       detailsTypeId: payload,
     }),
   },
-});
+})
 
-export const { setDetails } = massagesSlice.actions;
-export default massagesSlice.reducer;
+export const { setDetails } = massagesSlice.actions
+export default massagesSlice.reducer
