@@ -40,8 +40,8 @@ const Carousel = () => {
         autoplay={settings.autoplay}
         autoplaySpeed={settings.autoplaySpeed}
       >
-        {peelers.map((item, index) => (
-          <Banner item={item} index={index} key={item.quote} />
+        {peelers.map((item) => (
+          <Banner item={item} key={item.image} />
         ))}
       </Slider>
       <div className="center-hero">

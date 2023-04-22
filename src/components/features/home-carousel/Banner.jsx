@@ -2,12 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CarouselWrap from './CarouselWrap';
 
-const Banner = ({ massage, item, index }) => (
+const Banner = ({ massage, item }) => (
   <CarouselWrap massage={massage}>
     <div className="carousel">
       <img
         className="banner-massage"
-        key={index}
         src={item.image}
         alt="Banner Carousel"
       />
@@ -27,7 +26,6 @@ Banner.propTypes = {
     }).isRequired,
     quote: PropTypes.string.isRequired,
   }).isRequired,
-  index: PropTypes.number.isRequired,
   massage: PropTypes.bool.isRequired,
 };
 
