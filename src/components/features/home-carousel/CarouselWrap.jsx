@@ -25,6 +25,7 @@ position: relative;
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 0;
     transform: translate(-50%, -50%);
     border-radius: 1rem;
     padding: 2rem;
