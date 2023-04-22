@@ -23,6 +23,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  @media screen and (max-width: 900px) {
+    gap: 21.5px;
+  }
 }
 
 .menu-navbar a {
