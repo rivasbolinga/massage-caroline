@@ -19,9 +19,9 @@ position: relative;
     transform: translate(-50%, -50%);
     border-radius: 1rem;
     padding: 2rem;
-    background: linear-gradient(-45deg, rgba(255, 255, 255, 30%), rgba(255, 0, 0, 30%), rgba(0, 0, 255, 30%));
+    background: linear-gradient(-45deg, rgba(241, 194, 125, 50%), rgba(141, 85, 36, 50%));
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 5s ease infinite;
     img {
       position: relative;
       z-index: 1;
@@ -42,9 +42,23 @@ position: relative;
   .carousel {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     @media screen and (max-width: 426px) {
       height: 50vh !important;
+    }
+    img {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      margin: auto 0;
+      z-index: -1;
+      @media screen and (max-width: 768px) {
+        height: 90vh;
+      }
+
+      @media screen and (max-width: 426px) {
+        height: 50vh !important;
+      }
     }
   }
   .slick-slider {
@@ -53,20 +67,7 @@ position: relative;
     }
   }
 
-  img {
-    width: 100%;
-    height: 90vh;
-    position: absolute;
-    margin: auto 0;
-    z-index: -1;
-    @media screen and (max-width: 768px) {
-      height: 90vh;
-    }
 
-    @media screen and (max-width: 426px) {
-      height: 50vh !important;
-    }
-  }
 
   h1 {
     display: inline-block;
