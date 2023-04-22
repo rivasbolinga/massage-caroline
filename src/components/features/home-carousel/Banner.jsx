@@ -11,12 +11,6 @@ const Banner = ({ massage, item, index }) => (
         src={item.image}
         alt="Banner Carousel"
       />
-      <h1
-        style={item.style}
-        className="carousel-title"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: item.quote }}
-      />
     </div>
   </CarouselWrap>
 );

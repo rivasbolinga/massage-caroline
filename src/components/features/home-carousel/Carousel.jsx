@@ -56,6 +56,12 @@ const Carousel = () => {
           <Banner item={item} index={index} key={item.quote} />
         ))}
       </Slider>
+      <div className="center-hero">
+        <img src="https://user-images.githubusercontent.com/103900838/232329006-da6685dd-e72a-4eb9-a15a-457d2d2b555d.png" alt="" />
+        <h1 className="carousel-title">Caroline Aimé</h1>
+        <p>Your Healer</p>
+      </div>
+
     </CarouselWrap>
   );
 };
