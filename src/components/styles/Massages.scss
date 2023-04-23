@@ -1,0 +1,104 @@
+@import './common.scss';
+
+.massage-title-text {
+  font-family: $playfair;
+  font-size: 80px;
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 120px;
+}
+
+.massage-d-section {
+  background-image: url('../../assets/bc-images/bc11.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.massages-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.massage-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.massage-image {
+  width: 400px;
+}
+
+.massage-p-text.desktop {
+  background-color: rgba(147, 77, 31, 0);
+  width: 50%;
+  font-size: 16px;
+  max-width: 400px;
+  padding: 0;
+}
+
+.book-d-massage-button {
+  border: 1px solid $chocolate;
+  color: $chocolate;
+  background-color: white;
+  width: 230px;
+  height: 50px;
+  padding-left: 10px;
+}
+
+.book-d-massage-button:hover {
+  border: 1px solid $chocolate;
+  color: $chocolate;
+  background-color: rgba(255, 255, 255, 0);
+  width: 230px;
+  height: 50px;
+  transition: all ease 0.4s;
+}
+
+@media (min-width: 1024px) {
+  .massage-section {
+    gap: 120px;
+  }
+
+  .massage-title-text {
+    font-size: 100px;
+  }
+
+  .massage-container {
+    gap: 120px;
+  }
+
+  .massages-container {
+    gap: 50px;
+  }
+
+  .massage-image {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .massage-container {
+    gap: 150px;
+  }
+
+  .massage-d-section {
+    background-image: url('../../assets/bc-images/b15.png');
+    background-position: -100px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -63,13 +63,18 @@ function App() {
           <Route path="/bookings" element={<Bookings />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/sophrology" element={<Sophrology />} />
-          <Route path="/massages" element={<Massages />} />
+          {width < 768 ? (
+            <Route path="/massages" element={<MassagePhone />} />
+          ) : (
+            <Route path="/massages" element={<Massages />} />
+          )}
+
           <Route path="*" element={<Default404 />} />
         </Routes>
         <Footer />
       </HashRouter>
     </>
-  );
+  )
 }
 
 export default App;
