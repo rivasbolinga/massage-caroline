@@ -21,21 +21,21 @@ const Feedback = () => {
       id: 1,
       image: costumer,
       name: 'God Spartan',
-      star: 5,
+      star: 3,
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.',
     },
     {
       id: 2,
       image: costumer,
       name: 'God Spartan',
-      star: 5,
+      star: 4,
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.',
     },
     {
       id: 3,
       image: costumer,
       name: 'God Spartan',
-      star: 5,
+      star: 1,
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.',
     },
   ];
@@ -85,6 +85,12 @@ const FeedbackWrap = styled.section`
   padding: 5rem;
   h2 {
     margin: 0;
+    font-size: 2.5rem;
+
+  }
+
+  @media screen and (max-width: 426px) {
+    padding: 5rem 0;
   }
 `;
 

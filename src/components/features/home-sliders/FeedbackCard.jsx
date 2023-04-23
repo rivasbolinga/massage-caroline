@@ -17,12 +17,9 @@ const FeedbackCard = ({
         {description}
       </q>
       <span>
-        {() => {
-          for (let i = 0; i < 5; i += 1) {
-            if (i <= star) <i className="fa-solid fa-star" />;
-              <i className="fa-solid fa-star" />;
-          }
-        }}
+        {[...Array(5)].map((_, i) => (
+          <i key={star} className={`fa-solid fa-star${i < star ? ' active' : ''}`} />
+        ))}
       </span>
       <i className="fa-solid fa-quote-left quote fa-beat" />
     </div>
@@ -30,9 +27,23 @@ const FeedbackCard = ({
 );
 
 const FeedbackCardWrap = styled.div`
+  @keyframes twinkle {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
   display: flex;
   margin: auto auto;
-  width: 70%;
+  width: 60%;
+  max-width: 665px;
+  min-width: 598px;
   flex-wrap: wrap;
   border: 1px inset #f9a392;
   border-radius: 2rem;
@@ -44,9 +55,19 @@ const FeedbackCardWrap = styled.div`
     width: 40vh;
     overflow: hidden;
   }
+
+  .fa-solid.fa-star {
+    color: gray;
+  }
+
+  .fa-solid.fa-star.active {
+    color: gold;
+  }
+
   img {
     width: 100%;
     height: 50vh;
+    margin: auto;
     transition: all 1s ease;
   }
   .star-name {
@@ -65,6 +86,10 @@ const FeedbackCardWrap = styled.div`
       overflow: hidden;
       transform: scale(1.1, 1.1);
     }
+
+    .fa-star {
+      animation: twinkle 0.5s ease-in-out infinite
+    }
   }
   .quote {
     position: absolute;
@@ -78,6 +103,18 @@ const FeedbackCardWrap = styled.div`
   .fa-quote-left {
     bottom: 10%;
     left: 10%;
+  }
+
+  @media screen and (max-width: 727px) {
+    max-width: unset;
+    min-width: unset;
+    width: 90%;
+    .img-wrap {
+      width: 100%;
+    }
+    .star-name {
+      width: 100%;
+    }
   }
 `;
 FeedbackCard.propTypes = {
