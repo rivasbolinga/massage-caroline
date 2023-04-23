@@ -19,6 +19,7 @@ const Massages = () => {
       </div>
       <div className="massages-p-container">
         <div className="massage-p-container wellness">
+          <div className="image-desktop-wellness" />
           <div className="massage-p-text">
             <h3 className="massage-p-text-title">
               {t('massages.wellness-massage')}
@@ -68,8 +69,10 @@ const Massages = () => {
               </div>
             </div>
           </div>
+          <div className="image-desktop-customized" />
         </div>
         <div className="massage-p-container ayurvedic">
+          <div className="image-desktop-ayurvedic" />
           <div className="massage-p-text">
             <h3 className="massage-p-text-title">{t('massages.ayurvedic')}</h3>
             <p className="massage-p-text-description">
