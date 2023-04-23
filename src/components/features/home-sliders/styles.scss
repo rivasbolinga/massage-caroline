@@ -19,14 +19,6 @@
     }
   }
 
-  .slick-slide {
-    padding-right: 10px;
-
-    @media screen and (max-width: 426px) {
-      padding: 4% 0;
-    }
-  }
-
   .slick-slide:last-child {
     padding-right: 0;
   }
@@ -56,16 +48,15 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: none;
   }
 
-  .massage-img {
-     position: relative;
+  .container-card {
+    background-color: black;
   }
 
   .massages-btn {
     position: absolute;
-    top: 50%;
+    top: 39%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -76,20 +67,24 @@
     border-radius: 50%;
     opacity: 0;
     cursor: pointer;
+    background-color: rgb(246, 234, 225);
+    color: $chocolate;
+    font-size: 20px;
   }
 
   .massage-img {
-    width: 200px;
+    width: 100%;
+    position: relative;
     opacity: 1;
   }
 
   .container-card:hover img {
     opacity: 0.5;
   }
+
   .container-card:hover .massages-btn {
     opacity: 1;
   }
-
 
   .card-title {
     text-align: center;
@@ -98,8 +93,6 @@
   .jQRmPT h2 {
     font-size: 4rem;
   }
-
-
 
   .slick-dots {
     display: none !important;
@@ -141,9 +134,9 @@
   #massages {
     background-image: url('../../../assets/images/bc4.png');
 
-    .massage-img {
-      width: 100%;
-      height: 400px;
+    .slick-slider,
+    .slick-track {
+      gap: 20px;
     }
   }
 }
