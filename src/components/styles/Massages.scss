@@ -1,5 +1,104 @@
 @import './common.scss';
 
+
+.massage-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 3% 20% 3%;
+  gap: 40px;
+  background-image: url('../../assets/bc-images/bc1.png');
+  background-size: cover;
+  background-position: -100px 0;
+  background-repeat: no-repeat;
+}
+
+.massages-p-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.massage-p-container {
+  height: 500px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wellness {
+  background-image: url('../../assets/images/massage1.jpeg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.customized {
+  background-image: url('../../assets/images/massage2.jpeg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ayurvedic {
+  background-image: url('../../assets/images/massage3.jpeg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.massage-p-text {
+  background-color: rgba(198, 184, 175, 0.178);
+  text-align: center;
+  width: 95%;
+  height: 280px;
+  font-family: $playfair;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  font-size: 15px;
+}
+
+.massage-p-text-description {
+  margin: 4px;
+}
+
+.massage-p-title-text {
+  font-family: $playfair;
+  font-size: 50px;
+  margin-top: 85px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.massage-p-text-title {
+  font-size: 23px;
+  text-transform: uppercase;
+  font-family: $playfair;
+}
+
+.book-massage {
+  width: 200px;
+  padding: 0;
+  height: 35px;
+  margin: 0;
+  color: rgb(117, 114, 110);
+  background-color: rgb(246, 234, 225);
+  font-size: 17px;
+}
+
+.times-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
 .massage-title-text {
   font-family: $playfair;
   font-size: 80px;
@@ -101,4 +200,5 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
 }
