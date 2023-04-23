@@ -1,61 +1,113 @@
-import React from 'react';
-import styled from 'styled-components';
-import bannerImg from '../assets/home-massage-pics/banner.png';
-import Banner from './features/home-carousel/Banner';
-import TitleWrap from './styles/HomeTitle';
+import { useTranslation } from 'react-i18next';
+import './styles/Massages.scss';
+import massage1 from '../assets/images/massage1.jpeg';
+import massage2 from '../assets/images/massage2.jpeg';
+import massage3 from '../assets/images/massage3.jpeg';
 
-const Massages = () => (
-  <>
-    <Banner
-      massage
-      index={1}
-      item={
-        {
-          image: bannerImg,
-          style: {
-            backgroundColor: 'rgba(255, 255, 255, 20%)',
-            color: '#D25C33',
-            top: 0,
-            left: 0,
-            borderRadius: '2rem 0 0 2rem',
-          },
-          quote: `${'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos aut, eius nulla rerum perferendis quidem eligendi, tempora, consequuntur ab obcaecati doloribus aliquid eos recusandae ipsum repellat sed vel facilis!'}`,
-        }
-}
-    />
-    <MainWrapper>
-      <section className="massages-section">
-        <TitleWrap>
-          <h2>Massages WE Offer</h2>
-          <p className="description">You are our valuable customer choice A massage that suits your body</p>
-        </TitleWrap>
-        <div className="massage-container" />
-      </section>
-    </MainWrapper>
-  </>
-);
-
-const MainWrapper = styled.main`
-  margin: 0;
-  padding: 0;
-  .massages-section {
-    width: 100%;
-    background: rgb(231,221,221);
-    background: radial-gradient(circle, rgba(231,221,221,0.7792366946778712) 59%, rgba(242,210,189,1) 100%);
-    h2 {
-      margin: 1rem 0 0 0 !important;
+const Massages = () => {
+  const { t } = useTranslation();
+  const massageWellness = (e) => {
+    const timeMassage = e.target.value;
+    if (timeMassage !== '') {
+      const link = `https://calendly.com/carolineaime7/massage-bien-etre-${timeMassage}min`;
+      window.open(link, '_blank');
     }
-  }
-  .description {
-    text-align: center;
-    margin-bottom: 1rem;
-    padding: 0;
-  }
+  };
+  const massageCustom = (e) => {
+    const timeMassage = e.target.value;
+    if (timeMassage !== '') {
+      const link = `https://calendly.com/carolineaime7/massage-intuitif-${timeMassage}min`;
+      window.open(link, '_blank');
+    }
+  };
 
-  .massage-container {
-    width: 80%
-    margin: 0 auto;
-  }
-`;
+  const massageAyurvedic = (e) => {
+    const timeMassage = e.target.value;
+    if (timeMassage !== '') {
+      const link = `https://calendly.com/carolineaime7/massage-ayurvedique-${timeMassage}min`;
+      window.open(link, '_blank');
+    }
+  };
+  return (
+    <section className="massage-d-section">
+      <div className="massage-p-title-container">
+        <h1 className="massage-title-text">{t('navigation.massages')}</h1>
+      </div>
+      <div className="massages-container">
+        <div className="massage-container">
+          <img alt="massage" src={massage1} className="massage-image" />
+          <div className="massage-p-text desktop">
+            <h3 className="massage-p-text-title">
+              {t('massages.wellness-massage')}
+            </h3>
+            <p className="massage-p-text-description">
+              {t('massages.back-legs')}
+            </p>
+            <p className="massage-p-text-time">30 min</p>
+            <p className="massage-p-text-description">
+              {t('massages.entire-body')}
+            </p>
+            <p className="time-text">60 min - 90min </p>
+            <select
+              type="button"
+              className="book-d-massage-button"
+              onChange={massageWellness}
+            >
+              <option value="">{t('massages.book')}</option>
+              <option value="30">30 min</option>
+              <option value="60">60 min</option>
+              <option value="90">90 min</option>
+            </select>
+          </div>
+        </div>
+        <div className="massage-container">
+          <div className="massage-p-text desktop">
+            <h3 className="massage-p-text-title">{t('massages.customized')}</h3>
+            <p className="massage-p-text-description">
+              {t('massages.bespoke')}
+            </p>
+            <div className="times-container">
+              <div className="time-container">
+                <p className="time-text">30 min - 60min - 90min</p>
+                <select
+                  type="button"
+                  onChange={massageCustom}
+                  className="book-d-massage-button"
+                >
+                  <option value="">{t('massages.book')}</option>
+                  <option value="30">30 min</option>
+                  <option value="60">60 min</option>
+                  <option value="90">90 min</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <img alt="massage" src={massage2} className="massage-image" />
+        </div>
+        <div className="massage-container">
+          <img alt="massage" src={massage3} className="massage-image" />
+          <div className="massage-p-text desktop">
+            <h3 className="massage-p-text-title">{t('massages.ayurvedic')}</h3>
+            <p className="massage-p-text-description">
+              {t('massages.ayurvedic-technique')}
+            </p>
+            <div className="times-container">
+              <p className="time-text">60 min - 90 min</p>
+              <select
+                onChange={massageAyurvedic}
+                type="button"
+                className="book-d-massage-button"
+              >
+                <option value="">{t('massages.book')}</option>
+                <option value="60">60 min</option>
+                <option value="90">90 min</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default Massages;
