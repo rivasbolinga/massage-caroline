@@ -6,7 +6,7 @@ const FeedbackCard = ({
   id, image, name, description, star,
   index,
 }) => (
-  <FeedbackCardWrap>
+  <FeedbackCardWrap data-aos="flip-right" data-aos-duration="2000">
     <div className="img-wrap">
       <img key={id} src={image} alt={name} />
     </div>
@@ -18,7 +18,7 @@ const FeedbackCard = ({
       </q>
       <span>
         {[...Array(5)].map((_, i) => (
-          <i key={star} className={`fa-solid fa-star${i < star ? ' active' : ''}`} />
+          <i data-aos="fade-up" data-aos-duration={`${1000 + i * 200}`} key={star} className={`fa-solid fa-star${i < star ? ' active' : ''}`} />
         ))}
       </span>
       <i className="fa-solid fa-quote-left quote fa-beat" />
@@ -108,6 +108,9 @@ const FeedbackCardWrap = styled.div`
   @media screen and (max-width: 727px) {
     max-width: unset;
     min-width: unset;
+    h2 {
+      font-size: 2rem;
+    }
     width: 90%;
     .img-wrap {
       width: 100%;

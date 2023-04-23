@@ -89,8 +89,17 @@ const FeedbackWrap = styled.section`
 
   }
 
+  @media screen and (max-width: 596px) {
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
   @media screen and (max-width: 426px) {
-    padding: 5rem 0;
+    padding: 3rem 0;
+    h2{
+      font-size: 1.8rem;
+    }
+    
   }
 `;
 
