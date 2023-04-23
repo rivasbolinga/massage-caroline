@@ -82,8 +82,7 @@ const Feedback = () => {
 const FeedbackWrap = styled.section`
   background: rgb(231,221,221);
   margin: 0;
-  padding: 0;
-
+  padding: 5rem;
   h2 {
     margin: 0;
   }
