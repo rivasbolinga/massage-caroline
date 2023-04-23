@@ -43,14 +43,53 @@
     display: none !important;
   }
 
+  .card {
+    background-color: rgba(245, 222, 179, 0) !important;
+    border: none !important;
+    text-align: center;
+    font-family: $playfair;
+  }
+
   .card-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    height: 150px;
+    background-color: none;
   }
+
+  .massage-img {
+     position: relative;
+  }
+
+  .massages-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .massage-img {
+    width: 200px;
+    opacity: 1;
+  }
+
+  .container-card:hover img {
+    opacity: 0.5;
+  }
+  .container-card:hover .massages-btn {
+    opacity: 1;
+  }
+
 
   .card-title {
     text-align: center;
@@ -60,52 +99,11 @@
     font-size: 4rem;
   }
 
-  .product-actions {
-    .massages-btn {
-      width: 120px;
-      height: 30px;
-      font-size: 15px;
-      margin: 0;
-      border: 1px solid $salmon;
-      color: $salmon;
-      text-align: center;
-    }
 
-    .massages-btn:hover {
-      background-color: $salmon;
-      color: white;
-    }
-  }
-
-  .massage-img {
-    width: 100%;
-    height: auto;
-  }
 
   .slick-dots {
     display: none !important;
   }
-
-  .massage.img {
-  position: relative;
-}
-
-.product-actions {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  padding: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.massage-img:hover .product-actions {
-  opacity: 1;
-}
-
 
   #feedback .slick-slider {
     .image-wrap {

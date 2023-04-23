@@ -10,16 +10,16 @@ const ProductCard = ({ imgSrc, data }) => {
   return (
     <>
       <Card style={{ width: 'inherit' }}>
-        <img className="massage-img" src={imgSrc} alt="massage images" />
+        <div className="container-card">
+          <img className="massage-img" src={imgSrc} alt="massage images" />
+          <Link className="massages-btn" type="button" to="/massages">
+            {t('about.go-massages')}
+          </Link>
+        </div>
         <Card.Body>
           <Card.Title>
             <TranslatedTitle title={data.title} />
           </Card.Title>
-          <div className="product-actions">
-            <Link className="massages-btn" type="button" to="/massages">
-              {t('about.go-massages')}
-            </Link>
-          </div>
         </Card.Body>
       </Card>
     </>
