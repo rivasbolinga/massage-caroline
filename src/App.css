@@ -50,6 +50,11 @@ main {
   margin: 0;
 }
 
+/* this is a important line for whole app */
+.slick-arrow {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   body {
     background-color: #f6edea;
