@@ -16,7 +16,7 @@ const ProductSlider = () => {
     slidesToScroll: 2,
     initialSlide: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
