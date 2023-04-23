@@ -160,7 +160,6 @@ const Footer = () => {
 };
 
 const FooterWrap = styled.footer`
-  margin: 1rem 0 0 0;
   padding: 4rem 0 0 0;
   background-color: #E1BDA7;
   .footer-container {

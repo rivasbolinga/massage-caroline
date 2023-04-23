@@ -1,11 +1,43 @@
 import React from 'react';
+import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './styles.scss';
 import TitleWrap from '../../styles/HomeTitle';
+import FeedbackCard from './FeedbackCard';
 
 const Feedback = () => {
+  const feedbacks = [
+    {
+      id: 0,
+      image: '',
+      name: '',
+      star: 5,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.',
+    },
+    {
+      id: 1,
+      image: '',
+      name: '',
+      star: 5,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.',
+    },
+    {
+      id: 2,
+      image: '',
+      name: '',
+      star: 5,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.',
+    },
+    {
+      id: 3,
+      image: '',
+      name: '',
+      star: 5,
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.',
+    },
+  ];
   const settings = {
     dots: true,
     infinite: true,
@@ -45,7 +77,8 @@ const Feedback = () => {
     ],
   };
   return (
-    <div>
+    <FeedbackWrap>
+      <TitleWrap><h2>Customer Feedbacks</h2></TitleWrap>
       <Slider
         dots={settings.dots}
         infinite={settings.infinite}
@@ -57,15 +90,30 @@ const Feedback = () => {
         autoplaySpeed={settings.autoplaySpeed}
         responsive={settings.responsive}
       >
-        <div>
-          <TitleWrap>ahgfdsjghfjsdf</TitleWrap>
-          <div className="descriptions">
-            adfgkdsjfdghskjfgahdgkhahsgfjldsfadgfda
-          </div>
-        </div>
+        {feedbacks.map((item, index) => (
+          <FeedbackCard
+            key={item.id}
+            id={item.id}
+            index={index}
+            image={item.image}
+            name={item.name}
+            star={item.star}
+            description={item.description}
+          />
+        ))}
       </Slider>
-    </div>
+    </FeedbackWrap>
   );
 };
+
+const FeedbackWrap = styled.section`
+  background: rgb(231,221,221);
+  margin: 0;
+  padding: 0;
+
+  h2 {
+    margin: 0;
+  }
+`;
 
 export default Feedback;
