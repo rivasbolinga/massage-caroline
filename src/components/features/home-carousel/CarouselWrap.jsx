@@ -77,7 +77,7 @@ position: relative;
     width: 100%;
     height: 100vh;
     @media screen and (max-width: 426px) {
-      height: 50vh !important;
+      height: 70vh !important;
     }
     img {
       width: 100%;
@@ -90,7 +90,7 @@ position: relative;
       }
 
       @media screen and (max-width: 426px) {
-        height: 50vh !important;
+        height: 70vh !important;
       }
     }
   }
