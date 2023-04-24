@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
 const LanguageButton = () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   const handleClick = () => {
     const currentLang = i18n.language;
@@ -11,7 +11,7 @@ const LanguageButton = () => {
   };
 
   return (
-    <ToggleButton onClick={handleClick}>
+    <ToggleButton title={t('tooltips.navigation.lang-change')} onClick={handleClick}>
       <i className="fa-sharp fa-solid fa-globe" />
       <ToggleText>{i18n.language.toUpperCase()}</ToggleText>
     </ToggleButton>

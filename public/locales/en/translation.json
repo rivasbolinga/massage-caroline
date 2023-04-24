@@ -10,6 +10,14 @@
     "contact": "Contact"
   },
 
+  "tooltips" :{
+    "navigation" : {
+      "logo": "logo",
+      "nav-link": "Page Link",
+      "lang-change": "Change to france"
+    }
+  },
+
   "routes": {
     "home": "Home",
     "bookings": "Bookings",
