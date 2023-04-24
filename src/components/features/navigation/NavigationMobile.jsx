@@ -24,6 +24,7 @@ const NavigationMobile = () => {
           toggled={isOpen}
           toggle={setOpen}
           direction="right"
+          color="black"
           size={20}
           className="hamburger-icon"
         />

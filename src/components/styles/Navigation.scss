@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.6% 2%;
-  background-color: rgba(250, 235, 215, 0.012);
+  background-color: rgba(250, 235, 215, 0.2);
   z-index: 10;
   position: absolute;
   width: 100%;
@@ -23,16 +23,21 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
+
+  @media screen and (max-width: 900px) {
+    gap: 21.5px;
+  }
 }
 
 .menu-navbar a {
   font-family: $playfair;
+  font-weight: 900;
   font-size: 20px;
-  color: white;
+  color: #30221e;
 }
 
 .nav-bar.sticky {
-  background-color: #e0d8d3;
+  background-color: #f6eae1;
   color: rgba(188, 180, 174, 0.677);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-repeat: no-repeat;

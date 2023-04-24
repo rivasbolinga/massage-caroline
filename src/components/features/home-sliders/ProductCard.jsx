@@ -1,30 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import { Card } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import { BiSearch } from 'react-icons/bi';
 import TranslatedTitle from './TranslatedTitle';
 
-const ProductCard = ({ imgSrc, data }) => {
-  const { t } = useTranslation();
-  return (
-    <>
-      <Card style={{ width: 'inherit' }}>
+const ProductCard = ({ imgSrc, data }) => (
+  <>
+    <Card style={{ width: 'inherit' }}>
+      <div className="container-card">
         <img className="massage-img" src={imgSrc} alt="massage images" />
-        <Card.Body>
-          <Card.Title>
-            <TranslatedTitle title={data.title} />
-          </Card.Title>
-          <div className="product-actions">
-            <Link className="massages-btn" type="button" to="/massages">
-              {t('about.go-massages')}
-            </Link>
-          </div>
-        </Card.Body>
-      </Card>
-    </>
-  );
-};
+        <Link className="massages-btn" type="button" to="/massages">
+          <BiSearch />
+        </Link>
+      </div>
+      <Card.Body>
+        <Card.Title>
+          <TranslatedTitle title={data.title} />
+        </Card.Title>
+      </Card.Body>
+    </Card>
+  </>
+);
 
 ProductCard.propTypes = {
   imgSrc: PropTypes.string.isRequired,
