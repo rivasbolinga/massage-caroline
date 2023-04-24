@@ -21,10 +21,10 @@ const AboutPhone = ({ home }) => { // eslint-disable-line
       data-aos-duration="1000"
     >
       <div className="about-container">
-        <h1 className="about-title">{t('about.about-me')}</h1>
+        <h1 title={t('about.about-me')} className="about-title">{t('about.about-me')}</h1>
         <div className="line-title" />
-        <h3 className="about-name">{t('about.name')}</h3>
-        <div className="about-text">
+        <h3 title={t('tooltips.carousel.name')} className="about-name">{t('about.name')}</h3>
+        <div title={t('tooltips.about.description')} className="about-text">
           <p>{t('about.my-work')}</p>
           <p>{t('about.techniques')}</p>
           {showMore && <p>{t('about.passionate')}</p>}
@@ -36,7 +36,7 @@ const AboutPhone = ({ home }) => { // eslint-disable-line
       </div>
       {!home && (
         <div className="button-container">
-          <button type="button">
+          <button title={t('tooltips.navigation.nav-link')} type="button">
             <Link to="/massages#top" className="massages-btn">
               {t('about.go-massages')}
               <BsArrowRight className="arrow" />

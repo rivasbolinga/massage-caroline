@@ -12,13 +12,13 @@ const NavigationMobile = () => {
 
   return (
     <nav className="nav-mobile">
-      <div className="logo-mobile">
+      <div title={t('tooltips.navigation.logo')} className="logo-mobile">
         <Link to="/">
           <img className="logo-navbar-mobile" alt="logo" src={Logo} />
         </Link>
       </div>
 
-      <div className="burger-container">
+      <div title={t('tooltips.navigation.menu-button')} className="burger-container">
         <LanguageButton />
         <Hamburger
           toggled={isOpen}
@@ -32,10 +32,10 @@ const NavigationMobile = () => {
       {isOpen && (
         <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
           <Link to="/">
-            <img className="logo-mobile-popup" alt="logo" src={Logo} />
+            <img title={t('tooltips.navigation.logo')} className="logo-mobile-popup" alt="logo" src={Logo} />
           </Link>
           <ul className="menu">
-            <li className="nav-item">
+            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link
                 tabIndex="0"
                 onClick={() => setOpen(false)}
@@ -49,7 +49,7 @@ const NavigationMobile = () => {
                 {t('navigation.home')}
               </Link>
             </li>
-            <li className="nav-item">
+            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link
                 tabIndex="0"
                 onClick={() => setOpen(false)}
@@ -63,7 +63,7 @@ const NavigationMobile = () => {
                 {t('navigation.massages')}
               </Link>
             </li>
-            <li className="nav-item">
+            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link
                 tabIndex="0"
                 onClick={() => setOpen(false)}
@@ -77,7 +77,7 @@ const NavigationMobile = () => {
                 {t('navigation.sophrology')}
               </Link>
             </li>
-            <li className="nav-item">
+            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link
                 tabIndex="0"
                 onClick={() => setOpen(false)}
@@ -91,7 +91,7 @@ const NavigationMobile = () => {
                 {t('navigation.about-me')}
               </Link>
             </li>
-            <li className="nav-item">
+            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link
                 tabIndex="0"
                 onClick={() => setOpen(false)}

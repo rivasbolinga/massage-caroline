@@ -10,11 +10,19 @@
     "contact": "Contact"
   },
 
-  "tooltips" :{
+  "tooltips": {
     "navigation" : {
       "logo": "logo",
       "nav-link": "Page Link",
       "lang-change": "Change to france"
+    },
+    "carousel": {
+      "img": "Banner",
+      "info": "Our Info",
+      "name": "My Name"
+    },
+    "about": {
+      "description": "Our Expertise and Introduction"
     }
   },
 
