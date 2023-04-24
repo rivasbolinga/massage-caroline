@@ -4,39 +4,41 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './styles.scss';
+import { useTranslation } from 'react-i18next';
 import TitleWrap from '../../styles/HomeTitle';
 import FeedbackCard from './FeedbackCard';
 import costumer from '../../../assets/customer.png';
 
 const Feedback = () => {
+  const { t } = useTranslation();
   const feedbacks = [
     {
       id: 0,
       image: costumer,
       name: 'God Spartan',
       star: 5,
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.',
+      description: t('feedback.feedback1'),
     },
     {
       id: 1,
       image: costumer,
       name: 'God Spartan',
       star: 3,
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.',
+      description: t('feedback.feedback2'),
     },
     {
       id: 2,
       image: costumer,
       name: 'God Spartan',
       star: 4,
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.',
+      description: t('feedback.feedback3'),
     },
     {
       id: 3,
       image: costumer,
       name: 'God Spartan',
       star: 1,
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.',
+      description: t('feedback.feedback4'),
     },
   ];
   const settings = {
@@ -51,7 +53,7 @@ const Feedback = () => {
   };
   return (
     <FeedbackWrap>
-      <TitleWrap><h2>Customer Feedbacks</h2></TitleWrap>
+      <TitleWrap><h2>{t('feedback.title')}</h2></TitleWrap>
       <Slider
         dots={settings.dots}
         infinite={settings.infinite}
