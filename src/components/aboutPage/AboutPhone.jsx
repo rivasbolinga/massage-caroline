@@ -5,9 +5,8 @@ import '../styles/AboutPhone.scss';
 import { useState } from 'react';
 import { AiOutlineUpCircle, AiOutlineDownCircle } from 'react-icons/ai';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
-const AboutPhone = ({ home }) => {
+const AboutPhone = ({ home }) => { // eslint-disable-line
   const { t } = useTranslation();
   const [showMore, setShowMore] = useState(false);
 
@@ -36,24 +35,23 @@ const AboutPhone = ({ home }) => {
         </div>
       </div>
       {!home && (
-      <div className="button-container">
-        <button type="button">
-          <Link to="/massages#top" className="massages-btn">
-            {t('about.go-massages')}
-            <BsArrowRight className="arrow" />
-          </Link>
-        </button>
-      </div>
+        <div className="button-container">
+          <button type="button">
+            <Link to="/massages#top" className="massages-btn">
+              {t('about.go-massages')}
+              <BsArrowRight className="arrow" />
+            </Link>
+          </button>
+        </div>
       )}
     </AboutWrap>
   );
 };
 
-AboutPhone.propTypes = {
-  home: PropTypes.bool.isRequired,
-};
-
 const AboutWrap = styled.main`
+  button {
+    display: ${(props) => (props.home ? 'none' : 'block')}
+  }
   @media screen and (max-width: 768px) {
     .about-title {
       border-radius: ${(props) => (props.home ? '15px' : '0px')};
