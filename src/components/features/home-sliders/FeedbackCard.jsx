@@ -18,7 +18,7 @@ const FeedbackCard = ({
       </q>
       <span>
         {[...Array(5)].map((_, i) => (
-          <i data-aos="fade-up" data-aos-duration={`${1000 + i * 200}`} key={star} className={`fa-solid fa-star${i < star ? ' active' : ''}`} />
+          <i data-aos="fade-up" data-aos-duration={`${1000 + i * 200}`} key={Math.random()} className={`fa-solid fa-star${i < star ? ' active' : ''}`} />
         ))}
       </span>
       <i className="fa-solid fa-quote-left quote fa-beat" />
