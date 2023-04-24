@@ -61,7 +61,7 @@ const FeedbackCardWrap = styled.div`
   }
 
   .fa-solid.fa-star.active {
-    color: gold;
+    color: #F8CBA6;
   }
 
   img {
