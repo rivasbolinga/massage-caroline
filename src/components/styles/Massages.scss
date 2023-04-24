@@ -144,6 +144,19 @@
   }
 
   @media (min-width: 1000px) {
+    .massage-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 3% 20% 3%;
+  gap: 40px;
+  background-image: url('../../assets/bc-images/b15.png');
+  background-size: cover;
+  background-position: -100px 0;
+  background-repeat: no-repeat;
+}
+
     .massage-p-title-text {
       font-size: 100px;
     }
