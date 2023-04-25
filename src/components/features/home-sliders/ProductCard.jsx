@@ -13,7 +13,7 @@ const ProductCard = ({ imgSrc, data }) => {
       <Card title="Massage Card" style={{ width: 'inherit' }}>
         <div className="container-card">
           <img title={t('tooltips.massage.image')} className="massage-img" src={imgSrc} alt="massage images" />
-          <Link className="massages-btn" type="button" to="/massages">
+          <Link title={t('tooltips.navigation.nav-link')} className="massages-btn" type="button" to="/massages">
             <BiSearch />
           </Link>
         </div>

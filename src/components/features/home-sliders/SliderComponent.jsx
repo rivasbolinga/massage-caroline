@@ -50,7 +50,7 @@ const ProductSlider = () => {
   return (
     <div id="massages">
       <TitleWrap className="about-title">
-        <h2>{t('navigation.massages')}</h2>
+        <h2 title={t('navigation.massages')}>{t('navigation.massages')}</h2>
       </TitleWrap>
 
       <Slider
