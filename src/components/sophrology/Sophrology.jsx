@@ -26,6 +26,7 @@ const Sophrology = () => {
         </div>
         <div className="image-container">
           <img
+            title="Detail Chart"
             alt="sophrology chart"
             className="sp-image"
             src="https://be-sophro.com/wp-content/uploads/2023/01/What-is-Sophrology-Infographic-960x960.png"
@@ -42,6 +43,7 @@ const Sophrology = () => {
         <div className="sessions-container">
           <div className="icon-div">
             <img
+              title="icon"
               className="massage-icon"
               src={MassageIcon}
               alt="massage icon"
@@ -58,7 +60,6 @@ const Sophrology = () => {
             </div>
           </div>
         </div>
-
         <Link to="/bookings">
           <ButtonBookNow className="book-now-btn">Book now</ButtonBookNow>
         </Link>
