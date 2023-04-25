@@ -7,6 +7,7 @@ import {
 import AOS from 'aos';
 import Navigation from './components/features/navigation/Navigation';
 import NavigationMobile from './components/features/navigation/NavigationMobile';
+import ScrollToTop from './ScrollToTOp';
 import Home from './components/Home';
 import About from './components/aboutPage/About';
 import Contact from './components/Contact';
@@ -50,6 +51,7 @@ function App() {
   return (
     <>
       <HashRouter>
+        <ScrollToTop />
         {width < 769 ? <NavigationMobile /> : <Navigation />}
         <hr id="top" />
         <Routes>
