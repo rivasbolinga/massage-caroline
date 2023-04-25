@@ -10,10 +10,10 @@ const Footer = () => {
     <FooterWrap>
       <div className="footer-container">
         <div className="footer-item">
-          <h3>{t('footer.touch')}</h3>
+          <h3 title={t('footer.touch')}>{t('footer.touch')}</h3>
           <ul className="footer-list">
             {/* Andrea first you have to go here it's important for you */}
-            <li>
+            <li title={t('tooltips.footer.address')}>
               <a
                 href="https://goo.gl/maps/qrTwinB554XdUAet8"
                 target="_blank"
@@ -25,14 +25,14 @@ const Footer = () => {
                 Kendallville, IN 46755, United States
               </a>
             </li>
-            <li>
+            <li title={t('tooltips.footer.number')}>
               <a href="tel:+012 345 67890">
                 <i className="fa-solid fa-phone-volume" />
                 {' '}
                 +012 345 67890
               </a>
             </li>
-            <li>
+            <li title={t('tooltips.footer.email')}>
               <a href="mailto:info@example.com">
                 <i className="fa-solid fa-envelope-open" />
                 {' '}
@@ -41,58 +41,58 @@ const Footer = () => {
             </li>
           </ul>
           <div className="logo-wrap">
-            <div className="client">
+            <div title={t('tooltips.navigation.logo')} className="client">
               <Link to="/">Logo</Link>
             </div>
             <SocialLogos color="#D25C33" />
           </div>
         </div>
         <div className="footer-item">
-          <h3>{t('footer.links')}</h3>
+          <h3 title={t('footer.links')}>{t('footer.links')}</h3>
           <ul className="footer-list">
-            <li className="nav-item">
+            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link to="#top">
                 <i className="fa-solid fa-angle-right" />
                 {t('footer.home')}
                 {' '}
               </Link>
             </li>
-            <li className="nav-item">
+            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link to="/bookings#top">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
                 {t('footer.bookings')}
               </Link>
             </li>
-            <li className="nav-item">
+            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link to="/massages#top">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
                 Massages
               </Link>
             </li>
-            <li className="nav-item">
+            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link to="/syphilology#top">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
                 Syphilology
               </Link>
             </li>
-            <li className="nav-item">
+            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link to="/gift-card#top">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
                 Gift card
               </Link>
             </li>
-            <li className="nav-item">
+            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link to="/about#top">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
                 About us
               </Link>
             </li>
-            <li className="nav-item">
+            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link to="/contact#top">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
@@ -103,9 +103,10 @@ const Footer = () => {
         </div>
         <div className="footer-item form">
           <h3>Contact</h3>
-          <form action="https://formspree.io/f/xqkoyerk" method="post">
+          <form title={t('tooltips.footer.form')} action="https://formspree.io/f/xqkoyerk" method="post">
             <div className="from-container">
               <input
+                title={t('tooltips.footer.name')}
                 name="Visitor Name"
                 type="text"
                 maxLength="30"
@@ -113,6 +114,7 @@ const Footer = () => {
                 required
               />
               <input
+                title={t('tooltips.footer.purpose')}
                 name="Purpose"
                 type="text"
                 maxLength="70"
@@ -120,6 +122,7 @@ const Footer = () => {
                 required
               />
               <textarea
+                title={t('tooltips.footer.massages')}
                 name="Massage"
                 maxLength="300"
                 placeholder="Massage"
@@ -132,8 +135,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyright-section">
-        <div>© Caroline Massage Hub, All Right Reserved.</div>
-        <div>
+        <div title={t('tooltips.footer.copyright')}>© Caroline Massage Hub, All Right Reserved.</div>
+        <div title={t('tooltips.footer.developers')}>
           Design by
           {' '}
           <a

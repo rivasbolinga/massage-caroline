@@ -1,30 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 const FeedbackCard = ({
   id, image, name, description, star,
   index,
-}) => (
-  <FeedbackCardWrap data-aos="flip-right" data-aos-duration="2000">
-    <div className="img-wrap">
-      <img key={id} src={image} alt={name} />
-    </div>
-    <div key={index} className="star-name">
-      <i className="fa-solid fa-quote-right quote fa-beat" />
-      <h3>{name}</h3>
-      <q className="description">
-        {description}
-      </q>
-      <span>
-        {[...Array(5)].map((_, i) => (
-          <i data-aos="fade-up" data-aos-duration={`${1000 + i * 200}`} key={Math.random()} className={`fa-solid fa-star${i < star ? ' active' : ''}`} />
-        ))}
-      </span>
-      <i className="fa-solid fa-quote-left quote fa-beat" />
-    </div>
-  </FeedbackCardWrap>
-);
+}) => {
+  const { t } = useTranslation();
+  return (
+    <FeedbackCardWrap data-aos="flip-right" data-aos-duration="2000">
+      <div className="img-wrap">
+        <img title={t('tooltips.feedback.image')} key={id} src={image} alt={name} />
+      </div>
+      <div key={index} className="star-name">
+        <i className="fa-solid fa-quote-right quote fa-beat" />
+        <h3 title={t('tooltips.feedback.name')}>{name}</h3>
+        <q title={t('tooltips.feedback.description')} className="description">
+          {description}
+        </q>
+        <span title={t('tooltips.feedback.stars')}>
+          {[...Array(5)].map((_, i) => (
+            <i data-aos="fade-up" data-aos-duration={`${1000 + i * 200}`} key={Math.random()} className={`fa-solid fa-star${i < star ? ' active' : ''}`} />
+          ))}
+        </span>
+        <i className="fa-solid fa-quote-left quote fa-beat" />
+      </div>
+    </FeedbackCardWrap>
+  );
+};
 
 const FeedbackCardWrap = styled.div`
   @keyframes twinkle {

@@ -21,14 +21,6 @@ import 'aos/dist/aos.css';
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
-  const handleClick = () => {
-    // select the first button element with the given class name
-    const button = document.querySelector('.slick-dots button:first-of-type');
-    if (button) {
-      // click the button if it exists
-      button.click();
-    }
-  };
   useEffect(() => {
     function handleResize() {
       setWidth(window.innerWidth);
@@ -36,16 +28,6 @@ function App() {
     AOS.init();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  useEffect(() => {
-    // add an event listener for beforeunload
-    window.addEventListener('load', handleClick);
-
-    // remove the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('load', handleClick);
-    };
   }, []);
 
   return (
