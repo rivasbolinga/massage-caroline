@@ -48,7 +48,9 @@
       "option": "Massage Options",
       "description": "Massage Description"
     },
-    "button": "Bot"
+    "button": "Bot",
+    "social": "Social Media Handles",
+    "description": "Description About it"
   },
 
   "routes": {

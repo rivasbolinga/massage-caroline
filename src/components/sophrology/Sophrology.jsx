@@ -10,18 +10,18 @@ const Sophrology = () => {
   return (
     <section className="sp-section">
       <header className="sophrology-title-container">
-        <h1 className="sophrology-title">{t('sophrology.sophrology')}</h1>
+        <h1 title={t('sophrology.sophrology')} className="sophrology-title">{t('sophrology.sophrology')}</h1>
         <div className="horizontal-line" />
       </header>
       <main className="sophrology-main">
         <div className="explanation-container">
           <div className="what-is">
-            <h2 className="what-is-question">{t('sophrology.what-is')}</h2>
-            <p className="what-is-text">{t('sophrology.what-description')}</p>
+            <h2 title={t('sophrology.what-is')} className="what-is-question">{t('sophrology.what-is')}</h2>
+            <p title={t('tooltips.description')} className="what-is-text">{t('sophrology.what-description')}</p>
           </div>
           <div className="who-for">
-            <h2 className="who-for-question">{t('sophrology.who-for')}</h2>
-            <p className="who-description">{t('sophrology.who-description')}</p>
+            <h2 title={t('sophrology.who-for')} className="who-for-question">{t('sophrology.who-for')}</h2>
+            <p title={t('tooltips.description')} className="who-description">{t('sophrology.who-description')}</p>
           </div>
         </div>
         <div className="image-container">

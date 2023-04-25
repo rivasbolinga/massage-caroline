@@ -43,6 +43,7 @@ const FeedbackCardWrap = styled.div`
       transform: scale(1);
     }
   }
+  cursor: grab;
   display: flex;
   margin: auto auto;
   width: 60%;
