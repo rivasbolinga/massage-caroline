@@ -53,7 +53,6 @@ function App() {
       <HashRouter>
         <ScrollToTop />
         {width < 769 ? <NavigationMobile /> : <Navigation />}
-        <hr id="top" />
         <Routes>
           <Route path="/" element={<Home />} />
           {width < 768 ? (
