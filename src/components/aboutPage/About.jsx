@@ -1,9 +1,8 @@
 import React from 'react';
 import '../styles/About.scss';
-import { BsArrowRight } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import me from '../../assets/images/image5.jpeg';
+import SocialLogos from '../features/social/SocialLogos';
 
 const About = () => {
   const { t } = useTranslation();
@@ -21,16 +20,7 @@ const About = () => {
               <p>{t('about.techniques')}</p>
               <br />
               <p>{t('about.passionate')}</p>
-            </div>
-            <div className="button-container">
-              <Link
-                to="/massages#top"
-                type="button"
-                className="massages-button"
-              >
-                {t('about.go-massages')}
-                <BsArrowRight />
-              </Link>
+              <SocialLogos color="#D25C33" className="social-logos" />
             </div>
           </div>
         </div>
