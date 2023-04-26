@@ -1,6 +1,6 @@
 @import './common.scss';
 
-main {
+.about-main {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -50,14 +50,14 @@ main {
       align-items: center;
     }
 
-    .social-logo {
+    .social-logos {
       margin-top: 20px;
     }
   }
 }
 
 @media (min-width: 768px) {
-  main {
+  .about-main {
     background-image: url('../../assets/bc-images/bc3.png');
 
     .image-about {
@@ -78,7 +78,7 @@ main {
 }
 
 @media (min-width: 1024px) {
-  main {
+  .about-main {
     background-image: url('../../assets/bc-images/bc4.png');
 
     .about-me-container {
@@ -96,7 +96,7 @@ main {
   }
 
   @media (min-width: 1440px) {
-    main {
+    .about-main {
       .image-about {
         width: 600px;
       }
