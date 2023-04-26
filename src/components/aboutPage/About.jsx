@@ -3,6 +3,7 @@ import '../styles/About.scss';
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import me from '../../assets/images/image5.jpeg';
 
 const About = () => {
   const { t } = useTranslation();
@@ -15,6 +16,7 @@ const About = () => {
         <div className="about-me-container">
           <h1 className="about-me-title">{t('about.about-me')}</h1>
           <h3 className="about-me-name">{t('about.name')}</h3>
+          <img className="image-about" alt="me" src={me} />
           <div className="about-me-text">
             <p>{t('about.my-work')}</p>
             <br />
