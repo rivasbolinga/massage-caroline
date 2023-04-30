@@ -1,9 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { BiTimeFive } from 'react-icons/bi';
-import SocialLogos from './features/social/SocialLogos';
-import './styles/Contact.scss';
-import Map from './features/map/Map';
+import SocialLogos from '../features/social/SocialLogos';
+import '../styles/Contact.scss';
+import Map from '../features/map/Map';
+import Form from './From';
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -56,42 +57,7 @@ const Contact = () => {
             <SocialLogos />
           </article>
         </article>
-        <div className=" form">
-          <h3>{t('footer.touch')}</h3>
-          <div className="title-line" />
-          <p className="form-text">{t('contact.form')}</p>
-          <form action="https://formspree.io/f/xqkoyerk" method="post">
-            <div className="form-container">
-              <input
-                className="input name"
-                name="Visitor Name"
-                type="text"
-                maxLength="30"
-                placeholder="Your Name"
-                required
-              />
-              <input
-                className="input email"
-                name="email"
-                type="email"
-                maxLength="120"
-                placeholder="Your email"
-                required
-              />
-              <textarea
-                className="input textarea"
-                name="Massage"
-                maxLength="300"
-                placeholder="Your message"
-                type="text"
-                required
-              />
-            </div>
-          </form>
-          <button className="book-now-btn submit" type="submit">
-            Submit
-          </button>
-        </div>
+        <Form />
       </main>
     </section>
   );
