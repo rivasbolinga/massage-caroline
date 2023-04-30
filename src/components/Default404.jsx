@@ -43,6 +43,8 @@ const DefaultWrap = styled.section`
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
+      background-size: 200% 200%;
+      animation: gradient 10s ease infinite;
     }
     h2 {
       font-size: 5rem;
