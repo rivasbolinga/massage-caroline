@@ -15,7 +15,7 @@ const From = () => {
             name="Visitor Name"
             type="text"
             maxLength="30"
-            placeholder="Your Name"
+            placeholder={t('form.name')}
             required
           />
           <input
@@ -23,14 +23,14 @@ const From = () => {
             name="email"
             type="email"
             maxLength="120"
-            placeholder="Your email"
+            placeholder={t('form.email')}
             required
           />
           <textarea
             className="input textarea"
             name="Massage"
             maxLength="300"
-            placeholder="Your message"
+            placeholder={t('form.message')}
             type="text"
             required
           />

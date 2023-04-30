@@ -92,5 +92,10 @@
   "default": {
     "lost": "Oops you lost",
     "button": "back to home"
+  },
+  "form": {
+    "name": "Your name",
+    "email": "your email",
+    "message": "your message"
   }
 }

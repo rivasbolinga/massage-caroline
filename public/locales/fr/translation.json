@@ -94,6 +94,8 @@
     "button": "page d'accueil"
   },
   "form": {
-    
+    "name": "votre nom",
+    "email": "votre message",
+    "message": "votre message"
   }
 }
