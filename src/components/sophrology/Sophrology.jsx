@@ -1,7 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/Sophrology.scss';
+import styled from 'styled-components';
 import MassageIcon from '../../assets/icons/massage.png';
+import From from '../contactpage/From';
 
 const Sophrology = () => {
   const { t } = useTranslation();
@@ -56,9 +58,20 @@ const Sophrology = () => {
             </div>
           </div>
         </div>
+        <SpWrap>
+          <From />
+        </SpWrap>
       </main>
     </section>
   );
 };
+
+const SpWrap = styled.div`
+  margin-top: 2rem !important;
+  padding: 1rem;
+  h3 {
+    font-size: 3rem;
+  }
+`;
 
 export default Sophrology;

@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 
 const CarouselWrap = styled.div`
-  @keyframes gradient {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
-  }
   @keyframes boxShadow {
     0% {box-shadow: 0 15px 15px rgba(255, 219, 172, .7);}
     25% {box-shadow: 15px 0 15px rgba(255, 219, 172, .7);}

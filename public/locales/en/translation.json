@@ -88,5 +88,14 @@
     "feedback2" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.",
     "feedback3" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.",
     "feedback4" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium."
+  },
+  "default": {
+    "lost": "Oops you lost",
+    "button": "back to home"
+  },
+  "form": {
+    "name": "Your name",
+    "email": "your email",
+    "message": "your message"
   }
 }
