@@ -16,11 +16,13 @@ const NavigationMobile = () => {
   return (
     <nav className="navigation-bar">
       <div className="nav-mobile">
-        {isOpen ? null : (
-          <Link to="/">
-            <img className="logo-navbar" alt="logo" src={Logo} />
-          </Link>
-        )}
+        <Link to="/">
+          <img
+            className={`logo-navbar ${isOpen ? 'open' : ''}`}
+            alt="logo"
+            src={Logo}
+          />
+        </Link>
         <div className="burger-container">
           <LanguageButton />
           <Hamburger

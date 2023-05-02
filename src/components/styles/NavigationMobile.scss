@@ -61,7 +61,7 @@
 }
 
 .menu a:hover {
- color: $orange; 
+  color: $orange;
 }
 
 .mobile-menu {
@@ -82,17 +82,14 @@
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-
 .mobile-menu.open {
   transform: translateX(0%);
   opacity: 1;
 }
 
-.logo-navbar.open  {
-  display: none;
+.logo-navbar.open {
+  opacity: 0;
 }
-
-
 
 .mobile-menu li {
   opacity: 0;
@@ -119,6 +116,7 @@
 .menu li:nth-child(5) {
   transition-delay: 1s;
 }
+
 .menu li:nth-child(6) {
   transition-delay: 1.2s;
 }
@@ -127,8 +125,6 @@
   opacity: 1;
   transform: translateY(0);
 }
-
-
 
 @media (min-width: 768px) {
   .logo-mobile-popup {
@@ -148,7 +144,7 @@
   }
 
   .burger-container {
-  top: 20px;
-  right: 20px;
-}
+    top: 20px;
+    right: 20px;
+  }
 }

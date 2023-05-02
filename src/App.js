@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import {
-  HashRouter,
+  BrowserRouter,
   Route, Routes,
 } from 'react-router-dom';
 import AOS from 'aos';
@@ -48,7 +48,7 @@ function App() {
 
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         {width < 769 ? <NavigationMobile /> : <Navigation />}
         <hr id="top" />
         <Routes>
@@ -60,7 +60,7 @@ function App() {
           <Route path="*" element={<Default404 />} />
         </Routes>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
