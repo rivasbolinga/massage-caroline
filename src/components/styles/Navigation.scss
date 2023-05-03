@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.6% 2%;
-  background-color: rgba(250, 235, 215, 0.2);
+  background-color: $chocolate;
   z-index: 10;
   position: absolute;
   width: 100%;
@@ -33,7 +33,11 @@
   font-family: $playfair;
   font-weight: 900;
   font-size: 20px;
-  color: #30221e;
+  color: #f6eae1;
+}
+
+.menu-navbar a:hover {
+  color: $orange;
 }
 
 .nav-bar.sticky {

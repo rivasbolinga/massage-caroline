@@ -44,7 +44,6 @@ const FeedbackCardWrap = styled.div`
   width: 60%;
   max-width: 665px;
   min-width: 598px;
-  flex-wrap: wrap;
   border: 1px inset #f9a392;
   border-radius: 2rem;
   overflow: hidden;

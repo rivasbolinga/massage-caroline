@@ -50,7 +50,6 @@ function App() {
     <>
       <HashRouter>
         {width < 769 ? <NavigationMobile /> : <Navigation />}
-        <hr id="top" />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
