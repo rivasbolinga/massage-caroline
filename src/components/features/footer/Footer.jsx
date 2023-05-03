@@ -178,8 +178,8 @@ const FooterWrap = styled.footer`
     display: grid;
     place-items: center;
     @media screen and (max-width: 390px) {
-      width: 40px;
-      height: 40px;
+      width: 75px;
+      height: 70px;
     }
   }
 
@@ -188,7 +188,7 @@ const FooterWrap = styled.footer`
     gap: 2rem;
     align-items: center;
     img {
-      width: 100px
+      width: 80px
     }
   }
   .footer-item {
