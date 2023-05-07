@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SocialLogos from '../social/SocialLogos';
+import Logo from '../../../assets/icons/logo2.jpeg';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -41,8 +42,13 @@ const Footer = () => {
             </li>
           </ul>
           <div className="logo-wrap">
+<<<<<<< HEAD
             <div title={t('tooltips.navigation.logo')} className="client">
               <Link to="/">Logo</Link>
+=======
+            <div className="client">
+              <Link to="/"><img src={Logo} alt="logo" /></Link>
+>>>>>>> d54de5f4149899067f32191d0b1ab4695b3069d6
             </div>
             <SocialLogos color="#D25C33" />
           </div>
@@ -110,27 +116,32 @@ const Footer = () => {
                 name="Visitor Name"
                 type="text"
                 maxLength="30"
-                placeholder="Your Name"
+                placeholder={t('form.name')}
                 required
               />
               <input
+<<<<<<< HEAD
                 title={t('tooltips.footer.purpose')}
                 name="Purpose"
                 type="text"
+=======
+                name="email"
+                type="email"
+>>>>>>> d54de5f4149899067f32191d0b1ab4695b3069d6
                 maxLength="70"
-                placeholder="Purpose of Contact"
+                placeholder={t('form.email')}
                 required
               />
               <textarea
                 title={t('tooltips.footer.massages')}
                 name="Massage"
                 maxLength="300"
-                placeholder="Massage"
+                placeholder={t('form.message')}
                 type="text"
                 required
               />
             </div>
-            <button type="submit">contact Developers</button>
+            <button type="submit">Contact Developers</button>
           </form>
         </div>
       </div>
@@ -177,15 +188,11 @@ const FooterWrap = styled.footer`
   }
 
   .client {
-    width: 80px;
-    height: 80px;
-    border: 1px solid black;
     display: grid;
     place-items: center;
-
     @media screen and (max-width: 390px) {
-      width: 40px;
-      height: 40px;
+      width: 75px;
+      height: 70px;
     }
   }
 
@@ -193,6 +200,9 @@ const FooterWrap = styled.footer`
     display: flex;
     gap: 2rem;
     align-items: center;
+    img {
+      width: 80px
+    }
   }
   .footer-item {
     display: flex;
@@ -229,6 +239,8 @@ const FooterWrap = styled.footer`
       width: 100%;
       padding: 0.2rem;
       font-style: italic;
+      background: rgb(255,237,219);
+      background: linear-gradient(342deg, rgba(255,237,219,1) 100%, rgba(237,205,187,1) 48%, rgba(191,146,112,1) 0%);
     }
 
     @media screen and (max-width: 1054px) {

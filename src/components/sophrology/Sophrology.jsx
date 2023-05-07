@@ -1,9 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/Sophrology.scss';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 import MassageIcon from '../../assets/icons/massage.png';
-import ButtonBookNow from '../styles/ButtonBookNow';
+import From from '../contactpage/From';
 
 const Sophrology = () => {
   const { t } = useTranslation();
@@ -60,12 +60,26 @@ const Sophrology = () => {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <Link to="/bookings">
           <ButtonBookNow className="book-now-btn">Book now</ButtonBookNow>
         </Link>
+=======
+        <SpWrap>
+          <From />
+        </SpWrap>
+>>>>>>> d54de5f4149899067f32191d0b1ab4695b3069d6
       </main>
     </section>
   );
 };
+
+const SpWrap = styled.div`
+  margin-top: 2rem !important;
+  padding: 1rem;
+  h3 {
+    font-size: 3rem;
+  }
+`;
 
 export default Sophrology;

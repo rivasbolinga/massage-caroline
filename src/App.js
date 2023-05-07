@@ -10,13 +10,12 @@ import NavigationMobile from './components/features/navigation/NavigationMobile'
 import ScrollToTop from './ScrollToTOp';
 import Home from './components/Home';
 import About from './components/aboutPage/About';
-import Contact from './components/Contact';
+import Contact from './components/contactpage/Contact';
 import Sophrology from './components/sophrology/Sophrology';
-import Bookings from './components/Bookings';
 import Massages from './components/Massages';
+// import Default404 from './components/Default404';
 import Default404 from './components/Default404';
 import Footer from './components/features/footer/Footer';
-import AboutPhone from './components/aboutPage/AboutPhone';
 import 'aos/dist/aos.css';
 
 function App() {
@@ -37,13 +36,7 @@ function App() {
         {width < 769 ? <NavigationMobile /> : <Navigation />}
         <Routes>
           <Route path="/" element={<Home />} />
-          {width < 768 ? (
-            <Route path="/about" element={<AboutPhone />} />
-          ) : (
-            <Route path="/about" element={<About />} />
-          )}
-
-          <Route path="/bookings" element={<Bookings />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/sophrology" element={<Sophrology />} />
           <Route path="/massages" element={<Massages />} />
