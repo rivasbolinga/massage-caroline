@@ -10,18 +10,28 @@ const Sophrology = () => {
   return (
     <section className="sp-section">
       <header className="sophrology-title-container">
-        <h1 title={t('sophrology.sophrology')} className="sophrology-title">{t('sophrology.sophrology')}</h1>
+        <h1 title={t('sophrology.sophrology')} className="sophrology-title">
+          {t('sophrology.sophrology')}
+        </h1>
         <div className="horizontal-line" />
       </header>
       <main className="sophrology-main">
         <div className="explanation-container">
           <div className="what-is">
-            <h2 title={t('sophrology.what-is')} className="what-is-question">{t('sophrology.what-is')}</h2>
-            <p title={t('tooltips.description')} className="what-is-text">{t('sophrology.what-description')}</p>
+            <h2 title={t('sophrology.what-is')} className="what-is-question">
+              {t('sophrology.what-is')}
+            </h2>
+            <p title={t('tooltips.description')} className="what-is-text">
+              {t('sophrology.what-description')}
+            </p>
           </div>
           <div className="who-for">
-            <h2 title={t('sophrology.who-for')} className="who-for-question">{t('sophrology.who-for')}</h2>
-            <p title={t('tooltips.description')} className="who-description">{t('sophrology.who-description')}</p>
+            <h2 title={t('sophrology.who-for')} className="who-for-question">
+              {t('sophrology.who-for')}
+            </h2>
+            <p title={t('tooltips.description')} className="who-description">
+              {t('sophrology.who-description')}
+            </p>
           </div>
         </div>
         <div className="image-container">
@@ -33,10 +43,17 @@ const Sophrology = () => {
           />
           <div className="extra-info-container">
             <div className="offer-container">
-              <p className="offer-text">{t('sophrology.offer')}</p>
+              <p className="offer-text" title={t('tooltips.sophrology.offer')}>
+                {t('sophrology.offer')}
+              </p>
             </div>
             <div className="duration-container">
-              <p className="duration-text">{t('sophrology.duration')}</p>
+              <p
+                className="duration-text"
+                title={t('tooltips.sophrology.time')}
+              >
+                {t('sophrology.duration')}
+              </p>
             </div>
           </div>
         </div>
@@ -49,7 +66,8 @@ const Sophrology = () => {
               alt="massage icon"
             />
           </div>
-          <div className="sessions">
+          <div className="sessions" title={t('tooltips.sophrology.price')}>
+
             <div className="first-session">
               <i className="fa-solid fa-circle-dot" />
               <p className="first-text">{t('sophrology.first-session')}</p>

@@ -56,6 +56,12 @@
       "map": "Carte",
       "contact-me": "Contactez-moi"
     },
+    "sophrology": {
+      "offer": "Mon offre",
+      "time": "Durée de la session",
+      "price": "Prix de la session",
+      "ilustration": "Dessin de massage"
+    },
     "button": "Bot",
     "social": "Gestionnaires de médias sociaux",
     "description": "Description à propos de cela"

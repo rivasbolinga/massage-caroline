@@ -57,6 +57,12 @@
       "map": "Map",
       "contact-me": "Contact me"
     },
+    "sophrology": {
+      "offer": "my offer",
+      "time": "Session duration",
+      "price": "Session price",
+      "ilustration": ""
+    },
     "button": "Bot",
     "social": "Social Media Handles",
     "description": "Description About it"
