@@ -14,13 +14,8 @@ const NavigationMobile = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <nav className="nav-mobile">
-      <div title={t('tooltips.navigation.logo')} className="logo-mobile">
-=======
     <nav className="navigation-bar">
       <div className="nav-mobile">
->>>>>>> d54de5f4149899067f32191d0b1ab4695b3069d6
         <Link to="/">
           <img
             className={`logo-navbar ${isOpen ? 'open' : ''}`}
@@ -28,98 +23,6 @@ const NavigationMobile = () => {
             src={Logo}
           />
         </Link>
-<<<<<<< HEAD
-      </div>
-
-      <div title={t('tooltips.navigation.menu-button')} className="burger-container">
-        <LanguageButton />
-        <Hamburger
-          toggled={isOpen}
-          toggle={setOpen}
-          direction="right"
-          color="black"
-          size={20}
-          className="hamburger-icon"
-        />
-      </div>
-      {isOpen && (
-        <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
-          <Link to="/">
-            <img title={t('tooltips.navigation.logo')} className="logo-mobile-popup" alt="logo" src={Logo} />
-          </Link>
-          <ul className="menu">
-            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link
-                tabIndex="0"
-                onClick={() => setOpen(false)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    setOpen(false);
-                  }
-                }}
-                to="/"
-              >
-                {t('navigation.home')}
-              </Link>
-            </li>
-            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link
-                tabIndex="0"
-                onClick={() => setOpen(false)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    setOpen(false);
-                  }
-                }}
-                to="/massages"
-              >
-                {t('navigation.massages')}
-              </Link>
-            </li>
-            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link
-                tabIndex="0"
-                onClick={() => setOpen(false)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    setOpen(false);
-                  }
-                }}
-                to="/sophrology"
-              >
-                {t('navigation.sophrology')}
-              </Link>
-            </li>
-            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link
-                tabIndex="0"
-                onClick={() => setOpen(false)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    setOpen(false);
-                  }
-                }}
-                to="/about"
-              >
-                {t('navigation.about-me')}
-              </Link>
-            </li>
-            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link
-                tabIndex="0"
-                onClick={() => setOpen(false)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    setOpen(false);
-                  }
-                }}
-                to="/contact"
-              >
-                {t('navigation.contact')}
-              </Link>
-            </li>
-          </ul>
-=======
         <div className="burger-container">
           <LanguageButton />
           <Hamburger
@@ -130,7 +33,6 @@ const NavigationMobile = () => {
             size={20}
             className="hamburger-icon"
           />
->>>>>>> d54de5f4149899067f32191d0b1ab4695b3069d6
         </div>
       </div>
       <div

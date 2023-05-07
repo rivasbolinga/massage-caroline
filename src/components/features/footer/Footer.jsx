@@ -42,13 +42,8 @@ const Footer = () => {
             </li>
           </ul>
           <div className="logo-wrap">
-<<<<<<< HEAD
-            <div title={t('tooltips.navigation.logo')} className="client">
-              <Link to="/">Logo</Link>
-=======
             <div className="client">
               <Link to="/"><img src={Logo} alt="logo" /></Link>
->>>>>>> d54de5f4149899067f32191d0b1ab4695b3069d6
             </div>
             <SocialLogos color="#D25C33" />
           </div>
@@ -120,14 +115,8 @@ const Footer = () => {
                 required
               />
               <input
-<<<<<<< HEAD
-                title={t('tooltips.footer.purpose')}
-                name="Purpose"
-                type="text"
-=======
                 name="email"
                 type="email"
->>>>>>> d54de5f4149899067f32191d0b1ab4695b3069d6
                 maxLength="70"
                 placeholder={t('form.email')}
                 required

@@ -60,15 +60,9 @@ const Sophrology = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-        <Link to="/bookings">
-          <ButtonBookNow className="book-now-btn">Book now</ButtonBookNow>
-        </Link>
-=======
         <SpWrap>
           <From />
         </SpWrap>
->>>>>>> d54de5f4149899067f32191d0b1ab4695b3069d6
       </main>
     </section>
   );
