@@ -10,6 +10,64 @@
     "contact": "Contact"
   },
 
+  "tooltips": {
+    "navigation" : {
+      "logo": "logo",
+      "nav-link": "Page Link",
+      "lang-change": "Change to france"
+    },
+    "carousel": {
+      "img": "Banner",
+      "info": "Our Info",
+      "name": "My Name"
+    },
+    "about": {
+      "description": "Our Expertise and Introduction",
+      "image": "Our Image"
+    },
+    "footer": {
+      "address": "Our Address",
+      "number": "Our Address",
+      "email": "Our email",
+      "form": "contact our DEVS for projects",
+      "name": "Enter your name",
+      "purpose": "Enter your purpose",
+      "massages": "Write a massages for us",
+      "copyright": "Copyright ©️",
+      "developers": "Our developers"
+    },
+    "feedback": {
+      "title": "Client's feedback",
+      "image":"Client Image",
+      "name":"Client Name",
+      "description":"Client feedback",
+      "stars":"Number of Stars Given"
+    },
+    "massage": {
+      "image": "Massage Image",
+      "title": "Massage Title",
+      "option": "Massage Options",
+      "description": "Massage Description",
+      "time": "Temps de massage"
+    },
+    "contact": {
+      "days":"Days",
+      "time": "Opening times",
+      "close": "Close",
+      "map": "Map",
+      "contact-me": "Contact me"
+    },
+    "sophrology": {
+      "offer": "my offer",
+      "time": "Session duration",
+      "price": "Session price",
+      "ilustration": ""
+    },
+    "button": "Bot",
+    "social": "Social Media Handles",
+    "description": "Description About it"
+  },
+
   "routes": {
     "home": "Home",
     "bookings": "Bookings",
@@ -82,15 +140,8 @@
     "touch": "Get in touch",
     "links": "Quick links"
   },
-  "feedback": {
-    "title": "Customer Feedbacks",
-    "feedback1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.",
-    "feedback2" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.",
-    "feedback3" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.",
-    "feedback4" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium."
-  },
   "default": {
-    "lost": "Oops you lost",
+    "lost": "Oops you are lost",
     "button": "back to home"
   },
   "form": {

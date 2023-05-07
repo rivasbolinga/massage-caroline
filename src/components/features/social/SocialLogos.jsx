@@ -2,15 +2,19 @@ import { BsFacebook, BsWhatsapp, BsInstagram } from 'react-icons/bs';
 import styled from 'styled-components';
 import { AiOutlineMail } from 'react-icons/ai';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
-const SocialLogos = ({ color }) => (
-  <Wrapper className="social-logos-container">
-    <BsFacebook className="logo" color={color} />
-    <BsWhatsapp className="logo" color={color} />
-    <BsInstagram className="logo" color={color} />
-    <AiOutlineMail className="logo mail" color={color} />
-  </Wrapper>
-);
+const SocialLogos = ({ color }) => {
+  const { t } = useTranslation();
+  return (
+    <Wrapper title={t('tooltips.social')} className="social-logos-container">
+      <BsFacebook title="Facebook" className="logo" color={color} />
+      <BsWhatsapp title="Whatsapp" className="logo" color={color} />
+      <BsInstagram title="Instagram" className="logo" color={color} />
+      <AiOutlineMail title="Mail" className="logo mail" color={color} />
+    </Wrapper>
+  );
+};
 
 SocialLogos.propTypes = {
   color: PropTypes.string.isRequired,

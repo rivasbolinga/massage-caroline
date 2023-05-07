@@ -9,6 +9,63 @@
     "sophrology": "Sophrologie",
     "contact": "Contact"
   },
+  "tooltips": {
+    "navigation": {
+      "logo": "logo",
+      "nav-link": "Lien de la page",
+      "lang-change": "Change en français"
+    },
+    "carousel": {
+      "img": "Banner",
+      "info": "Notre information",
+      "name": "Mon nom"
+    },
+    "about": {
+      "description": "Notre expertise et introduction",
+      "image": "Notre Image"
+    },
+    "footer": {
+      "address": "Notre adresse",
+      "number": "Notre contact",
+      "email": "Notre email",
+      "form": "Contactez nos développeurs pour des projets",
+      "name": "Entrez votre nom",
+      "purpose": "Entrez votre objectif",
+      "massages": "Écrivez un message pour nous",
+      "copyright": "Copyright ©️",
+      "developers": "Nos développeurs"
+    },
+    "feedback": {
+      "title": "Avis des clients",
+      "image": "Image du client",
+      "name": "Nom du client",
+      "description": "Commentaire du client",
+      "stars": "Nombre d'étoiles attribuées"
+    },
+    "massage": {
+      "image": "Image de massage",
+      "title": "Titre du massage",
+      "option": "Options de massage",
+      "description": "Description du massage",
+      "time": "Massage time"
+    },
+    "contact": {
+      "days": "Jours",
+      "time": "Horaires d'ouverture",
+      "close": "Fermé",
+      "map": "Carte",
+      "contact-me": "Contactez-moi"
+    },
+    "sophrology": {
+      "offer": "Mon offre",
+      "time": "Durée de la session",
+      "price": "Prix de la session",
+      "ilustration": "Dessin de massage"
+    },
+    "button": "Bot",
+    "social": "Gestionnaires de médias sociaux",
+    "description": "Description à propos de cela"
+  },
 
   "routes": {
     "home": "Accueil",
@@ -83,11 +140,11 @@
     "links": "Liens directs"
   },
   "feedback": {
-    "title": "Témoignage",
-    "feedback1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.",
-    "feedback2" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.",
-    "feedback3" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.",
-    "feedback4" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium."
+    "title": "Avis clients",
+    "image": "Photo du client",
+    "name": "Nom du client",
+    "description": "Commentaire du client",
+    "stars": "Nombre d'étoiles attribuées"
   },
   "default": {
     "lost": "Oups tu as perdu",

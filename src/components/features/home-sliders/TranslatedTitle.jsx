@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const TranslatedTitle = ({ title }) => {
   const { t } = useTranslation();
-  return <span>{t(`massages.${title}`)}</span>;
+  return <span title={t('tooltips.massage.title')}>{t(`massages.${title}`)}</span>;
 };
 
 TranslatedTitle.propTypes = {

@@ -39,7 +39,7 @@ const DefaultWrap = styled.section`
     h1 {
       font-size: 20rem;
       color: transparent;
-      background: url("./massage-5.jpg");
+      background: url("./massage-4.jpg");
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;

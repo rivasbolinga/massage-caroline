@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { useTranslation } from 'react-i18next';
 import banner1 from '../../../assets/massage-banners/banner-c1.png';
 import banner2 from '../../../assets/massage-banners/banner-c2.png';
 import banner3 from '../../../assets/massage-banners/banner-c3.png';
@@ -7,6 +8,7 @@ import Banner from './Banner';
 import CarouselWrap from './CarouselWrap';
 
 const Carousel = () => {
+  const { t } = useTranslation();
   const peelers = [
     {
       image: banner1,
@@ -44,9 +46,9 @@ const Carousel = () => {
           <Banner item={item} key={item.image} />
         ))}
       </Slider>
-      <div className="center-hero">
-        <img src="https://user-images.githubusercontent.com/103900838/232329006-da6685dd-e72a-4eb9-a15a-457d2d2b555d.png" alt="" />
-        <h1 className="carousel-title">Caroline Aimé</h1>
+      <div title={t('tooltips.carousel.info')} className="center-hero">
+        <img title={t('tooltips.navigation.logo')} src="https://user-images.githubusercontent.com/103900838/232329006-da6685dd-e72a-4eb9-a15a-457d2d2b555d.png" alt="" />
+        <h1 title={t('tooltips.carousel.name')} className="carousel-title">Caroline Aimé</h1>
         <p>Healing</p>
       </div>
     </CarouselWrap>

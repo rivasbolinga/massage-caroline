@@ -11,49 +11,74 @@ const Contact = () => {
   return (
     <section className="contact-section">
       <article className="contact-title-container">
-        <h1 className="contact-title">Contact</h1>
+        <h1 className="contact-title" title={t('navigation.contact')}>
+          Contact
+        </h1>
       </article>
       <main className="contact-main">
         <article className="hours-location-container">
           <div className="opening-hours-container">
-            <h2 className="opening-hours-title">
+            <h2
+              className="opening-hours-title"
+              title={t('contact.opening-hours')}
+            >
               {t('contact.opening-hours')}
             </h2>
             <div className="title-line" />
             <div className="opening-hours-text-container">
-              <h3 className="week-days">{t('contact.week-days')}</h3>
+              <h3 className="week-days" title={t('tooltips.contact.days')}>
+                {t('contact.week-days')}
+              </h3>
               <div className="hours-div">
                 <BiTimeFive className="time-icon" />
-                <p className="hours">{t('contact.week-days-hours')}</p>
+                <p className="hours" title={t('tooltips.contact.time')}>
+                  {t('contact.week-days-hours')}
+                </p>
               </div>
-              <h3 className="saturday-wednesday">
+              <h3
+                className="saturday-wednesday"
+                title={t('tooltips.contact.days')}
+              >
                 {t('contact.saturday-wednesday')}
               </h3>
               <div className="hours-div">
                 <BiTimeFive className="time-icon" />
-                <p className="hours">{t('contact.weekend-hours')}</p>
+                <p className="hours" title={t('tooltips.contact.days')}>
+                  {t('contact.weekend-hours')}
+                  {' '}
+                </p>
               </div>
-              <h3 className="sunday">{t('contact.sunday')}</h3>
-              <p className="hours">{t('contact.close')}</p>
+              <h3 className="sunday" title={t('tooltips.contact.days')}>
+                {t('contact.sunday')}
+              </h3>
+              <p className="hours" title={t('tooltips.contact.close')}>
+                {t('contact.close')}
+              </p>
             </div>
           </div>
         </article>
         <article className="location-container">
-          <h2>{t('contact.address')}</h2>
+          <h2 title={t('contact.address')}>{t('contact.address')}</h2>
           <div className="title-line" />
-          <p className="location-text">
+          <p className="location-text" title={t('contact.address')}>
             606 route de la Télécabine 01170 Crozet
           </p>
-          <div className="map-container">
+          <div className="map-container" title={t('tooltips.contact.map')}>
             <Map />
           </div>
         </article>
         <article className="contact-container">
           <article className="phone-container">
-            <h3 className="phone-title">{t('contact.phone')}</h3>
+            <h3 className="phone-title" title={t('contact.phone')}>
+              {t('contact.phone')}
+            </h3>
             <div className="title-line" />
-            <p className="phone-number">0033/6 74 81 20 09</p>
-            <p className="contact-text">{t('contact.contact-text')}</p>
+            <p className="phone-number" title={t('contact.phone')}>
+              0033/6 74 81 20 09
+            </p>
+            <p className="contact-text" title={t('tooltips.contact.contact-me')}>
+              {t('contact.contact-text')}
+            </p>
             <SocialLogos />
           </article>
         </article>
