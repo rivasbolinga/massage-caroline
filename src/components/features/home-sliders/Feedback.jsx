@@ -17,23 +17,26 @@ const Feedback = () => {
     {
       id: 0,
       image: costumer1,
-      name: 'God Spartan',
+      name: 'Annie Ranoux',
       star: 5,
-      description: 'Je me suis senti tellement détendu et revigoré après mon massage avec Caroline. Elle a une présence apaisante et a vraiment écouté mes préoccupations avant de commencer la séance. Je la recommanderais sans hésiter à quiconque recherche un excellent massage!',
+      description:
+        'Je me suis senti tellement détendu et revigoré après mon massage avec Caroline. Elle a une présence apaisante et a vraiment écouté mes préoccupations avant de commencer la séance. Je la recommanderais sans hésiter à quiconque recherche un excellent massage!',
     },
     {
       id: 1,
       image: costumer2,
-      name: 'God Spartan',
-      star: 3,
-      description: "Je vois Caroline depuis plusieurs mois maintenant et je suis continuellement impressionné par son professionnalisme et son habileté. Elle m'a aidé à gérer mes douleurs chroniques et m'a donné des conseils précieux sur les soins personnels et les étirements à faire à la maison. Je repars toujours en me sentant mieux qu'à mon arrivée.",
+      name: 'Ugo Climber',
+      star: 5,
+      description:
+        "Je vois Caroline depuis plusieurs mois maintenant et je suis continuellement impressionné par son professionnalisme et son habileté. Elle m'a aidé à gérer mes douleurs chroniques et m'a donné des conseils précieux sur les soins personnels et les étirements à faire à la maison. Je repars toujours en me sentant mieux qu'à mon arrivée.",
     },
     {
       id: 2,
       image: costumer3,
-      name: 'God Spartan',
+      name: 'Oceane Guede',
       star: 4,
-      description: "J'ai eu une expérience merveilleuse avec Caroline. Elle m'a mis à l'aise dès que je suis entré et son massage était à la fois thérapeutique et relaxant. Son attention aux détails et sa concentration sur les zones à problèmes la distinguent vraiment des autres massothérapeutes que j'ai vus. Je ne peux pas la recommander assez",
+      description:
+        "J'ai eu une expérience merveilleuse avec Caroline. Elle m'a mis à l'aise dès que je suis entré et son massage était à la fois thérapeutique et relaxant. Son attention aux détails et sa concentration sur les zones à problèmes la distinguent vraiment des autres massothérapeutes que j'ai vus. Je ne peux pas la recommander assez",
     },
   ];
   const settings = {
