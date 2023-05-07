@@ -7,38 +7,33 @@ import './styles.scss';
 import { useTranslation } from 'react-i18next';
 import TitleWrap from '../../styles/HomeTitle';
 import FeedbackCard from './FeedbackCard';
-import costumer from '../../../assets/customer.png';
+import costumer1 from '../../../assets/customer-1.png';
+import costumer2 from '../../../assets/customer-2.png';
+import costumer3 from '../../../assets/customer-3.png';
 
 const Feedback = () => {
   const { t } = useTranslation();
   const feedbacks = [
     {
       id: 0,
-      image: costumer,
+      image: costumer1,
       name: 'God Spartan',
       star: 5,
-      description: t('feedback.feedback1'),
+      description: 'Je me suis senti tellement détendu et revigoré après mon massage avec Caroline. Elle a une présence apaisante et a vraiment écouté mes préoccupations avant de commencer la séance. Je la recommanderais sans hésiter à quiconque recherche un excellent massage!',
     },
     {
       id: 1,
-      image: costumer,
+      image: costumer2,
       name: 'God Spartan',
       star: 3,
-      description: t('feedback.feedback2'),
+      description: "Je vois Caroline depuis plusieurs mois maintenant et je suis continuellement impressionné par son professionnalisme et son habileté. Elle m'a aidé à gérer mes douleurs chroniques et m'a donné des conseils précieux sur les soins personnels et les étirements à faire à la maison. Je repars toujours en me sentant mieux qu'à mon arrivée.",
     },
     {
       id: 2,
-      image: costumer,
+      image: costumer3,
       name: 'God Spartan',
       star: 4,
-      description: t('feedback.feedback3'),
-    },
-    {
-      id: 3,
-      image: costumer,
-      name: 'God Spartan',
-      star: 1,
-      description: t('feedback.feedback4'),
+      description: "J'ai eu une expérience merveilleuse avec Caroline. Elle m'a mis à l'aise dès que je suis entré et son massage était à la fois thérapeutique et relaxant. Son attention aux détails et sa concentration sur les zones à problèmes la distinguent vraiment des autres massothérapeutes que j'ai vus. Je ne peux pas la recommander assez",
     },
   ];
   const settings = {
