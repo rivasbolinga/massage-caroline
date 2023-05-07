@@ -50,6 +50,13 @@
       "description": "Massage Description",
       "time": "Temps de massage"
     },
+    "contact": {
+      "days":"Days",
+      "time": "Opening times",
+      "close": "Close",
+      "map": "Map",
+      "contact-me": "Contact me"
+    },
     "button": "Bot",
     "social": "Social Media Handles",
     "description": "Description About it"
