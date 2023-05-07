@@ -37,6 +37,7 @@
       "developers": "Our developers"
     },
     "feedback": {
+      "title": "Client's feedback",
       "image":"Client Image",
       "name":"Client Name",
       "description":"Client feedback",
@@ -46,7 +47,8 @@
       "image": "Massage Image",
       "title": "Massage Title",
       "option": "Massage Options",
-      "description": "Massage Description"
+      "description": "Massage Description",
+      "time": "Temps de massage"
     },
     "button": "Bot",
     "social": "Social Media Handles",
@@ -125,15 +127,8 @@
     "touch": "Get in touch",
     "links": "Quick links"
   },
-  "feedback": {
-    "title": "Customer Feedbacks",
-    "feedback1" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.",
-    "feedback2" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.",
-    "feedback3" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium.",
-    "feedback4" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus corrupti debitis accusamus quaerat tempore, facilis inventore a doloribus nihil sequi nam exercitationem id. Ratione, numquam distinctio! Assumenda, delectus laudantium."
-  },
   "default": {
-    "lost": "Oops you lost",
+    "lost": "Oops you are lost",
     "button": "back to home"
   },
   "form": {

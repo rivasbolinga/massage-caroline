@@ -48,7 +48,7 @@ const Feedback = () => {
   };
   return (
     <FeedbackWrap>
-      <TitleWrap><h2>{t('feedback.title')}</h2></TitleWrap>
+      <TitleWrap><h2 title={t('tooltips.feedback.title')}>{t('tooltips.feedback.title')}</h2></TitleWrap>
       <Slider
         dots={settings.dots}
         infinite={settings.infinite}
