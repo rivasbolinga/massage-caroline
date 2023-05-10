@@ -37,7 +37,7 @@ const From = () => {
         </div>
       </form>
       <button className="book-now-btn submit" type="submit">
-        Submit
+        {t('contact.send')}
       </button>
     </div>
   );

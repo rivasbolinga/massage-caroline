@@ -157,7 +157,10 @@ const Footer = () => {
 
 const FooterWrap = styled.footer`
   padding: 4rem 0 0 0;
-  background-color: #E1BDA7;
+  background-color: #292929;
+  h3, a {
+    color: rgb(246, 232, 225);
+  }
   .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -183,7 +186,7 @@ const FooterWrap = styled.footer`
     gap: 2rem;
     align-items: center;
     img {
-      width: 80px
+      width: 80px;
     }
   }
   .footer-item {
@@ -191,20 +194,20 @@ const FooterWrap = styled.footer`
     min-width: 100px;
     flex-direction: column;
     .footer-list {
-      list-style-type:none;
+      list-style-type: none;
       display: flex;
       flex-direction: column;
       padding: 0;
     }
-    margin: .5rem 1rem;
+    margin: 0.5rem 1rem;
     @media screen and (max-width: 676px) {
-      width: 70% ;
+      width: 70%;
     }
   }
   .from-container {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   button {
@@ -213,7 +216,7 @@ const FooterWrap = styled.footer`
     border: none;
     border-radius: 5px;
   }
-  
+
   .form {
     width: 30%;
     input,
@@ -221,8 +224,13 @@ const FooterWrap = styled.footer`
       width: 100%;
       padding: 0.2rem;
       font-style: italic;
-      background: rgb(255,237,219);
-      background: linear-gradient(342deg, rgba(255,237,219,1) 100%, rgba(237,205,187,1) 48%, rgba(191,146,112,1) 0%);
+      background: rgb(255, 237, 219);
+      background: linear-gradient(
+        342deg,
+        rgba(255, 237, 219, 1) 100%,
+        rgba(237, 205, 187, 1) 48%,
+        rgba(191, 146, 112, 1) 0%
+      );
     }
 
     @media screen and (max-width: 1054px) {

@@ -126,7 +126,8 @@
     "address": "Address",
     "phone": "Phone",
     "contact-text": "You can contact me by email, WhatsApp or text message and I will revert asap.",
-    "form":"Have any questions? Feel free to use the contact form below to get in touch with us. We will answer you as soon as possible!"
+    "form":"Have any questions? Feel free to use the contact form below to get in touch with us. We will answer you as soon as possible!",
+    "send": "Send"
   },
   "footer": {
     "home": "Home",
@@ -146,7 +147,7 @@
   },
   "form": {
     "name": "Your name",
-    "email": "your email",
-    "message": "your message"
+    "email": "Your email",
+    "message": "Your message..."
   }
 }
