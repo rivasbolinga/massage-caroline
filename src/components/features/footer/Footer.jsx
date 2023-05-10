@@ -21,16 +21,14 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <i className="fa-solid fa-location-dot" />
-                {' '}
-                612 E Mitchell St,
-                Kendallville, IN 46755, United States
+                606 route de la Télécabine, 01170 Crozet
               </a>
             </li>
             <li title={t('tooltips.footer.number')}>
-              <a href="tel:+012 345 67890">
+              <a href="tel:0033674812009">
                 <i className="fa-solid fa-phone-volume" />
                 {' '}
-                +012 345 67890
+                0033/ 674812009
               </a>
             </li>
             <li title={t('tooltips.footer.email')}>
@@ -43,9 +41,11 @@ const Footer = () => {
           </ul>
           <div className="logo-wrap">
             <div className="client">
-              <Link to="/"><img src={Logo} alt="logo" /></Link>
+              <Link to="/">
+                <img src={Logo} alt="logo" />
+              </Link>
             </div>
-            <SocialLogos color="#D25C33" />
+            <SocialLogos color="rgb(246,232,225)" />
           </div>
         </div>
         <div className="footer-item">
@@ -54,57 +54,48 @@ const Footer = () => {
             <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link to="#top">
                 <i className="fa-solid fa-angle-right" />
+                {' '}
                 {t('footer.home')}
                 {' '}
               </Link>
             </li>
             <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link to="/bookings#top">
-                <i className="fa-solid fa-angle-right" />
-                {' '}
-                {t('footer.bookings')}
-              </Link>
-            </li>
-            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link to="/massages#top">
+              <Link to="/massages">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
                 Massages
               </Link>
             </li>
             <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link to="/syphilology#top">
+              <Link to="/sophrology">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
-                Syphilology
+                {t('navigation.sophrology')}
               </Link>
             </li>
             <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link to="/gift-card#top">
+              <Link to="/about">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
-                Gift card
+                {t('navigation.about-me')}
               </Link>
             </li>
             <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link to="/about#top">
+              <Link to="/contact">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
-                About us
-              </Link>
-            </li>
-            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link to="/contact#top">
-                <i className="fa-solid fa-angle-right" />
-                {' '}
-                Contact us
+                Contact
               </Link>
             </li>
           </ul>
         </div>
         <div className="footer-item form">
           <h3>Contact</h3>
-          <form title={t('tooltips.footer.form')} action="https://formspree.io/f/xqkoyerk" method="post">
+          <form
+            title={t('tooltips.footer.form')}
+            action="https://formspree.io/f/xqkoyerk"
+            method="post"
+          >
             <div className="from-container">
               <input
                 title={t('tooltips.footer.name')}
@@ -135,7 +126,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyright-section">
-        <div title={t('tooltips.footer.copyright')}>© Caroline Massage Hub, All Right Reserved.</div>
+        <div title={t('tooltips.footer.copyright')}>
+          © Caroline Massage Hub, All Right Reserved.
+        </div>
         <div title={t('tooltips.footer.developers')}>
           Design by
           {' '}
