@@ -219,7 +219,7 @@ const FooterWrap = styled.footer`
     place-items: center;
     transition: All 1s;
     &:hover {
-      transform: scale(1.1)
+      transform: scale(1.3)
     }
     @media screen and (max-width: 390px) {
       width: 75px;
