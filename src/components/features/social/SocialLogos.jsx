@@ -26,6 +26,10 @@ const Wrapper = styled.div`
   gap: 10px;
   .logo {
     font-size: 30px;
+    transition: All 1s;
+    &:hover {
+      transform: translateY(-0.5rem)
+    }
   }
   .mail {
     font-size: 35px;

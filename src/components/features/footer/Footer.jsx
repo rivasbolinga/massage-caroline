@@ -16,7 +16,7 @@ const Footer = () => {
           data-aos-duration="1000"
         >
           <h3 title={t('footer.touch')}>{t('footer.touch')}</h3>
-          <ul className="footer-list">
+          <ul className="footer-list info">
             {/* Andrea first you have to go here it's important for you */}
             <li title={t('tooltips.footer.address')}>
               <a
@@ -149,6 +149,7 @@ const Footer = () => {
           Design by
           {' '}
           <a
+            className="author"
             href="https://www.linkedin.com/in/andrearivaspalacios/"
             target="_blank"
             rel="noreferrer"
@@ -159,6 +160,7 @@ const Footer = () => {
           and
           {' '}
           <a
+            className="author"
             href="https://www.linkedin.com/in/adarsh-pathak-powerlevel/"
             target="_blank"
             rel="noreferrer"
@@ -181,6 +183,26 @@ const FooterWrap = styled.footer`
    a, p {
     color: rgb(246, 232, 225);
   }
+
+  .info {
+    li {
+      .fa-solid {
+        transition: All 1s;
+      }
+      &:hover {
+        a {
+          color: #d25c33;
+        }
+        .fa-solid {
+          transform: scale(1.1)
+        }
+      }
+    }
+  }
+
+  .author {
+    color: #d25c33;
+  }
   .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -195,6 +217,10 @@ const FooterWrap = styled.footer`
   .client {
     display: grid;
     place-items: center;
+    transition: All 1s;
+    &:hover {
+      transform: scale(1.1)
+    }
     @media screen and (max-width: 390px) {
       width: 75px;
       height: 70px;
