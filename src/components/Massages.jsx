@@ -18,7 +18,7 @@ const Massages = () => {
         <h1
           className="massage-p-title-text"
           title={t('navigation.massages')}
-          data-aos="fade-up"
+          data-aos="fade-down"
           data-aos-duration="1000"
         >
           {t('navigation.massages')}
@@ -27,7 +27,7 @@ const Massages = () => {
       <div className="massages-p-container">
         <div
           className="massage-p-container wellness"
-          data-aos="fade-up"
+          data-aos="fade-left"
           data-aos-duration="1000"
         >
           <div
@@ -79,7 +79,7 @@ const Massages = () => {
         <div
           className="massage-p-container customized"
           title={t('tooltips.massage.image')}
-          data-aos="fade-up"
+          data-aos="fade-right"
           data-aos-duration="1000"
         >
           <div className="massage-p-text">
@@ -119,7 +119,7 @@ const Massages = () => {
         <div
           className="massage-p-container ayurvedic"
           title={t('tooltips.massage.image')}
-          data-aos="fade-up"
+          data-aos="fade-left"
           data-aos-duration="1000"
         >
           <div className="image-desktop-ayurvedic" />

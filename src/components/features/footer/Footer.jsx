@@ -174,6 +174,7 @@ const Footer = () => {
 const FooterWrap = styled.footer`
   padding: 4rem 0 0 0;
   background-color: #292929;
+  overflow: hidden;
   h3 {
     color: white;
   }
