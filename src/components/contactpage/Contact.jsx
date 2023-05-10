@@ -10,13 +10,20 @@ const Contact = () => {
   const { t } = useTranslation();
   return (
     <section className="contact-section">
-      <article className="contact-title-container">
-        <h1 className="contact-title" title={t('navigation.contact')}>
-          Contact
-        </h1>
-      </article>
+      <h1
+        className="contact-title"
+        title={t('navigation.contact')}
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        Contact
+      </h1>
       <main className="contact-main">
-        <article className="hours-location-container">
+        <article
+          className="hours-location-container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="opening-hours-container">
             <h2
               className="opening-hours-title"
@@ -57,7 +64,11 @@ const Contact = () => {
             </div>
           </div>
         </article>
-        <article className="location-container">
+        <article
+          className="location-container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h2 title={t('contact.address')}>{t('contact.address')}</h2>
           <div className="title-line" />
           <p className="location-text" title={t('contact.address')}>
@@ -67,7 +78,11 @@ const Contact = () => {
             <Map />
           </div>
         </article>
-        <article className="contact-container">
+        <article
+          className="contact-container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <article className="phone-container">
             <h3 className="phone-title" title={t('contact.phone')}>
               {t('contact.phone')}
@@ -76,7 +91,10 @@ const Contact = () => {
             <p className="phone-number" title={t('contact.phone')}>
               0033/6 74 81 20 09
             </p>
-            <p className="contact-text" title={t('tooltips.contact.contact-me')}>
+            <p
+              className="contact-text"
+              title={t('tooltips.contact.contact-me')}
+            >
               {t('contact.contact-text')}
             </p>
             <SocialLogos />

@@ -10,7 +10,11 @@ const Footer = () => {
   return (
     <FooterWrap>
       <div className="footer-container">
-        <div className="footer-item">
+        <div
+          className="footer-item"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h3 title={t('footer.touch')}>{t('footer.touch')}</h3>
           <ul className="footer-list">
             {/* Andrea first you have to go here it's important for you */}
@@ -21,7 +25,9 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <i className="fa-solid fa-location-dot" />
-                606 route de la Télécabine, 01170 Crozet
+                {' '}
+                606 route de la
+                Télécabine, 01170 Crozet
               </a>
             </li>
             <li title={t('tooltips.footer.number')}>
@@ -48,7 +54,11 @@ const Footer = () => {
             <SocialLogos color="rgb(246,232,225)" />
           </div>
         </div>
-        <div className="footer-item">
+        <div
+          className="footer-item"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h3 title={t('footer.links')}>{t('footer.links')}</h3>
           <ul className="footer-list">
             <li title={t('tooltips.navigation.nav-link')} className="nav-item">
@@ -89,7 +99,11 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="footer-item form">
+        <div
+          className="footer-item form"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h3>Contact</h3>
           <form
             title={t('tooltips.footer.form')}
@@ -125,7 +139,9 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="copyright-section">
+      <div
+        className="copyright-section"
+      >
         <div title={t('tooltips.footer.copyright')}>
           © Caroline Massage Hub, All Right Reserved.
         </div>
@@ -158,7 +174,10 @@ const Footer = () => {
 const FooterWrap = styled.footer`
   padding: 4rem 0 0 0;
   background-color: #292929;
-  h3, a {
+  h3 {
+    color: white;
+  }
+   a, p {
     color: rgb(246, 232, 225);
   }
   .footer-container {
@@ -245,6 +264,7 @@ const FooterWrap = styled.footer`
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+    color: white;
     @media screen and (max-width: 564px) {
       border: 1px solid black;
       gap: 0.5rem;

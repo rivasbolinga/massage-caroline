@@ -39,23 +39,59 @@
   justify-content: flex-start;
   background-image: url('../../assets/bc-images/bc8.png');
   background-size: cover;
+
+
+
   .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     h3 {
       font-size: 30px;
-      text-align: center;
     }
+  }
+
+  .form-text {
+    padding-top: 20px;
+    max-width: 600px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .input {
+    border-radius: 40px;
+    height: 50px;
+    border: 0.5px solid grey;
+    padding: 20px;
+    width: 300px;
+  }
+
+  .textarea {
+    height: 200px;
   }
 }
 
 .explanation-container {
   text-align: center;
+  margin-top: 50px;
 }
+
 .sophrology-title {
   color: #453227;
   font-size: 50px;
   text-align: center;
   padding: 10% 4% 0 4%;
   margin-top: 100px;
+  font-family: $playfair;
 }
 
 .sophrology-main {
@@ -219,7 +255,6 @@
 }
 
 @media (min-width: 1000px) {
-
   .sophrology-title {
     font-size: 120px;
   }

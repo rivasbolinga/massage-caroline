@@ -9,15 +9,23 @@ const Sophrology = () => {
   const { t } = useTranslation();
   return (
     <section className="sp-section">
-      <header className="sophrology-title-container">
-        <h1 title={t('sophrology.sophrology')} className="sophrology-title">
+      <header
+        className="sophrology-title-container"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h1
+          title={t('sophrology.sophrology')}
+          className="sophrology-title"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           {t('sophrology.sophrology')}
         </h1>
-        <div className="horizontal-line" />
       </header>
       <main className="sophrology-main">
         <div className="explanation-container">
-          <div className="what-is">
+          <div className="what-is" data-aos="fade-up" data-aos-duration="1000">
             <h2 title={t('sophrology.what-is')} className="what-is-question">
               {t('sophrology.what-is')}
             </h2>
@@ -25,7 +33,7 @@ const Sophrology = () => {
               {t('sophrology.what-description')}
             </p>
           </div>
-          <div className="who-for">
+          <div className="who-for" data-aos="fade-up" data-aos-duration="1000">
             <h2 title={t('sophrology.who-for')} className="who-for-question">
               {t('sophrology.who-for')}
             </h2>
@@ -34,7 +42,11 @@ const Sophrology = () => {
             </p>
           </div>
         </div>
-        <div className="image-container">
+        <div
+          className="image-container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <img
             title="Detail Chart"
             alt="sophrology chart"
@@ -42,12 +54,20 @@ const Sophrology = () => {
             src="https://be-sophro.com/wp-content/uploads/2023/01/What-is-Sophrology-Infographic-960x960.png"
           />
           <div className="extra-info-container">
-            <div className="offer-container">
+            <div
+              className="offer-container"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <p className="offer-text" title={t('tooltips.sophrology.offer')}>
                 {t('sophrology.offer')}
               </p>
             </div>
-            <div className="duration-container">
+            <div
+              className="duration-container"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <p
                 className="duration-text"
                 title={t('tooltips.sophrology.time')}
@@ -58,7 +78,7 @@ const Sophrology = () => {
           </div>
         </div>
         <div className="sessions-container">
-          <div className="icon-div">
+          <div className="icon-div" data-aos="fade-up" data-aos-duration="1000">
             <img
               title="icon"
               className="massage-icon"
@@ -66,8 +86,12 @@ const Sophrology = () => {
               alt="massage icon"
             />
           </div>
-          <div className="sessions" title={t('tooltips.sophrology.price')}>
-
+          <div
+            className="sessions"
+            title={t('tooltips.sophrology.price')}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div className="first-session">
               <i className="fa-solid fa-circle-dot" />
               <p className="first-text">{t('sophrology.first-session')}</p>
@@ -90,7 +114,7 @@ const SpWrap = styled.div`
   margin-top: 2rem !important;
   padding: 1rem;
   h3 {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 `;
 
