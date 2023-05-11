@@ -125,7 +125,8 @@
     "address": "Addresse",
     "phone": "Téléphone",
     "contact-text": "N’hésitez pas à m’écrire par mail, WhatsApp ou par message et je vous recontacterai dès que possible.",
-    "form": "Avez-vous des questions ? N'hésitez pas à utiliser le formulaire de contact ci-dessous pour nous contacter. Nous vous répondrons dès que possible!"
+    "form": "Avez-vous des questions ? N'hésitez pas à utiliser le formulaire de contact ci-dessous pour nous contacter. Nous vous répondrons dès que possible!",
+    "send": "Envoyer"
   },
   "footer": {
     "home": "Accueil",
@@ -136,7 +137,7 @@
     "gift-card": "Carte Cadeau",
     "sophrology": "Sophrologie",
     "contact": "Contact",
-    "touch": "Entrer en contact",
+    "touch": "Me contacter",
     "links": "Liens directs"
   },
   "feedback": {
@@ -151,8 +152,8 @@
     "button": "page d'accueil"
   },
   "form": {
-    "name": "votre nom",
-    "email": "votre message",
-    "message": "votre message"
+    "name": "Nom e prénom",
+    "email": "Email",
+    "message": "Votre message...."
   }
 }

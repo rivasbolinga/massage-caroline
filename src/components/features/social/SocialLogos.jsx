@@ -25,7 +25,14 @@ const Wrapper = styled.div`
   flex-direction: row;
   gap: 10px;
   .logo {
+    curser: pointer;
+    color: #d25c33 !important;
     font-size: 30px;
+    transition: All 1s;
+    &:hover {
+      color: red !important;
+      transform: translateY(-0.5rem)
+    }
   }
   .mail {
     font-size: 35px;

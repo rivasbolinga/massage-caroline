@@ -15,12 +15,21 @@ const Massages = () => {
   return (
     <section className="massage-section">
       <div className="massage-p-title-container">
-        <h1 className="massage-p-title-text" title={t('navigation.massages')}>
+        <h1
+          className="massage-p-title-text"
+          title={t('navigation.massages')}
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           {t('navigation.massages')}
         </h1>
       </div>
       <div className="massages-p-container">
-        <div className="massage-p-container wellness">
+        <div
+          className="massage-p-container wellness"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <div
             className="image-desktop-wellness"
             title={t('tooltips.massage.image')}
@@ -70,6 +79,8 @@ const Massages = () => {
         <div
           className="massage-p-container customized"
           title={t('tooltips.massage.image')}
+          data-aos="fade-right"
+          data-aos-duration="1000"
         >
           <div className="massage-p-text">
             <h3
@@ -108,6 +119,8 @@ const Massages = () => {
         <div
           className="massage-p-container ayurvedic"
           title={t('tooltips.massage.image')}
+          data-aos="fade-left"
+          data-aos-duration="1000"
         >
           <div className="image-desktop-ayurvedic" />
           <div className="massage-p-text">

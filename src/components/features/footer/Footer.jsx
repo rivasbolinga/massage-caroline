@@ -10,9 +10,13 @@ const Footer = () => {
   return (
     <FooterWrap>
       <div className="footer-container">
-        <div className="footer-item">
+        <div
+          className="footer-item"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h3 title={t('footer.touch')}>{t('footer.touch')}</h3>
-          <ul className="footer-list">
+          <ul className="footer-list info">
             {/* Andrea first you have to go here it's important for you */}
             <li title={t('tooltips.footer.address')}>
               <a
@@ -22,15 +26,15 @@ const Footer = () => {
               >
                 <i className="fa-solid fa-location-dot" />
                 {' '}
-                612 E Mitchell St,
-                Kendallville, IN 46755, United States
+                606 route de la
+                Télécabine, 01170 Crozet
               </a>
             </li>
             <li title={t('tooltips.footer.number')}>
-              <a href="tel:+012 345 67890">
+              <a href="tel:0033674812009">
                 <i className="fa-solid fa-phone-volume" />
                 {' '}
-                +012 345 67890
+                0033/ 674812009
               </a>
             </li>
             <li title={t('tooltips.footer.email')}>
@@ -43,68 +47,69 @@ const Footer = () => {
           </ul>
           <div className="logo-wrap">
             <div className="client">
-              <Link to="/"><img src={Logo} alt="logo" /></Link>
+              <Link to="/">
+                <img src={Logo} alt="logo" />
+              </Link>
             </div>
-            <SocialLogos color="#D25C33" />
+            <SocialLogos color="rgb(246,232,225)" />
           </div>
         </div>
-        <div className="footer-item">
+        <div
+          className="footer-item"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h3 title={t('footer.links')}>{t('footer.links')}</h3>
           <ul className="footer-list">
             <li title={t('tooltips.navigation.nav-link')} className="nav-item">
               <Link to="#top">
                 <i className="fa-solid fa-angle-right" />
+                {' '}
                 {t('footer.home')}
                 {' '}
               </Link>
             </li>
             <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link to="/bookings#top">
-                <i className="fa-solid fa-angle-right" />
-                {' '}
-                {t('footer.bookings')}
-              </Link>
-            </li>
-            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link to="/massages#top">
+              <Link to="/massages">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
                 Massages
               </Link>
             </li>
             <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link to="/syphilology#top">
+              <Link to="/sophrology">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
-                Syphilology
+                {t('navigation.sophrology')}
               </Link>
             </li>
             <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link to="/gift-card#top">
+              <Link to="/about">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
-                Gift card
+                {t('navigation.about-me')}
               </Link>
             </li>
             <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link to="/about#top">
+              <Link to="/contact">
                 <i className="fa-solid fa-angle-right" />
                 {' '}
-                About us
-              </Link>
-            </li>
-            <li title={t('tooltips.navigation.nav-link')} className="nav-item">
-              <Link to="/contact#top">
-                <i className="fa-solid fa-angle-right" />
-                {' '}
-                Contact us
+                Contact
               </Link>
             </li>
           </ul>
         </div>
-        <div className="footer-item form">
+        <div
+          className="footer-item form"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h3>Contact</h3>
-          <form title={t('tooltips.footer.form')} action="https://formspree.io/f/xqkoyerk" method="post">
+          <form
+            title={t('tooltips.footer.form')}
+            action="https://formspree.io/f/xqkoyerk"
+            method="post"
+          >
             <div className="from-container">
               <input
                 title={t('tooltips.footer.name')}
@@ -134,12 +139,17 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="copyright-section">
-        <div title={t('tooltips.footer.copyright')}>© Caroline Massage Hub, All Right Reserved.</div>
+      <div
+        className="copyright-section"
+      >
+        <div title={t('tooltips.footer.copyright')}>
+          © Caroline Massage Hub, All Right Reserved.
+        </div>
         <div title={t('tooltips.footer.developers')}>
           Design by
           {' '}
           <a
+            className="author"
             href="https://www.linkedin.com/in/andrearivaspalacios/"
             target="_blank"
             rel="noreferrer"
@@ -150,6 +160,7 @@ const Footer = () => {
           and
           {' '}
           <a
+            className="author"
             href="https://www.linkedin.com/in/adarsh-pathak-powerlevel/"
             target="_blank"
             rel="noreferrer"
@@ -164,7 +175,34 @@ const Footer = () => {
 
 const FooterWrap = styled.footer`
   padding: 4rem 0 0 0;
-  background-color: #E1BDA7;
+  background-color: #292929;
+  overflow: hidden;
+  h3 {
+    color: white;
+  }
+   a, p {
+    color: rgb(246, 232, 225);
+  }
+
+  .info {
+    li {
+      .fa-solid {
+        transition: All 1s;
+      }
+      &:hover {
+        a {
+          color: #d25c33;
+        }
+        .fa-solid {
+          transform: scale(1.1)
+        }
+      }
+    }
+  }
+
+  .author {
+    color: #d25c33;
+  }
   .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -179,6 +217,10 @@ const FooterWrap = styled.footer`
   .client {
     display: grid;
     place-items: center;
+    transition: All 1s;
+    &:hover {
+      transform: scale(1.3)
+    }
     @media screen and (max-width: 390px) {
       width: 75px;
       height: 70px;
@@ -190,7 +232,7 @@ const FooterWrap = styled.footer`
     gap: 2rem;
     align-items: center;
     img {
-      width: 80px
+      width: 80px;
     }
   }
   .footer-item {
@@ -198,20 +240,20 @@ const FooterWrap = styled.footer`
     min-width: 100px;
     flex-direction: column;
     .footer-list {
-      list-style-type:none;
+      list-style-type: none;
       display: flex;
       flex-direction: column;
       padding: 0;
     }
-    margin: .5rem 1rem;
+    margin: 0.5rem 1rem;
     @media screen and (max-width: 676px) {
-      width: 70% ;
+      width: 70%;
     }
   }
   .from-container {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   button {
@@ -220,7 +262,7 @@ const FooterWrap = styled.footer`
     border: none;
     border-radius: 5px;
   }
-  
+
   .form {
     width: 30%;
     input,
@@ -228,8 +270,13 @@ const FooterWrap = styled.footer`
       width: 100%;
       padding: 0.2rem;
       font-style: italic;
-      background: rgb(255,237,219);
-      background: linear-gradient(342deg, rgba(255,237,219,1) 100%, rgba(237,205,187,1) 48%, rgba(191,146,112,1) 0%);
+      background: rgb(255, 237, 219);
+      background: linear-gradient(
+        342deg,
+        rgba(255, 237, 219, 1) 100%,
+        rgba(237, 205, 187, 1) 48%,
+        rgba(191, 146, 112, 1) 0%
+      );
     }
 
     @media screen and (max-width: 1054px) {
@@ -244,6 +291,7 @@ const FooterWrap = styled.footer`
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+    color: white;
     @media screen and (max-width: 564px) {
       border: 1px solid black;
       gap: 0.5rem;

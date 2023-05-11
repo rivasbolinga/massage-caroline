@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 const From = () => {
   const { t } = useTranslation();
   return (
-    <div className=" form">
+    <div className=" form" data-aos="fade-up" data-aos-duration="1000">
       <h3>{t('footer.touch')}</h3>
       <div className="title-line" />
       <p className="form-text">{t('contact.form')}</p>
@@ -37,7 +37,7 @@ const From = () => {
         </div>
       </form>
       <button className="book-now-btn submit" type="submit">
-        Submit
+        {t('contact.send')}
       </button>
     </div>
   );
