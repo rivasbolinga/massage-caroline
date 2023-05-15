@@ -179,7 +179,7 @@ npm start
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [Issues](https://github.com/Bigizi/Space-Travel-Hub/issues).
+Feel free to check the [Issues](https://github.com/rivasbolinga/massage-caroline/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
