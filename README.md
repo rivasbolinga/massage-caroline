@@ -86,7 +86,7 @@ Through our attention to detail and passion for creating a visually appealing an
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-You can see the live version 📍 [here](https://deploy-preview-37--ubiquitous-malabi-6bd866.netlify.app/)
+You can see the live version 📍 [here](https://carolineaime-adarsh-and-andrea.netlify.app/)
 (still under construction)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
